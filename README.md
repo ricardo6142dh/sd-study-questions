@@ -2,6 +2,8 @@
 
 Este app recebe cursos e questões em JSON, lista os simulados disponíveis, deixa o usuário responder e mostra o resultado final.
 
+![Study App home](public/screenshots/study-app-home.png)
+
 ## Como adicionar um curso
 
 Crie uma pasta em:
