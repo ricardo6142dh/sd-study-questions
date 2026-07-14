@@ -1,0 +1,90 @@
+{
+  "slug": "fundamentals_of_operating_systems",
+  "title": "Fundamentals of Operating Systems",
+  "language": "en",
+  "provider": "Udemy",
+  "instructor": "Hussein Nasser",
+  "landingPage": "https://www.udemy.com/course/fundamentals-of-operating-systems/",
+  "modules": [
+    {
+      "slug": "core_chapters",
+      "title": "Core Chapters",
+      "order": 1,
+      "key": "core_chapters",
+      "topics": [
+        {
+          "slug": "chapter_01_introduction_to_operating_systems",
+          "title": "Chapter 1 – Introduction to Operating Systems"
+        },
+        {
+          "slug": "chapter_02_system_architecture",
+          "title": "Chapter 2 – System Architecture"
+        },
+        {
+          "slug": "chapter_03_programs_vs_processes",
+          "title": "Chapter 3 – Programs vs Processes"
+        },
+        {
+          "slug": "chapter_04_process_execution_fetch_execute_cycle",
+          "title": "Chapter 4 – Process Execution (Fetch–Execute Cycle)"
+        },
+        {
+          "slug": "chapter_05_the_stack",
+          "title": "Chapter 5 – The Stack"
+        },
+        {
+          "slug": "chapter_06_data_section_and_heap",
+          "title": "Chapter 6 – Data Section & Heap"
+        },
+        {
+          "slug": "chapter_07_memory_management_basics",
+          "title": "Chapter 7 – Memory Management Basics"
+        },
+        {
+          "slug": "chapter_08_physical_memory_and_dram",
+          "title": "Chapter 8 – Physical Memory & DRAM"
+        },
+        {
+          "slug": "chapter_09_virtual_memory",
+          "title": "Chapter 9 – Virtual Memory"
+        },
+        {
+          "slug": "chapter_10_paging_page_tables_and_swap",
+          "title": "Chapter 10 – Paging, Page Tables & Swap"
+        },
+        {
+          "slug": "chapter_11_dma_direct_memory_access",
+          "title": "Chapter 11 – DMA (Direct Memory Access)"
+        },
+        {
+          "slug": "chapter_12_cpu_internals_and_instruction_execution",
+          "title": "Chapter 12 – CPU Internals & Instruction Execution"
+        },
+        {
+          "slug": "chapter_13_processes_vs_threads",
+          "title": "Chapter 13 – Processes vs Threads"
+        },
+        {
+          "slug": "chapter_14_context_switching",
+          "title": "Chapter 14 – Context Switching"
+        },
+        {
+          "slug": "chapter_15_cpu_scheduling",
+          "title": "Chapter 15 – CPU Scheduling"
+        },
+        {
+          "slug": "chapter_16_concurrency_and_synchronization",
+          "title": "Chapter 16 – Concurrency & Synchronization"
+        },
+        {
+          "slug": "chapter_17_io_systems_and_storage",
+          "title": "Chapter 17 – I/O Systems & Storage"
+        },
+        {
+          "slug": "chapter_18_sockets",
+          "title": "Chapter 18 – Sockets"
+        }
+      ]
+    }
+  ]
+}

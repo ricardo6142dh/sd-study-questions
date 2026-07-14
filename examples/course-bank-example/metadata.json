@@ -1,0 +1,22 @@
+{
+  "slug": "example_course",
+  "title": "Example Course",
+  "language": "pt-BR",
+  "provider": "Community",
+  "instructor": "Example Instructor",
+  "landingPage": "https://example.com/example-course",
+  "modules": [
+    {
+      "slug": "intro_module",
+      "title": "Intro Module",
+      "order": 1,
+      "key": "intro_module",
+      "topics": [
+        {
+          "slug": "first_topic",
+          "title": "First Topic"
+        }
+      ]
+    }
+  ]
+}

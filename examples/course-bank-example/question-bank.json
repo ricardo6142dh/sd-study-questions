@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "id": "example-course-q1",
+      "course": "example_course",
+      "module_order": 1,
+      "module_title": "Intro Module",
+      "topic_title": "First Topic",
+      "difficulty": "easy",
+      "prompt": "Qual e o objetivo deste exemplo?",
+      "options": [
+        "Mostrar o contrato minimo",
+        "Executar um pipeline externo",
+        "Baixar arquivos remotos",
+        "Gerar PDF automaticamente"
+      ],
+      "correct_option": 0,
+      "explanation": "Este exemplo existe apenas para mostrar o contrato minimo esperado pelo app.",
+      "recommended_review": {
+        "topic_key": "first_topic",
+        "topic_title": "First Topic",
+        "why_review": "Reveja o formato para manter compatibilidade com o catalogo."
+      }
+    }
+  ]
+}

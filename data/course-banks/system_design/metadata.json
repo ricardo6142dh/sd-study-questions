@@ -1,0 +1,262 @@
+{
+  "slug": "system_design",
+  "title": "Descomplicando o System Design",
+  "language": "pt-BR",
+  "provider": "LINUXtips",
+  "instructor": "Matheus Fidelis",
+  "landingPage": "https://linuxtips.io/descomplicando-o-system-design/",
+  "modules": [
+    {
+      "slug": "day_01_protocolos_de_rede",
+      "title": "Day 01 - System Design: Protocolos de Rede",
+      "order": 1,
+      "key": "network_protocols",
+      "topics": [
+        {
+          "slug": "01_artigo_base",
+          "title": "Artigo Base - Protocolos de Rede"
+        }
+      ]
+    },
+    {
+      "slug": "day_02_storage_raid_e_io",
+      "title": "Day 02 - System Design: Storage, RAID e I/O",
+      "order": 2,
+      "key": "storage_raid_io",
+      "topics": [
+        {
+          "slug": "01_artigo_base",
+          "title": "Artigo Base - Storage, RAID e I/O"
+        }
+      ]
+    },
+    {
+      "slug": "day_03_teorema_cap_databases_acid_e_base",
+      "title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "order": 3,
+      "key": "cap_acid_base",
+      "topics": [
+        {
+          "slug": "01_teorema_cap",
+          "title": "Teorema CAP"
+        },
+        {
+          "slug": "02_modelo_acid_atomicity_consistency_isolation_durability",
+          "title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability"
+        },
+        {
+          "slug": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+          "title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency"
+        },
+        {
+          "slug": "04_componentes_do_cap",
+          "title": "Componentes do CAP"
+        },
+        {
+          "slug": "05_combinacoes_do_modelo_cap_cp_ap_ca",
+          "title": "Combinações do Modelo CAP - CP, AP, CA"
+        },
+        {
+          "slug": "06_criticas_modernas_ao_modelo_cap",
+          "title": "Críticas Modernas ao modelo CAP"
+        },
+        {
+          "slug": "07_teorema_pacelc",
+          "title": "Teorema PACELC"
+        }
+      ]
+    },
+    {
+      "slug": "day_04_databases_modelos_de_dados_e_indexacao",
+      "title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "order": 4,
+      "key": "databases_data_models_indexing",
+      "topics": [
+        {
+          "slug": "01_o_que_sao_bancos_de_dados",
+          "title": "O que sao Bancos de Dados"
+        },
+        {
+          "slug": "02_tipos_de_bancos_de_dados",
+          "title": "Tipos de Bancos de Dados"
+        },
+        {
+          "slug": "03_niveis_de_consistencia",
+          "title": "Niveis de Consistencia"
+        },
+        {
+          "slug": "04_modelos_orientados_a_tuplas_row_oriented",
+          "title": "Modelos Orientados a Tuplas (Row-Oriented)"
+        },
+        {
+          "slug": "05_modelos_orientados_a_documentos",
+          "title": "Modelos Orientados a Documentos"
+        },
+        {
+          "slug": "06_modelos_colunares_column_oriented",
+          "title": "Modelos Colunares (Column-Oriented)"
+        },
+        {
+          "slug": "07_modelos_de_coluna_larga_wide_column",
+          "title": "Modelos de Coluna Larga (Wide-Column)"
+        },
+        {
+          "slug": "08_modelos_chave_valor_key_value",
+          "title": "Modelos Chave-Valor (Key-Value)"
+        },
+        {
+          "slug": "09_modelos_de_grafos",
+          "title": "Modelos de Grafos"
+        },
+        {
+          "slug": "10_page_size_e_indexacao_colunar",
+          "title": "Page Size e Indexacao Colunar"
+        },
+        {
+          "slug": "11_lsm_trees_log_structured_merge_tree",
+          "title": "LSM Trees (Log-Structured Merge Tree)"
+        },
+        {
+          "slug": "12_indexacao_b_tree_arvores_b",
+          "title": "Indexacao B-Tree e Arvores B"
+        },
+        {
+          "slug": "13_indexacao_por_hashing",
+          "title": "Indexacao por Hashing"
+        },
+        {
+          "slug": "14_indices_invertidos_case_elasticsearch",
+          "title": "Indices Invertidos e o Caso Elasticsearch"
+        },
+        {
+          "slug": "15_arquitetura_write_intensive_e_read_intensive",
+          "title": "Arquitetura Write-Intensive e Read-Intensive"
+        }
+      ]
+    },
+    {
+      "slug": "day_05_estrategias_de_cache",
+      "title": "Day 05 - Estrategias de Cache",
+      "order": 5,
+      "key": "cache_strategies",
+      "topics": [
+        {
+          "slug": "01_estrategias_de_cache_introducao",
+          "title": "Estrategias de Cache - Introducao"
+        },
+        {
+          "slug": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+          "title": "Estrategias de Cache - Consistencia e Time To Live (TTL)"
+        },
+        {
+          "slug": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+          "title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache"
+        },
+        {
+          "slug": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+          "title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate"
+        },
+        {
+          "slug": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+          "title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido"
+        },
+        {
+          "slug": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+          "title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs"
+        },
+        {
+          "slug": "07_estrategias_de_cache_criando_uma_cdn_simples",
+          "title": "Estrategias de Cache - Criando uma CDN Simples"
+        }
+      ]
+    },
+    {
+      "slug": "day_06_microsservicos_monolitos_e_dominios",
+      "title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "order": 6,
+      "key": "microservices_monoliths_domains",
+      "topics": [
+        {
+          "slug": "01_microservicos_monolitos_e_dominios_introducao",
+          "title": "Microservicos, Monolitos e Dominios - Introducao"
+        },
+        {
+          "slug": "02_microservicos_monolitos_e_dominios_monolitos",
+          "title": "Microservicos, Monolitos e Dominios - Monolitos"
+        },
+        {
+          "slug": "03_microservicos_monolitos_e_dominios_microservicos",
+          "title": "Microservicos, Monolitos e Dominios - Microservicos"
+        },
+        {
+          "slug": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+          "title": "Microservicos, Monolitos e Dominios - Domain Driven Design"
+        },
+        {
+          "slug": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+          "title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes"
+        },
+        {
+          "slug": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+          "title": "Microservicos, Monolitos e Dominios - Lei de Conway"
+        },
+        {
+          "slug": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+          "title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades"
+        },
+        {
+          "slug": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+          "title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio"
+        }
+      ]
+    },
+    {
+      "slug": "day_07_load_balancers_e_proxies_reversos",
+      "title": "Day 07 - Load Balancers e Proxies Reversos",
+      "order": 7,
+      "key": "load_balancers_reverse_proxies",
+      "topics": [
+        {
+          "slug": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+          "title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks"
+        },
+        {
+          "slug": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+          "title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos"
+        },
+        {
+          "slug": "03_round_robin",
+          "title": "Round Robin"
+        },
+        {
+          "slug": "04_least_request",
+          "title": "Least Request"
+        },
+        {
+          "slug": "05_least_connection",
+          "title": "Least Connection"
+        },
+        {
+          "slug": "06_least_outstanding_requests_lor",
+          "title": "Least Outstanding Requests (LOR)"
+        },
+        {
+          "slug": "07_ip_hash_manglev_e_random",
+          "title": "IP Hash, Maglev e Random"
+        },
+        {
+          "slug": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+          "title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7"
+        },
+        {
+          "slug": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+          "title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado"
+        },
+        {
+          "slug": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+          "title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso"
+        }
+      ]
+    }
+  ]
+}
