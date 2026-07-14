@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { formatModuleLabel, formatTopicLabel } from "@/lib/display-label";
 import type { QuizQuestion } from "@/types/quiz";
 
 type ExamConfigFormProps = {
@@ -116,7 +117,7 @@ export function ExamConfigForm({
                     checked={selectedModules.includes(module)}
                     onChange={() => toggleValue(module, selectedModules, setSelectedModules)}
                   />
-                  <span>{module}</span>
+                  <span>{formatModuleLabel(module)}</span>
                 </label>
               ))}
             </div>
@@ -142,7 +143,7 @@ export function ExamConfigForm({
                             toggleValue(module, selectedModules, setSelectedModules)
                           }
                         />
-                        <span>{module}</span>
+                        <span>{formatModuleLabel(module)}</span>
                       </label>
                       <button
                         type="button"
@@ -167,7 +168,7 @@ export function ExamConfigForm({
                                 toggleValue(topic, selectedTopics, setSelectedTopics)
                               }
                             />
-                            <span>{topic}</span>
+                            <span>{formatTopicLabel(topic)}</span>
                           </label>
                         ))}
                       </div>

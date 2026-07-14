@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { formatModuleLabel, formatTopicLabel } from "@/lib/display-label";
 import type { CourseCatalogEntry } from "@/types/course";
 import { getCourseTheme } from "@/lib/course-theme";
 import type { BuiltExam, QuizQuestion } from "@/types/quiz";
@@ -46,7 +47,7 @@ function ResultCard({
       {!isCorrect ? (
         <div className="review-box">
           <strong>Revisar depois</strong>
-          <p>{question.recommended_review.topic_title}</p>
+          <p>{formatTopicLabel(question.recommended_review.topic_title)}</p>
           <p>{question.recommended_review.why_review}</p>
         </div>
       ) : null}
@@ -212,8 +213,8 @@ export function ExamRunner({
 
           <article className="course-panel question-card">
             <div className="question-meta">
-              <span>{currentQuestion.module_title}</span>
-              <span>{currentQuestion.topic_title}</span>
+              <span>{formatModuleLabel(currentQuestion.module_title)}</span>
+              <span>{formatTopicLabel(currentQuestion.topic_title)}</span>
             </div>
 
             <h2>{currentQuestion.prompt}</h2>

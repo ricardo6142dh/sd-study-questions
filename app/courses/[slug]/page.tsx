@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { loadCourseBySlug } from "@/lib/course-catalog";
+import { formatModuleLabel, formatTopicLabel } from "@/lib/display-label";
 import { getCourseTheme } from "@/lib/course-theme";
 
 export default async function CoursePage({
@@ -68,14 +69,13 @@ export default async function CoursePage({
           {course.modules.map((module) => (
             <article key={module.slug} className="module-card">
               <div className="module-topline">
-                <span>Day {String(module.order).padStart(2, "0")}</span>
                 <span>{module.topics.length} tópicos</span>
               </div>
-              <h3>{module.title}</h3>
+              <h3>{formatModuleLabel(module.title)}</h3>
               <div className="module-topics">
                 {module.topics.map((topic) => (
                   <span key={topic.slug} className="module-topic-pill">
-                    {topic.title}
+                    {formatTopicLabel(topic.title)}
                   </span>
                 ))}
               </div>
