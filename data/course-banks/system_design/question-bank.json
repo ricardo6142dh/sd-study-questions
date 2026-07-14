@@ -841,7 +841,7 @@
       "topic_title": "Tipos de Bancos de Dados",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa descreve corretamente um banco de dados relacional, segundo o tópico?",
+      "question": "Qual alternativa descreve corretamente um banco de dados relacional?",
       "options": [
         "Usa tabelas e relacionamentos entre tabelas, sendo associado a SQL e ACID",
         "É sempre orientado a documentos e prioriza escalabilidade horizontal acima de consistência",
@@ -849,8 +849,8 @@
         "É definido principalmente por indexação por tempo e padrão append-only"
       ],
       "answer": "Usa tabelas e relacionamentos entre tabelas, sendo associado a SQL e ACID",
-      "explanation": "O conteúdo associa o modelo relacional a tabelas, relacionamentos, SQL e ACID, com foco em consistência forte.",
-      "prompt": "Qual alternativa descreve corretamente um banco de dados relacional, segundo o tópico?",
+      "explanation": "Bancos relacionais organizam dados em tabelas com relacionamentos explícitos entre elas, utilizam SQL como linguagem de consulta e seguem as propriedades ACID para garantir consistência forte nas transações.",
+      "prompt": "Qual alternativa descreve corretamente um banco de dados relacional?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -868,7 +868,7 @@
       "topic_title": "Tipos de Bancos de Dados",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No conteúdo fornecido, qual é a principal característica associada aos bancos não relacionais (NoSQL)?",
+      "question": "Qual é a principal característica dos bancos de dados não relacionais (NoSQL)?",
       "options": [
         "Maior flexibilidade e uso quando se busca escalabilidade horizontal",
         "Uso obrigatório de tabelas com relacionamentos explícitos",
@@ -876,8 +876,8 @@
         "Dependência exclusiva de SQL para consultas"
       ],
       "answer": "Maior flexibilidade e uso quando se busca escalabilidade horizontal",
-      "explanation": "O tópico descreve NoSQL como mais flexível e associado à escalabilidade horizontal.",
-      "prompt": "No conteúdo fornecido, qual é a principal característica associada aos bancos não relacionais (NoSQL)?",
+      "explanation": "Bancos NoSQL renunciam ao esquema rígido e às garantias ACID dos relacionais em favor de maior flexibilidade de modelagem e capacidade de escalar horizontalmente, distribuindo dados por múltiplos nós com menor fricção.",
+      "prompt": "Qual é a principal característica dos bancos de dados não relacionais (NoSQL)?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -895,7 +895,7 @@
       "topic_title": "Tipos de Bancos de Dados",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, qual afirmação melhor resume o papel de ACID em bancos relacionais?",
+      "question": "Qual afirmação melhor descreve o papel de ACID em bancos de dados relacionais?",
       "options": [
         "É o termo usado para descrever a consistência em bancos relacionais",
         "É um princípio citado apenas para bancos não relacionais",
@@ -903,8 +903,8 @@
         "É sinônimo de escalabilidade horizontal"
       ],
       "answer": "É o termo usado para descrever a consistência em bancos relacionais",
-      "explanation": "O material liga ACID aos bancos relacionais como referência de consistência.",
-      "prompt": "Segundo o tópico, qual afirmação melhor resume o papel de ACID em bancos relacionais?",
+      "explanation": "ACID (Atomicidade, Consistência, Isolamento, Durabilidade) é o conjunto de propriedades que os bancos relacionais garantem para cada transação, sendo a base do modelo de consistência forte desses sistemas.",
+      "prompt": "Qual afirmação melhor descreve o papel de ACID em bancos de dados relacionais?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -922,16 +922,16 @@
       "topic_title": "Tipos de Bancos de Dados",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que o tópico afirma sobre CAP?",
+      "question": "O que é o Teorema CAP?",
       "options": [
-        "É o trade-off entre consistência, disponibilidade e latência em sistemas distribuídos",
+        "É o trade-off entre consistência, disponibilidade e tolerância a partições em sistemas distribuídos",
         "É um modelo de tabelas e relacionamentos entre tabelas",
         "É um princípio exclusivo de bancos relacionais",
         "É uma técnica de indexação para reduzir custo de escrita"
       ],
-      "answer": "É o trade-off entre consistência, disponibilidade e latência em sistemas distribuídos",
-      "explanation": "O conteúdo menciona CAP como o trade-off entre consistência, disponibilidade e latência em sistemas distribuídos.",
-      "prompt": "O que o tópico afirma sobre CAP?",
+      "answer": "É o trade-off entre consistência, disponibilidade e tolerância a partições em sistemas distribuídos",
+      "explanation": "O Teorema CAP estabelece que um sistema distribuído consegue garantir, no máximo, duas das três propriedades simultaneamente: Consistência (C), Disponibilidade (A) e Tolerância a Partições (P), forçando designers a escolher quais sacrificar em cenários de falha de rede.",
+      "prompt": "O que é o Teorema CAP?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -949,7 +949,7 @@
       "topic_title": "Tipos de Bancos de Dados",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa está mais alinhada ao que o tópico diz sobre modelos de dados e indexação?",
+      "question": "Qual é a relação entre modelos de dados e indexação em bancos de dados?",
       "options": [
         "Modelos de dados influenciam a indexação",
         "Indexação independe totalmente do modelo de dados",
@@ -957,8 +957,8 @@
         "Indexação substitui a necessidade de modelo de dados"
       ],
       "answer": "Modelos de dados influenciam a indexação",
-      "explanation": "O tópico afirma explicitamente que modelos de dados são importantes para a indexação.",
-      "prompt": "Qual alternativa está mais alinhada ao que o tópico diz sobre modelos de dados e indexação?",
+      "explanation": "A forma como os dados são estruturados (orientado a linhas, colunas, documentos, grafos etc.) determina quais estratégias de indexação são mais adequadas e eficientes, pois o layout físico dos dados impacta diretamente o desempenho das leituras.",
+      "prompt": "Qual é a relação entre modelos de dados e indexação em bancos de dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -976,7 +976,7 @@
       "topic_title": "Niveis de Consistencia",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, qual é a relação central entre alta disponibilidade e consistência em sistemas distribuídos?",
+      "question": "Qual é a relação entre alta disponibilidade e consistência em sistemas distribuídos?",
       "options": [
         "Buscar alta disponibilidade pode levar à perda de consistência",
         "Alta disponibilidade sempre aumenta a consistência",
@@ -984,8 +984,8 @@
         "Disponibilidade e consistência são independentes e não entram em trade-off"
       ],
       "answer": "Buscar alta disponibilidade pode levar à perda de consistência",
-      "explanation": "O material destaca explicitamente o trade-off: priorizar disponibilidade pode custar consistência.",
-      "prompt": "Segundo o conteúdo, qual é a relação central entre alta disponibilidade e consistência em sistemas distribuídos?",
+      "explanation": "Pelo Teorema CAP, em caso de partição de rede um sistema distribuído deve escolher entre continuar respondendo (disponibilidade) ou garantir que todos os nós vejam os mesmos dados (consistência), tornando esses dois atributos fundamentalmente conflitantes.",
+      "prompt": "Qual é a relação entre alta disponibilidade e consistência em sistemas distribuídos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1003,7 +1003,7 @@
       "topic_title": "Niveis de Consistencia",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No conteúdo apresentado, como o modelo ACID é caracterizado?",
+      "question": "Como o modelo ACID é caracterizado em sistemas de banco de dados?",
       "options": [
         "Como um modelo associado à consistência forte",
         "Como um modelo descrito como mais flexível que BASE",
@@ -1011,8 +1011,8 @@
         "Como um modelo definido apenas por latência baixa"
       ],
       "answer": "Como um modelo associado à consistência forte",
-      "explanation": "A entrada associa ACID diretamente à garantia de consistência forte.",
-      "prompt": "No conteúdo apresentado, como o modelo ACID é caracterizado?",
+      "explanation": "ACID prioriza a integridade dos dados acima de tudo: cada transação é atômica, mantém o banco em estado consistente, é isolada de outras transações concorrentes e torna as mudanças duráveis, o que resulta em consistência forte.",
+      "prompt": "Como o modelo ACID é caracterizado em sistemas de banco de dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1030,7 +1030,7 @@
       "topic_title": "Niveis de Consistencia",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual trade-off o conteúdo associa ao uso de ACID?",
+      "question": "Qual é o principal trade-off associado ao uso do modelo ACID?",
       "options": [
         "Pode aumentar a latência",
         "Elimina completamente a necessidade de consistência",
@@ -1038,8 +1038,8 @@
         "Garante alta disponibilidade sem custo"
       ],
       "answer": "Pode aumentar a latência",
-      "explanation": "O material afirma que ACID garante consistência forte, mas pode aumentar a latência.",
-      "prompt": "Qual trade-off o conteúdo associa ao uso de ACID?",
+      "explanation": "As garantias de atomicidade e isolamento do ACID exigem coordenação entre transações — via bloqueios ou controle de concorrência multiversão — o que introduz overhead e pode elevar a latência, especialmente sob alta carga de escrita concorrente.",
+      "prompt": "Qual é o principal trade-off associado ao uso do modelo ACID?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1057,7 +1057,7 @@
       "topic_title": "Niveis de Consistencia",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Como o modelo BASE é descrito no conteúdo?",
+      "question": "Como o modelo BASE se diferencia do ACID em sistemas de banco de dados?",
       "options": [
         "Como um modelo mais flexível",
         "Como um modelo que garante consistência forte",
@@ -1065,8 +1065,8 @@
         "Como um modelo focado principalmente em reduzir latência de escrita"
       ],
       "answer": "Como um modelo mais flexível",
-      "explanation": "A entrada caracteriza BASE apenas como mais flexível, sem atribuir consistência forte a ele.",
-      "prompt": "Como o modelo BASE é descrito no conteúdo?",
+      "explanation": "BASE (Basically Available, Soft state, Eventually consistent) abre mão das garantias rígidas do ACID em troca de maior disponibilidade e escalabilidade, aceitando que o sistema pode ficar temporariamente inconsistente até atingir consistência eventual.",
+      "prompt": "Como o modelo BASE se diferencia do ACID em sistemas de banco de dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1119,7 +1119,7 @@
         "Em arquivos separados por tipo de dado"
       ],
       "answer": "Em linhas",
-      "explanation": "O conteúdo define o modelo orientado a tuplas como aquele que armazena os dados em linhas.",
+      "explanation": "No modelo row-oriented, todos os atributos de um registro são armazenados juntos e sequencialmente no disco, o que favorece operações de leitura e escrita de registros completos, como inserções e consultas que retornam todas as colunas de poucas linhas.",
       "prompt": "No modelo orientado a tuplas (row-oriented), como os dados são armazenados?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -1138,7 +1138,7 @@
       "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, para qual perfil de uso o modelo orientado a tuplas é descrito como ideal?",
+      "question": "Para qual perfil de uso o modelo orientado a tuplas (linhas) é ideal?",
       "options": [
         "Escrita intensiva",
         "Leitura intensiva",
@@ -1146,8 +1146,8 @@
         "Consultas exclusivamente analíticas"
       ],
       "answer": "Escrita intensiva",
-      "explanation": "O texto associa o modelo orientado a tuplas a sistemas com muitas operações de escrita.",
-      "prompt": "Segundo o conteúdo, para qual perfil de uso o modelo orientado a tuplas é descrito como ideal?",
+      "explanation": "O modelo orientado a tuplas armazena todos os campos de um registro de forma contígua no disco, o que favorece operações de escrita e atualização de registros completos, tornando-o adequado para cargas com escrita intensiva.",
+      "prompt": "Para qual perfil de uso o modelo orientado a tuplas (linhas) é ideal?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1165,7 +1165,7 @@
       "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual consequência o conteúdo destaca do armazenamento em linhas no modelo orientado a tuplas?",
+      "question": "Qual é uma consequência direta do armazenamento em linhas no modelo orientado a tuplas?",
       "options": [
         "Facilita atualizações completas de registros",
         "Elimina a necessidade de índices",
@@ -1173,8 +1173,8 @@
         "Garante alta disponibilidade por definição"
       ],
       "answer": "Facilita atualizações completas de registros",
-      "explanation": "O material afirma que armazenar em linhas facilita a atualização do registro como um todo.",
-      "prompt": "Qual consequência o conteúdo destaca do armazenamento em linhas no modelo orientado a tuplas?",
+      "explanation": "Como todos os campos de um registro ficam armazenados juntos na mesma linha, reescrever ou atualizar um registro inteiro exige apenas uma operação localizada, tornando esse padrão eficiente para escritas e atualizações.",
+      "prompt": "Qual é uma consequência direta do armazenamento em linhas no modelo orientado a tuplas?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1192,7 +1192,7 @@
       "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No material, qual termo é tratado como padrão em português para esse modelo?",
+      "question": "Em português, qual é o termo técnico que designa o modelo de armazenamento orientado a tuplas?",
       "options": [
         "Linhas",
         "Colunas",
@@ -1200,8 +1200,8 @@
         "Partições"
       ],
       "answer": "Linhas",
-      "explanation": "O texto explicita que “linhas” é o termo técnico padrão em português neste tópico.",
-      "prompt": "No material, qual termo é tratado como padrão em português para esse modelo?",
+      "explanation": "O modelo orientado a tuplas é conhecido em português como modelo orientado a linhas, pois os dados são organizados e armazenados registro a registro, com todos os campos de uma entrada agrupados em uma mesma linha.",
+      "prompt": "Em português, qual é o termo técnico que designa o modelo de armazenamento orientado a tuplas?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1219,16 +1219,16 @@
       "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que o conteúdo permite afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
+      "question": "O que se pode afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
       "options": [
-        "Há incerteza explícita e não deve ser inferido além do que foi dito",
+        "O modelo não oferece garantias explícitas de alta disponibilidade ou escalabilidade horizontal",
         "O modelo é confirmado como ideal para alta disponibilidade e escalabilidade horizontal",
         "O modelo é inadequado para qualquer cenário distribuído",
         "A escalabilidade depende exclusivamente de índices secundários"
       ],
-      "answer": "Há incerteza explícita e não deve ser inferido além do que foi dito",
-      "explanation": "O material marca disponibilidade e escalabilidade como incertas, então não permite concluir mais do que isso.",
-      "prompt": "O que o conteúdo permite afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
+      "answer": "O modelo não oferece garantias explícitas de alta disponibilidade ou escalabilidade horizontal",
+      "explanation": "O modelo orientado a linhas define a forma de organização física dos dados, mas não implica por si só garantias de alta disponibilidade ou escalabilidade horizontal — essas propriedades dependem da arquitetura e configuração do banco, não do modelo de armazenamento.",
+      "prompt": "O que se pode afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1246,7 +1246,7 @@
       "topic_title": "Modelos Orientados a Documentos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que caracteriza um modelo orientado a documentos, segundo o conteúdo principal?",
+      "question": "O que caracteriza um modelo orientado a documentos?",
       "options": [
         "Um modelo NoSQL que armazena dados em documentos",
         "Um modelo relacional baseado em tabelas, linhas e colunas",
@@ -1254,8 +1254,8 @@
         "Um modelo que depende obrigatoriamente de schema rígido"
       ],
       "answer": "Um modelo NoSQL que armazena dados em documentos",
-      "explanation": "O texto define o modelo orientado a documentos como um modelo NoSQL que armazena dados em documentos.",
-      "prompt": "O que caracteriza um modelo orientado a documentos, segundo o conteúdo principal?",
+      "explanation": "Bancos orientados a documentos pertencem à categoria NoSQL e organizam os dados em documentos semi-estruturados (como JSON), permitindo esquemas flexíveis sem a rigidez das tabelas relacionais.",
+      "prompt": "O que caracteriza um modelo orientado a documentos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1273,7 +1273,7 @@
       "topic_title": "Modelos Orientados a Documentos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual formato de dados é citado no armazenamento de bancos orientados a documentos?",
+      "question": "Qual formato de dados é tipicamente utilizado no armazenamento de bancos orientados a documentos?",
       "options": [
         "JSON",
         "CSV",
@@ -1281,8 +1281,8 @@
         "Parquet"
       ],
       "answer": "JSON",
-      "explanation": "O conteúdo principal afirma que esses bancos armazenam dados em formato JSON.",
-      "prompt": "Qual formato de dados é citado no armazenamento de bancos orientados a documentos?",
+      "explanation": "Bancos orientados a documentos, como MongoDB, armazenam dados em formato JSON (ou variantes como BSON), o que permite representar estruturas aninhadas e campos variáveis de forma nativa.",
+      "prompt": "Qual formato de dados é tipicamente utilizado no armazenamento de bancos orientados a documentos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1354,7 +1354,7 @@
       "topic_title": "Modelos Orientados a Documentos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual desvantagem é mencionada ao comparar modelos orientados a documentos com bancos relacionais?",
+      "question": "Qual é uma desvantagem dos modelos orientados a documentos em comparação com bancos relacionais?",
       "options": [
         "Consistência reduzida",
         "Menor capacidade de armazenar dados não estruturados",
@@ -1362,8 +1362,8 @@
         "Obrigatoriedade de tabelas e colunas fixas"
       ],
       "answer": "Consistência reduzida",
-      "explanation": "O texto afirma que esses modelos têm consistência reduzida em comparação com bancos relacionais.",
-      "prompt": "Qual desvantagem é mencionada ao comparar modelos orientados a documentos com bancos relacionais?",
+      "explanation": "Para ganhar flexibilidade de esquema e escalabilidade horizontal, bancos orientados a documentos frequentemente relaxam garantias de consistência forte (ACID), oferecendo consistência eventual em vez da consistência total dos bancos relacionais.",
+      "prompt": "Qual é uma desvantagem dos modelos orientados a documentos em comparação com bancos relacionais?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1408,7 +1408,7 @@
       "topic_title": "Modelos Colunares (Column-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual benefício o material associa ao modelo colunar?",
+      "question": "Qual é o principal benefício do modelo colunar de armazenamento?",
       "options": [
         "Consultas rápidas em grandes volumes de dados",
         "Garantia de consistência forte em qualquer cenário",
@@ -1416,8 +1416,8 @@
         "Redução automática do tamanho lógico do schema"
       ],
       "answer": "Consultas rápidas em grandes volumes de dados",
-      "explanation": "O conteúdo destaca esse como o principal benefício do modelo colunar.",
-      "prompt": "Qual benefício o material associa ao modelo colunar?",
+      "explanation": "O modelo colunar armazena os dados de cada atributo de forma contígua, permitindo que consultas analíticas leiam apenas as colunas necessárias e se beneficiem de alta compressão, tornando operações de leitura sobre grandes volumes significativamente mais rápidas.",
+      "prompt": "Qual é o principal benefício do modelo colunar de armazenamento?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1462,7 +1462,7 @@
       "topic_title": "Modelos Colunares (Column-Oriented)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o material, qual limitação pode aparecer em modelos colunares?",
+      "question": "Qual limitação pode surgir em modelos colunares?",
       "options": [
         "Problemas de consistência",
         "Impossibilidade de consultar grandes volumes de dados",
@@ -1470,8 +1470,8 @@
         "Ausência total de organização por atributos"
       ],
       "answer": "Problemas de consistência",
-      "explanation": "O texto menciona essa limitação, mas não detalha qual tipo de consistência está em jogo.",
-      "prompt": "Segundo o material, qual limitação pode aparecer em modelos colunares?",
+      "explanation": "Modelos colunares, especialmente em bancos distribuídos como Cassandra ou HBase, frequentemente sacrificam consistência forte em favor de disponibilidade e desempenho de leitura, podendo apresentar leituras desatualizadas dependendo da configuração.",
+      "prompt": "Qual limitação pode surgir em modelos colunares?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1524,7 +1524,7 @@
         "Cada linha representa uma tabela e cada coluna representa um relacionamento"
       ],
       "answer": "Cada linha representa um registro e cada coluna representa um campo",
-      "explanation": "Essa é a definição central do modelo de coluna larga no conteúdo: linha = registro, coluna = campo.",
+      "explanation": "No modelo de coluna larga, a estrutura básica mantém linhas como entidades completas (registros) e colunas como atributos desses registros, porém cada linha pode ter um conjunto diferente de colunas, oferecendo flexibilidade de esquema.",
       "prompt": "No modelo de coluna larga, o que cada linha e cada coluna representam, respectivamente?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -1543,7 +1543,7 @@
       "topic_title": "Modelos de Coluna Larga (Wide-Column)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual contexto o modelo de coluna larga é usado, segundo o conteúdo?",
+      "question": "Em qual contexto o modelo de coluna larga é tipicamente utilizado?",
       "options": [
         "Em sistemas de armazenamento distribuído",
         "Apenas em bancos relacionais com schema rígido",
@@ -1551,8 +1551,8 @@
         "Exclusivamente em memória local da aplicação"
       ],
       "answer": "Em sistemas de armazenamento distribuído",
-      "explanation": "O texto associa o modelo de coluna larga ao uso em armazenamento distribuído.",
-      "prompt": "Em qual contexto o modelo de coluna larga é usado, segundo o conteúdo?",
+      "explanation": "O modelo de coluna larga foi projetado para cenários de armazenamento distribuído, onde os dados precisam ser particionados e replicados entre múltiplos nós de forma eficiente.",
+      "prompt": "Em qual contexto o modelo de coluna larga é tipicamente utilizado?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1570,7 +1570,7 @@
       "topic_title": "Modelos de Coluna Larga (Wide-Column)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual objetivo de infraestrutura é associado ao modelo de coluna larga no conteúdo?",
+      "question": "Qual objetivo de infraestrutura é característico do modelo de coluna larga?",
       "options": [
         "Escalabilidade horizontal",
         "Bloqueio pessimista por padrão",
@@ -1578,8 +1578,8 @@
         "Redução de latência por cache local"
       ],
       "answer": "Escalabilidade horizontal",
-      "explanation": "O conteúdo destaca o modelo como associado à escalabilidade horizontal.",
-      "prompt": "Qual objetivo de infraestrutura é associado ao modelo de coluna larga no conteúdo?",
+      "explanation": "O modelo de coluna larga foi concebido para escalar horizontalmente, distribuindo dados entre múltiplos servidores sem a necessidade de hardware mais poderoso.",
+      "prompt": "Qual objetivo de infraestrutura é característico do modelo de coluna larga?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1597,7 +1597,7 @@
       "topic_title": "Modelos de Coluna Larga (Wide-Column)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual característica do modelo de coluna larga é explicitamente destacada no conteúdo?",
+      "question": "Qual é uma característica fundamental do modelo de coluna larga em relação à estrutura dos dados?",
       "options": [
         "Flexibilidade na estrutura de dados",
         "Schema rígido e imutável",
@@ -1605,8 +1605,8 @@
         "Consistência forte como requisito principal"
       ],
       "answer": "Flexibilidade na estrutura de dados",
-      "explanation": "O texto aponta flexibilidade na estrutura de dados como uma característica do modelo.",
-      "prompt": "Qual característica do modelo de coluna larga é explicitamente destacada no conteúdo?",
+      "explanation": "O modelo de coluna larga permite que diferentes linhas tenham conjuntos distintos de colunas, oferecendo flexibilidade estrutural que bancos relacionais tradicionais com schema rígido não possibilitam.",
+      "prompt": "Qual é uma característica fundamental do modelo de coluna larga em relação à estrutura dos dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1678,7 +1678,7 @@
       "topic_title": "Modelos Chave-Valor (Key-Value)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação está de acordo com o papel da indexação no tópico de chave-valor?",
+      "question": "Qual é o papel da indexação em bancos de dados chave-valor?",
       "options": [
         "A indexação é importante para melhorar a busca",
         "A indexação elimina a necessidade de qualquer chave",
@@ -1686,8 +1686,8 @@
         "A indexação é irrelevante para desempenho de acesso"
       ],
       "answer": "A indexação é importante para melhorar a busca",
-      "explanation": "O conteúdo destaca a indexação como mecanismo importante para melhorar a busca, sem detalhar sua implementação.",
-      "prompt": "Qual afirmação está de acordo com o papel da indexação no tópico de chave-valor?",
+      "explanation": "Em bancos chave-valor, a indexação melhora o desempenho das operações de busca, pois sem ela seria necessário varrer todos os registros para localizar um valor específico.",
+      "prompt": "Qual é o papel da indexação em bancos de dados chave-valor?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1705,16 +1705,16 @@
       "topic_title": "Modelos Chave-Valor (Key-Value)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, qual comparação entre estruturas de busca é mencionada no contexto de chave-valor?",
+      "question": "Em termos gerais de desempenho para acesso direto por chave, qual comparação entre hash tables e árvores de busca é mais precisa?",
       "options": [
         "Hash tables tendem a ser mais rápidas que árvores de busca",
         "Árvores de busca tendem a ser mais rápidas que hash tables",
         "Hash tables e árvores de busca têm exatamente o mesmo desempenho em qualquer caso",
-        "O conteúdo afirma que apenas árvores de busca são adequadas para chave-valor"
+        "Apenas árvores de busca são adequadas para armazenamento chave-valor"
       ],
       "answer": "Hash tables tendem a ser mais rápidas que árvores de busca",
-      "explanation": "O tópico afirma essa tendência como parte do contexto de indexação e desempenho.",
-      "prompt": "Segundo o conteúdo, qual comparação entre estruturas de busca é mencionada no contexto de chave-valor?",
+      "explanation": "Hash tables oferecem acesso em tempo O(1) para operações de leitura e escrita por chave exata, enquanto árvores de busca operam em O(log n), tornando hash tables geralmente mais rápidas para esse padrão de acesso.",
+      "prompt": "Em termos gerais de desempenho para acesso direto por chave, qual comparação entre hash tables e árvores de busca é mais precisa?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1732,7 +1732,7 @@
       "topic_title": "Modelos Chave-Valor (Key-Value)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Com que tipo de sistemas o modelo chave-valor é associado no conteúdo principal?",
+      "question": "Com que categoria de sistemas o modelo chave-valor é normalmente associado?",
       "options": [
         "Sistemas não relacionais",
         "Sistemas exclusivamente relacionais",
@@ -1740,8 +1740,8 @@
         "Sistemas que exigem schema rígido e integridade referencial"
       ],
       "answer": "Sistemas não relacionais",
-      "explanation": "O texto descreve o modelo chave-valor como comum em sistemas não relacionais.",
-      "prompt": "Com que tipo de sistemas o modelo chave-valor é associado no conteúdo principal?",
+      "explanation": "O modelo chave-valor é uma das formas mais simples de banco de dados NoSQL (não relacional), priorizando acesso rápido por chave em detrimento de recursos como joins e integridade referencial.",
+      "prompt": "Com que categoria de sistemas o modelo chave-valor é normalmente associado?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1840,7 +1840,7 @@
       "topic_title": "Modelos de Grafos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em sistemas distribuídos, qual problema pode surgir ao usar grafos segundo o tópico?",
+      "question": "Em sistemas distribuídos, qual problema pode surgir ao utilizar bancos de dados orientados a grafos?",
       "options": [
         "Problemas de consistência",
         "Perda obrigatória de índices",
@@ -1848,8 +1848,8 @@
         "Obrigatoriedade de schema rígido"
       ],
       "answer": "Problemas de consistência",
-      "explanation": "O conteúdo afirma explicitamente que, em sistemas distribuídos, o uso de grafos pode trazer problemas de consistência.",
-      "prompt": "Em sistemas distribuídos, qual problema pode surgir ao usar grafos segundo o tópico?",
+      "explanation": "Grafos com relacionamentos entre entidades são difíceis de particionar entre nós de um sistema distribuído, pois traversais entre partições exigem coordenação, o que pode introduzir problemas de consistência.",
+      "prompt": "Em sistemas distribuídos, qual problema pode surgir ao utilizar bancos de dados orientados a grafos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1867,7 +1867,7 @@
       "topic_title": "Modelos de Grafos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa descreve melhor a tensão prática destacada no tópico sobre modelos de grafos?",
+      "question": "Qual é o principal trade-off prático ao utilizar bancos de dados orientados a grafos em ambientes distribuídos?",
       "options": [
         "Índices ajudam na performance, mas sistemas distribuídos podem introduzir problemas de consistência",
         "Schema rígido melhora a consistência, mas elimina a necessidade de índices",
@@ -1875,8 +1875,8 @@
         "A principal preocupação é otimizar escrita, não leitura"
       ],
       "answer": "Índices ajudam na performance, mas sistemas distribuídos podem introduzir problemas de consistência",
-      "explanation": "O tópico aponta exatamente esse trade-off prático: performance com índices e risco de consistência em ambiente distribuído.",
-      "prompt": "Qual alternativa descreve melhor a tensão prática destacada no tópico sobre modelos de grafos?",
+      "explanation": "Índices aceleram traversais em grafos, mas ao distribuir os dados entre múltiplos nós, manter a consistência das relações torna-se um desafio, criando uma tensão entre performance e consistência.",
+      "prompt": "Qual é o principal trade-off prático ao utilizar bancos de dados orientados a grafos em ambientes distribuídos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1921,7 +1921,7 @@
       "topic_title": "Page Size e Indexacao Colunar",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No contexto de indexação por colunas, qual é o papel do tamanho da página segundo o material?",
+      "question": "Em bancos de dados colunares, qual é o papel do tamanho de página na eficiência de leitura?",
       "options": [
         "É um fator relevante para a eficiência de leitura e pode ser ajustado para melhorar desempenho",
         "É sempre fixo em 4 KB em qualquer banco de dados",
@@ -1929,8 +1929,8 @@
         "Não influencia a velocidade de consulta em sistemas colunares"
       ],
       "answer": "É um fator relevante para a eficiência de leitura e pode ser ajustado para melhorar desempenho",
-      "explanation": "O texto destaca o tamanho da página como fator importante de desempenho em bancos colunares, com impacto direto na eficiência de leitura.",
-      "prompt": "No contexto de indexação por colunas, qual é o papel do tamanho da página segundo o material?",
+      "explanation": "Em sistemas colunares, páginas maiores permitem ler mais dados de uma única coluna em cada operação de I/O, reduzindo o número de acessos ao disco e melhorando o desempenho de consultas analíticas.",
+      "prompt": "Em bancos de dados colunares, qual é o papel do tamanho de página na eficiência de leitura?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1948,7 +1948,7 @@
       "topic_title": "Page Size e Indexacao Colunar",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação melhor descreve a diferença entre páginas de 4 KB e 128 KB no material?",
+      "question": "Como páginas de 4 KB e 128 KB se comparam em termos de uso em sistemas colunares?",
       "options": [
         "4 KB é citado como comum em armazenamento, enquanto 128 KB é um exemplo de ajuste em sistemas colunares para otimizar leitura",
         "128 KB é o tamanho padrão universal de qualquer banco relacional",
@@ -1956,8 +1956,8 @@
         "Os dois tamanhos são equivalentes e não afetam a consulta"
       ],
       "answer": "4 KB é citado como comum em armazenamento, enquanto 128 KB é um exemplo de ajuste em sistemas colunares para otimizar leitura",
-      "explanation": "A comparação apresentada no texto é justamente essa: 4 KB como tamanho comum e 128 KB como ajuste usado em colunar para melhorar leitura.",
-      "prompt": "Qual afirmação melhor descreve a diferença entre páginas de 4 KB e 128 KB no material?",
+      "explanation": "Sistemas de armazenamento geralmente usam páginas de 4 KB por padrão, mas bancos colunares frequentemente aumentam esse tamanho para 128 KB ou mais, pois leituras sequenciais de colunas inteiras se beneficiam de páginas maiores ao reduzir o overhead de I/O.",
+      "prompt": "Como páginas de 4 KB e 128 KB se comparam em termos de uso em sistemas colunares?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1975,7 +1975,7 @@
       "topic_title": "Page Size e Indexacao Colunar",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que significa indexação por colunas, de acordo com o conteúdo principal?",
+      "question": "O que é indexação por colunas em bancos de dados?",
       "options": [
         "Organização de dados em estruturas que permitem consultas específicas por coluna",
         "Criação de índices apenas para acelerar escrita",
@@ -1983,8 +1983,8 @@
         "Uso exclusivo de páginas de 4 KB em qualquer cenário"
       ],
       "answer": "Organização de dados em estruturas que permitem consultas específicas por coluna",
-      "explanation": "O material define indexação por colunas como uma organização voltada a consultas específicas por coluna.",
-      "prompt": "O que significa indexação por colunas, de acordo com o conteúdo principal?",
+      "explanation": "Indexação por colunas organiza os dados de forma que cada coluna seja armazenada e indexada separadamente, tornando consultas analíticas que acessam apenas algumas colunas muito mais eficientes do que o modelo orientado a linhas.",
+      "prompt": "O que é indexação por colunas em bancos de dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2002,7 +2002,7 @@
       "topic_title": "Page Size e Indexacao Colunar",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Por que o Apache Parquet aparece como exemplo no tópico?",
+      "question": "Por que o Apache Parquet usa páginas de 128 KB em vez do tamanho padrão de 4 KB?",
       "options": [
         "Porque usa páginas de 128 KB como exemplo de ajuste para otimizar leitura em sistemas colunares",
         "Porque prova que 4 KB é o melhor tamanho para qualquer banco",
@@ -2010,8 +2010,8 @@
         "Porque elimina a necessidade de indexação por colunas"
       ],
       "answer": "Porque usa páginas de 128 KB como exemplo de ajuste para otimizar leitura em sistemas colunares",
-      "explanation": "O texto cita o Apache Parquet como exemplo de sistema colunar que usa páginas de 128 KB para otimizar leitura.",
-      "prompt": "Por que o Apache Parquet aparece como exemplo no tópico?",
+      "explanation": "Sistemas colunares como o Parquet se beneficiam de páginas maiores porque leituras analíticas varrem grandes volumes de dados sequencialmente, reduzindo o overhead de I/O por página e aumentando o throughput de leitura.",
+      "prompt": "Por que o Apache Parquet usa páginas de 128 KB em vez do tamanho padrão de 4 KB?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2029,7 +2029,7 @@
       "topic_title": "Page Size e Indexacao Colunar",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em que contexto o material destaca a otimização da velocidade de consulta?",
+      "question": "Em que contexto a otimização da velocidade de consulta por ajuste do tamanho de página é mais relevante?",
       "options": [
         "Em cenários com alto volume de dados",
         "Somente em bancos com schema rígido",
@@ -2037,8 +2037,8 @@
         "Exclusivamente em sistemas sem indexação"
       ],
       "answer": "Em cenários com alto volume de dados",
-      "explanation": "O resumo executivo relaciona o ajuste do tamanho da página à velocidade de consulta em cenários com alto volume de dados.",
-      "prompt": "Em que contexto o material destaca a otimização da velocidade de consulta?",
+      "explanation": "Com alto volume de dados, o custo de I/O por consulta se torna o principal gargalo; ajustar o tamanho da página para o padrão de acesso (sequencial vs. aleatório) reduz esse custo e melhora significativamente a velocidade de consulta.",
+      "prompt": "Em que contexto a otimização da velocidade de consulta por ajuste do tamanho de página é mais relevante?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2056,7 +2056,7 @@
       "topic_title": "LSM Trees (Log-Structured Merge Tree)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o objetivo principal de um LSM tree em bancos de dados?",
+      "question": "Qual é o objetivo principal de uma estrutura LSM tree em bancos de dados?",
       "options": [
         "Otimizar a eficiência de escrita",
         "Maximizar a consistência forte em leituras",
@@ -2064,8 +2064,8 @@
         "Priorizar consultas analíticas complexas"
       ],
       "answer": "Otimizar a eficiência de escrita",
-      "explanation": "O material destaca o LSM tree como uma estrutura voltada para eficiência de escrita.",
-      "prompt": "Qual é o objetivo principal de um LSM tree em bancos de dados?",
+      "explanation": "A LSM tree (Log-Structured Merge-tree) foi projetada para maximizar a taxa de escrita ao acumular mutações sequencialmente em memória e disco, adiando a reorganização dos dados para operações de merge periódicas.",
+      "prompt": "Qual é o objetivo principal de uma estrutura LSM tree em bancos de dados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2091,7 +2091,7 @@
         "Somente após o merge periódico"
       ],
       "answer": "De forma sequencial em blocos de log estruturados",
-      "explanation": "A escrita sequencial em blocos de log estruturados é a característica central descrita no tópico.",
+      "explanation": "Gravações sequenciais em log eliminam buscas de disco aleatórias, que são muito mais lentas; ao escrever sempre no final do log, a LSM tree atinge alta taxa de throughput de escrita.",
       "prompt": "No LSM tree, como os dados são gravados inicialmente?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -2110,7 +2110,7 @@
       "topic_title": "LSM Trees (Log-Structured Merge Tree)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que o processo de merge faz no LSM tree?",
+      "question": "O que o processo de merge realiza em uma LSM tree?",
       "options": [
         "Combina os blocos em um índice",
         "Remove a necessidade de escrita sequencial",
@@ -2118,8 +2118,8 @@
         "Executa apenas consultas de leitura"
       ],
       "answer": "Combina os blocos em um índice",
-      "explanation": "O merge é o processo de combinação dos blocos em um índice, conforme descrito no conteúdo.",
-      "prompt": "O que o processo de merge faz no LSM tree?",
+      "explanation": "O merge consolida os vários blocos de log acumulados em um índice organizado, eliminando entradas obsoletas e melhorando a eficiência das leituras futuras.",
+      "prompt": "O que o processo de merge realiza em uma LSM tree?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2137,7 +2137,7 @@
       "topic_title": "LSM Trees (Log-Structured Merge Tree)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Por que o merge é executado periodicamente no LSM tree?",
+      "question": "Por que o merge é executado periodicamente em uma LSM tree?",
       "options": [
         "Para reduzir o número de blocos e melhorar a performance",
         "Para impedir qualquer escrita sequencial",
@@ -2145,8 +2145,8 @@
         "Para tornar o índice desnecessário"
       ],
       "answer": "Para reduzir o número de blocos e melhorar a performance",
-      "explanation": "O material afirma que o merge periódico reduz blocos e está associado à melhoria de performance.",
-      "prompt": "Por que o merge é executado periodicamente no LSM tree?",
+      "explanation": "À medida que novos blocos se acumulam, leituras precisam varrer mais arquivos; o merge periódico compacta esses blocos, reduzindo amplificação de leitura e mantendo a performance geral do sistema.",
+      "prompt": "Por que o merge é executado periodicamente em uma LSM tree?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2164,7 +2164,7 @@
       "topic_title": "LSM Trees (Log-Structured Merge Tree)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa descreve melhor o trade-off implícito do LSM tree apresentado no material?",
+      "question": "Qual é o principal trade-off de uma LSM tree em comparação com estruturas de índice tradicionais?",
       "options": [
         "Eficiência de escrita com reorganização posterior via merge",
         "Leitura imediata com ausência total de manutenção",
@@ -2172,8 +2172,8 @@
         "Indexação sem custo adicional em escrita"
       ],
       "answer": "Eficiência de escrita com reorganização posterior via merge",
-      "explanation": "O tópico enfatiza escrita eficiente agora e combinação posterior dos blocos por meio de merge.",
-      "prompt": "Qual alternativa descreve melhor o trade-off implícito do LSM tree apresentado no material?",
+      "explanation": "A LSM tree favorece escritas rápidas e sequenciais ao custo de um processo de merge posterior; estruturas como B-trees fazem o oposto — mantêm o índice sempre organizado, pagando o custo na escrita.",
+      "prompt": "Qual é o principal trade-off de uma LSM tree em comparação com estruturas de índice tradicionais?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2191,7 +2191,7 @@
       "topic_title": "Indexacao B-Tree e Arvores B",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que é uma B-tree?",
+      "question": "O que é uma B-tree?",
       "options": [
         "Uma estrutura de árvore balanceada usada em bancos de dados para indexing e consultas",
         "Uma tabela otimizada para armazenar dados em colunas variáveis",
@@ -2199,8 +2199,8 @@
         "Uma técnica de replicação entre bancos distribuídos"
       ],
       "answer": "Uma estrutura de árvore balanceada usada em bancos de dados para indexing e consultas",
-      "explanation": "O conteúdo define B-tree como uma estrutura de árvore balanceada usada em bancos de dados para melhorar consultas e indexação.",
-      "prompt": "Segundo o tópico, o que é uma B-tree?",
+      "explanation": "A B-tree mantém todos os seus caminhos da raiz às folhas com a mesma profundidade (balanceamento), garantindo que o custo de busca, inserção e remoção seja O(log n) independentemente dos dados armazenados.",
+      "prompt": "O que é uma B-tree?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2218,7 +2218,7 @@
       "topic_title": "Indexacao B-Tree e Arvores B",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual característica estrutural da B-tree é destacada no tópico?",
+      "question": "Qual é a principal característica estrutural de cada nó em uma B-tree?",
       "options": [
         "Cada nó possui um número fixo de filhos",
         "Cada nó tem exatamente dois filhos",
@@ -2226,8 +2226,8 @@
         "A árvore é organizada em linhas e colunas"
       ],
       "answer": "Cada nó possui um número fixo de filhos",
-      "explanation": "O texto afirma explicitamente que a B-tree tem número fixo de filhos por nó.",
-      "prompt": "Qual característica estrutural da B-tree é destacada no tópico?",
+      "explanation": "O número fixo de filhos por nó (definido pelo fator de ramificação, ou ordem da árvore) controla a altura da B-tree e garante que a estrutura permaneça balanceada e com custo de acesso previsível.",
+      "prompt": "Qual é a principal característica estrutural de cada nó em uma B-tree?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2272,7 +2272,7 @@
       "topic_title": "Indexacao B-Tree e Arvores B",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual cenário o tópico destaca a vantagem da B-tree?",
+      "question": "Em qual cenário a B-tree apresenta maior vantagem de desempenho?",
       "options": [
         "Em grandes volumes de dados",
         "Apenas em tabelas pequenas e estáticas",
@@ -2280,8 +2280,8 @@
         "Exclusivamente em dados em tempo real"
       ],
       "answer": "Em grandes volumes de dados",
-      "explanation": "O material associa a eficiência da B-tree ao uso com grandes volumes de dados.",
-      "prompt": "Em qual cenário o tópico destaca a vantagem da B-tree?",
+      "explanation": "A estrutura balanceada da B-tree garante profundidade logarítmica independente do tamanho do conjunto de dados, mantendo o número de operações de I/O por consulta baixo mesmo com volumes muito grandes.",
+      "prompt": "Em qual cenário a B-tree apresenta maior vantagem de desempenho?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2299,7 +2299,7 @@
       "topic_title": "Indexacao B-Tree e Arvores B",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação resume melhor a relação entre balanceamento e desempenho no tópico?",
+      "question": "Qual afirmação descreve corretamente a relação entre balanceamento de árvore e eficiência das consultas?",
       "options": [
         "Manter a árvore balanceada ajuda a manter a altura baixa e melhora a eficiência das consultas",
         "Balanceamento só importa para reduzir o número de colunas por registro",
@@ -2307,8 +2307,8 @@
         "O balanceamento substitui a necessidade de indexação"
       ],
       "answer": "Manter a árvore balanceada ajuda a manter a altura baixa e melhora a eficiência das consultas",
-      "explanation": "No tópico, o balanceamento está ligado ao controle da altura, que por sua vez melhora o desempenho.",
-      "prompt": "Qual afirmação resume melhor a relação entre balanceamento e desempenho no tópico?",
+      "explanation": "Em uma B-tree, o balanceamento garante que a altura da árvore cresça de forma logarítmica, limitando o número de comparações e acessos a disco necessários para localizar qualquer registro.",
+      "prompt": "Qual afirmação descreve corretamente a relação entre balanceamento de árvore e eficiência das consultas?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2361,7 +2361,7 @@
         "Depender do número de colunas da tabela"
       ],
       "answer": "Ser rápida e distribuir os valores de forma uniforme",
-      "explanation": "O conteúdo destaca que a função hash deve ser rápida e uniforme para reduzir colisões.",
+      "explanation": "Velocidade minimiza o custo computacional de cada operação de indexação, enquanto a distribuição uniforme das chaves reduz colisões, evitando que o tempo de acesso degrade de O(1) para O(n) no pior caso.",
       "prompt": "Qual propriedade é desejável em uma função hash usada para indexação?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -2434,16 +2434,16 @@
       "topic_title": "Indexacao por Hashing",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
+      "question": "Por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
       "options": [
-        "Porque esse padrão pode aumentar a ocorrência de colisões",
+        "Porque dados que mudam frequentemente exigem recálculo do hash, gerando índices desatualizados e overhead de manutenção",
         "Porque hashing só funciona com dados imutáveis",
         "Porque a função hash deixa de produzir índices",
         "Porque dados mutáveis não podem ser indexados"
       ],
-      "answer": "Porque esse padrão pode aumentar a ocorrência de colisões",
-      "explanation": "O texto aponta que dados que mudam frequentemente podem tornar o hashing menos adequado por aumentar colisões.",
-      "prompt": "Segundo o conteúdo, por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
+      "answer": "Porque dados que mudam frequentemente exigem recálculo do hash, gerando índices desatualizados e overhead de manutenção",
+      "explanation": "Quando um valor indexado por hash é alterado, o índice existente aponta para um local incorreto; corrigi-lo exige recalcular o hash e atualizar a estrutura do índice, gerando custo adicional proporcional à frequência de mudanças.",
+      "prompt": "Por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2488,7 +2488,7 @@
       "topic_title": "Indices Invertidos e o Caso Elasticsearch",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o principal benefício do índice invertido para consultas no Elasticsearch?",
+      "question": "Qual é o principal benefício do índice invertido para buscas textuais no Elasticsearch?",
       "options": [
         "Acelerar buscas por palavras em texto",
         "Eliminar a necessidade de indexação",
@@ -2496,8 +2496,8 @@
         "Substituir completamente o armazenamento dos documentos"
       ],
       "answer": "Acelerar buscas por palavras em texto",
-      "explanation": "O material destaca o índice invertido como base para pesquisa rápida por termos.",
-      "prompt": "Qual é o principal benefício do índice invertido para consultas no Elasticsearch?",
+      "explanation": "O índice invertido mapeia cada termo às posições em que ocorre nos documentos, tornando a busca por palavras praticamente instantânea mesmo em grandes coleções, pois elimina a necessidade de varredura sequencial.",
+      "prompt": "Qual é o principal benefício do índice invertido para buscas textuais no Elasticsearch?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2515,7 +2515,7 @@
       "topic_title": "Indices Invertidos e o Caso Elasticsearch",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No material, o que significa indexação no Elasticsearch?",
+      "question": "O que representa o processo de indexação no Elasticsearch?",
       "options": [
         "Criar o mapeamento entre palavras e os documentos correspondentes",
         "Ordenar os documentos apenas por data de inserção",
@@ -2523,8 +2523,8 @@
         "Executar consultas sem preparar nenhuma estrutura auxiliar"
       ],
       "answer": "Criar o mapeamento entre palavras e os documentos correspondentes",
-      "explanation": "Indexação é a etapa de construção do índice que relaciona termos aos documentos.",
-      "prompt": "No material, o que significa indexação no Elasticsearch?",
+      "explanation": "Ao indexar um documento, o Elasticsearch analisa seu conteúdo, extrai os termos e registra em qual documento cada termo aparece, construindo assim o índice invertido que viabiliza buscas eficientes.",
+      "prompt": "O que representa o processo de indexação no Elasticsearch?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2569,16 +2569,16 @@
       "topic_title": "Indices Invertidos e o Caso Elasticsearch",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, qual afirmação sobre o uso de índice invertido com dados estruturados deve ser tratada com cautela?",
+      "question": "Como o índice invertido se relaciona com dados estruturados?",
       "options": [
-        "O material indica que não é recomendado para dados estruturados, mas essa afirmação vem com ressalva de incerteza",
-        "O material afirma com certeza que índice invertido é a melhor escolha para dados estruturados",
-        "O material diz que dados estruturados não podem ser indexados de forma alguma",
-        "O material afirma que Elasticsearch só funciona com dados estruturados"
+        "Tende a ser menos eficiente para dados estruturados do que para dados não estruturados, como texto livre",
+        "É a solução ideal para indexar tabelas com muitos campos e relacionamentos",
+        "Dados estruturados não podem ser indexados de nenhuma forma",
+        "O Elasticsearch foi projetado exclusivamente para dados estruturados"
       ],
-      "answer": "O material indica que não é recomendado para dados estruturados, mas essa afirmação vem com ressalva de incerteza",
-      "explanation": "O texto menciona essa limitação, mas também sinaliza incerteza sobre a afirmação.",
-      "prompt": "Segundo o conteúdo, qual afirmação sobre o uso de índice invertido com dados estruturados deve ser tratada com cautela?",
+      "answer": "Tende a ser menos eficiente para dados estruturados do que para dados não estruturados, como texto livre",
+      "explanation": "O índice invertido foi concebido para mapear termos a documentos em coleções de texto não estruturado; para dados com esquema bem definido e consultas por campos específicos, estruturas como B-tree ou índices de hash costumam ser mais apropriadas.",
+      "prompt": "Como o índice invertido se relaciona com dados estruturados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2596,7 +2596,7 @@
       "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em uma arquitetura write-intensive, qual é a prioridade principal segundo o tópico?",
+      "question": "Em uma arquitetura write-intensive, qual é a prioridade principal de design?",
       "options": [
         "Minimizar a latência de escrita",
         "Maximizar a eficiência de leitura com indexação",
@@ -2604,8 +2604,8 @@
         "Normalizar ao máximo os dados para consultas"
       ],
       "answer": "Minimizar a latência de escrita",
-      "explanation": "O tópico define write-intensive como foco em escrita, com ênfase em reduzir a latência de escrita.",
-      "prompt": "Em uma arquitetura write-intensive, qual é a prioridade principal segundo o tópico?",
+      "explanation": "Em sistemas write-intensive, o volume e a frequência de escritas são o gargalo dominante; reduzir a latência de escrita garante que o sistema consiga processar as operações sem acumular fila e degradar o throughput.",
+      "prompt": "Em uma arquitetura write-intensive, qual é a prioridade principal de design?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2623,7 +2623,7 @@
       "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, qual combinação está mais associada a uma arquitetura write-intensive?",
+      "question": "Qual abordagem de modelagem de dados é mais adequada para uma arquitetura write-intensive?",
       "options": [
         "Modelos de dados não normalizados (NoSQL)",
         "Modelos de dados normalizados (SQL) com indexação adequada",
@@ -2631,8 +2631,8 @@
         "Indexação como mecanismo principal de otimização de consulta"
       ],
       "answer": "Modelos de dados não normalizados (NoSQL)",
-      "explanation": "O texto associa write-intensive a modelos de dados não normalizados (NoSQL) para favorecer menor latência de escrita.",
-      "prompt": "Segundo o conteúdo, qual combinação está mais associada a uma arquitetura write-intensive?",
+      "explanation": "Modelos não normalizados evitam a necessidade de joins e atualizações em múltiplas tabelas a cada escrita, reduzindo o overhead por operação e permitindo maior taxa de gravação com menor latência.",
+      "prompt": "Qual abordagem de modelagem de dados é mais adequada para uma arquitetura write-intensive?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2704,7 +2704,7 @@
       "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No contexto do tópico, qual fator deve ser considerado como crítico em sistemas distribuídos?",
+      "question": "Qual fator é tipicamente considerado crítico no design de sistemas distribuídos?",
       "options": [
         "Consistência",
         "Compressão de dados",
@@ -2712,8 +2712,8 @@
         "Particionamento por hash"
       ],
       "answer": "Consistência",
-      "explanation": "O texto afirma que consistência é um fator crítico em sistemas distribuídos, sem detalhar a implementação.",
-      "prompt": "No contexto do tópico, qual fator deve ser considerado como crítico em sistemas distribuídos?",
+      "explanation": "Em sistemas distribuídos, múltiplos nós operam de forma independente e falhas parciais são inevitáveis; garantir consistência — que todos os nós enxerguem os mesmos dados ao mesmo tempo — é um dos principais desafios de design e está no centro do teorema CAP.",
+      "prompt": "Qual fator é tipicamente considerado crítico no design de sistemas distribuídos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3325,7 +3325,7 @@
       "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Por que o cache em memória exige invalidação manual com mais cuidado?",
+      "question": "Por que o cache em memória exige invalidação manual com mais cuidado do que outras estratégias de cache?",
       "options": [
         "Porque entradas acumuladas podem saturar a memória e causar memory leaks",
         "Porque o cache é automaticamente compartilhado entre réplicas",
@@ -3333,8 +3333,8 @@
         "Porque ele só funciona quando há Redis centralizado"
       ],
       "answer": "Porque entradas acumuladas podem saturar a memória e causar memory leaks",
-      "explanation": "O texto destaca que a invalidação manual é necessária para evitar acúmulo excessivo e memory leaks.",
-      "prompt": "Por que o cache em memória exige invalidação manual com mais cuidado?",
+      "explanation": "Diferente de caches externos com TTL gerenciado centralmente, o cache em memória cresce dentro do processo da aplicação — sem invalidação ativa, entradas obsoletas se acumulam e podem esgotar a memória disponível.",
+      "prompt": "Por que o cache em memória exige invalidação manual com mais cuidado do que outras estratégias de cache?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3487,7 +3487,7 @@
       "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual cenário a CDN é mais adequada, segundo o tópico?",
+      "question": "Em qual cenário uma CDN é mais adequada?",
       "options": [
         "Distribuição de conteúdo estático mais perto do usuário",
         "Persistência assíncrona de dados transacionais",
@@ -3495,8 +3495,8 @@
         "Atualização síncrona de cache e origem no caminho de escrita"
       ],
       "answer": "Distribuição de conteúdo estático mais perto do usuário",
-      "explanation": "A CDN atua como camada de cache voltada a conteúdo estático, aproximando a resposta do usuário e reduzindo carga na origem.",
-      "prompt": "Em qual cenário a CDN é mais adequada, segundo o tópico?",
+      "explanation": "CDNs são projetadas para armazenar e servir conteúdo estático (imagens, CSS, JS, vídeos) a partir de nós geograficamente próximos ao usuário, reduzindo latência e carga na origem.",
+      "prompt": "Em qual cenário uma CDN é mais adequada?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3514,7 +3514,7 @@
       "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Na CDN simples descrita no tópico, qual é o papel do proxy HTTP intermediário?",
+      "question": "Qual é o papel do proxy HTTP em uma CDN simples?",
       "options": [
         "Receber a requisição, decidir entre cache e origem e responder ao cliente",
         "Persistir os dados na origem antes de consultar o cache",
@@ -3522,8 +3522,8 @@
         "Substituir a origem permanentemente para todas as requisições"
       ],
       "answer": "Receber a requisição, decidir entre cache e origem e responder ao cliente",
-      "explanation": "O proxy HTTP atua como camada intermediária: recebe a requisição, verifica o cache e, se necessário, consulta a origem.",
-      "prompt": "Na CDN simples descrita no tópico, qual é o papel do proxy HTTP intermediário?",
+      "explanation": "O proxy HTTP atua como intermediário inteligente: verifica se o conteúdo está em cache e, em caso de miss, busca na origem e armazena o resultado para requisições futuras.",
+      "prompt": "Qual é o papel do proxy HTTP em uma CDN simples?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3784,7 +3784,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que caracteriza um monólito?",
+      "question": "O que caracteriza uma arquitetura monolítica?",
       "options": [
         "Componentes e funcionalidades ficam na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
         "Serviços independentes se comunicam apenas por eventos assíncronos",
@@ -3792,8 +3792,8 @@
         "A aplicação é dividida em domínios isolados sem qualquer compartilhamento"
       ],
       "answer": "Componentes e funcionalidades ficam na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
-      "explanation": "Essa é a definição central de monólito no tópico: uma unidade lógica compartilhada.",
-      "prompt": "Segundo o tópico, o que caracteriza um monólito?",
+      "explanation": "No monólito, toda a aplicação é uma única unidade deployável onde módulos compartilham o mesmo processo e, geralmente, o mesmo banco de dados, o que simplifica a consistência mas limita escala independente.",
+      "prompt": "O que caracteriza uma arquitetura monolítica?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3811,7 +3811,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação descreve melhor a diferença central entre monólito e microsserviços no tópico?",
+      "question": "Qual é a diferença central entre monólito e microsserviços do ponto de vista de consistência e escalabilidade?",
       "options": [
         "Monólito favorece consistência de dados; microsserviços favorecem escala horizontal por serviço",
         "Monólito sempre escala melhor; microsserviços sempre têm consistência mais simples",
@@ -3819,8 +3819,8 @@
         "Monólito é sempre distribuído; microsserviços são sempre uma única unidade lógica"
       ],
       "answer": "Monólito favorece consistência de dados; microsserviços favorecem escala horizontal por serviço",
-      "explanation": "O tópico destaca esse trade-off como a comparação principal entre as abordagens.",
-      "prompt": "Qual afirmação descreve melhor a diferença central entre monólito e microsserviços no tópico?",
+      "explanation": "O banco de dados compartilhado do monólito torna transações e consistência mais simples, enquanto microsserviços permitem escalar e evoluir cada serviço de forma independente, ao custo de maior complexidade de consistência distribuída.",
+      "prompt": "Qual é a diferença central entre monólito e microsserviços do ponto de vista de consistência e escalabilidade?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3838,7 +3838,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Por que a consistência de dados tende a ser mais fácil em monólitos, segundo o tópico?",
+      "question": "Por que a consistência de dados tende a ser mais fácil em monólitos do que em microsserviços?",
       "options": [
         "Porque funcionalidades e componentes compartilham a mesma unidade lógica, frequentemente com banco de dados comum",
         "Porque cada serviço é isolado por rede e não precisa coordenar dados",
@@ -3846,8 +3846,8 @@
         "Porque a divisão em vários processos reduz automaticamente conflitos de escrita"
       ],
       "answer": "Porque funcionalidades e componentes compartilham a mesma unidade lógica, frequentemente com banco de dados comum",
-      "explanation": "O compartilhamento de unidade lógica e banco de dados simplifica a manutenção da consistência.",
-      "prompt": "Por que a consistência de dados tende a ser mais fácil em monólitos, segundo o tópico?",
+      "explanation": "Com um único banco de dados compartilhado, transações ACID cobrem múltiplos módulos sem necessidade de coordenação distribuída, tornando a consistência intrinsecamente mais simples.",
+      "prompt": "Por que a consistência de dados tende a ser mais fácil em monólitos do que em microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3865,7 +3865,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o papel do DDD no contexto do tópico?",
+      "question": "Qual é o papel do Domain-Driven Design (DDD) na definição de arquiteturas de software?",
       "options": [
         "Ajudar a definir limites de domínio e organizar responsabilidades com uma linguagem comum entre negócio e engenharia",
         "Substituir a necessidade de contratos explícitos entre serviços",
@@ -3873,8 +3873,8 @@
         "Eliminar a influência da estrutura organizacional sobre a arquitetura"
       ],
       "answer": "Ajudar a definir limites de domínio e organizar responsabilidades com uma linguagem comum entre negócio e engenharia",
-      "explanation": "O tópico apresenta DDD como ferramenta para delimitar domínios e alinhar linguagem entre negócio e engenharia.",
-      "prompt": "Qual é o papel do DDD no contexto do tópico?",
+      "explanation": "DDD usa conceitos como Bounded Context e Ubiquitous Language para alinhar o modelo de software com o domínio de negócio, facilitando a divisão clara de responsabilidades entre times e serviços.",
+      "prompt": "Qual é o papel do Domain-Driven Design (DDD) na definição de arquiteturas de software?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3919,7 +3919,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, qual fator é mais importante para decidir entre monólito e microsserviços?",
+      "question": "Quais fatores devem orientar a decisão entre adotar monólito ou microsserviços?",
       "options": [
         "Escala, maturidade técnica, tamanho da equipe e necessidade de autonomia operacional",
         "Usar sempre a tecnologia mais recente disponível",
@@ -3927,8 +3927,8 @@
         "Separar o sistema apenas pela linguagem de programação"
       ],
       "answer": "Escala, maturidade técnica, tamanho da equipe e necessidade de autonomia operacional",
-      "explanation": "A decisão é contextual e depende desses fatores, não de uma regra universal.",
-      "prompt": "Segundo o tópico, qual fator é mais importante para decidir entre monólito e microsserviços?",
+      "explanation": "Não existe escolha universalmente correta: microsserviços trazem complexidade operacional que só compensa quando a equipe tem maturidade técnica, escala real e necessidade de deployar serviços de forma independente.",
+      "prompt": "Quais fatores devem orientar a decisão entre adotar monólito ou microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3946,7 +3946,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o papel do DDD segundo o conteúdo principal?",
+      "question": "O que é Domain-Driven Design (DDD) e qual seu principal objetivo?",
       "options": [
         "Identificar domínios, definir limites de responsabilidade e alinhar linguagem entre negócio e engenharia",
         "Substituir a necessidade de modelar o negócio",
@@ -3954,8 +3954,8 @@
         "Eliminar a complexidade de sistemas distribuídos"
       ],
       "answer": "Identificar domínios, definir limites de responsabilidade e alinhar linguagem entre negócio e engenharia",
-      "explanation": "O texto define DDD como base para entender domínios e fronteiras, com linguagem comum entre negócio e engenharia.",
-      "prompt": "Qual é o papel do DDD segundo o conteúdo principal?",
+      "explanation": "DDD é uma abordagem de modelagem que parte do domínio de negócio para guiar decisões de design, usando Bounded Contexts para separar responsabilidades e Ubiquitous Language para reduzir ambiguidades entre times.",
+      "prompt": "O que é Domain-Driven Design (DDD) e qual seu principal objetivo?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3973,7 +3973,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que a entrada permite afirmar sobre a relação entre DDD e microsserviços?",
+      "question": "Qual é a relação correta entre DDD e microsserviços?",
       "options": [
         "DDD ajuda a identificar domínios e limites, mas não é apresentado como sinônimo de microsserviços",
         "DDD é equivalente a microsserviços em qualquer contexto",
@@ -3981,8 +3981,8 @@
         "DDD elimina a necessidade de limites de responsabilidade"
       ],
       "answer": "DDD ajuda a identificar domínios e limites, mas não é apresentado como sinônimo de microsserviços",
-      "explanation": "O conteúdo destaca DDD como orientação para estruturar domínios, sem afirmar equivalência com microsserviços.",
-      "prompt": "O que a entrada permite afirmar sobre a relação entre DDD e microsserviços?",
+      "explanation": "DDD é uma ferramenta de modelagem agnóstica à arquitetura: seus conceitos de domínio e Bounded Context são úteis tanto em monólitos modulares quanto em microsserviços, sem exigir distribuição.",
+      "prompt": "Qual é a relação correta entre DDD e microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4054,7 +4054,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que caracteriza um monólito?",
+      "question": "O que caracteriza um sistema monolítico?",
       "options": [
         "Um sistema em que todos os componentes ficam em uma mesma unidade lógica",
         "Um sistema dividido em serviços menores com deploy independente obrigatório",
@@ -4062,8 +4062,8 @@
         "Uma abordagem focada em reduzir o blast radius por serviço"
       ],
       "answer": "Um sistema em que todos os componentes ficam em uma mesma unidade lógica",
-      "explanation": "O tópico define monólito como um sistema com todos os componentes em uma mesma unidade lógica.",
-      "prompt": "Segundo o tópico, o que caracteriza um monólito?",
+      "explanation": "Em um monólito, todos os componentes — incluindo lógica de negócio, acesso a dados e apresentação — residem em uma única unidade lógica, o que simplifica o desenvolvimento mas cria acoplamento forte entre as partes.",
+      "prompt": "O que caracteriza um sistema monolítico?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4081,7 +4081,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é a definição mais alinhada ao tópico para microsserviços?",
+      "question": "O que define uma arquitetura de microsserviços?",
       "options": [
         "Sistema formado por serviços menores e independentes",
         "Sistema em que todos os módulos compartilham o mesmo deploy",
@@ -4089,8 +4089,8 @@
         "Estratégia de cache para reduzir latência entre componentes"
       ],
       "answer": "Sistema formado por serviços menores e independentes",
-      "explanation": "O tópico descreve microsserviços como serviços menores e independentes.",
-      "prompt": "Qual é a definição mais alinhada ao tópico para microsserviços?",
+      "explanation": "Microsserviços dividem a aplicação em serviços autônomos e independentes, cada um responsável por um recorte específico de negócio, permitindo deploy e escalabilidade individuais.",
+      "prompt": "O que define uma arquitetura de microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4135,7 +4135,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que significa linguagem ubíqua no contexto de DDD?",
+      "question": "O que é linguagem ubíqua no contexto de Domain-Driven Design (DDD)?",
       "options": [
         "Vocabulário comum entre negócio e engenharia",
         "Linguagem usada apenas pela equipe de infraestrutura",
@@ -4143,8 +4143,8 @@
         "Regra para nomear serviços com prefixos padronizados"
       ],
       "answer": "Vocabulário comum entre negócio e engenharia",
-      "explanation": "O tópico define linguagem ubíqua como um vocabulário compartilhado entre negócio e engenharia.",
-      "prompt": "O que significa linguagem ubíqua no contexto de DDD?",
+      "explanation": "A linguagem ubíqua é um vocabulário compartilhado e acordado entre especialistas de domínio e desenvolvedores, garantindo que os conceitos do negócio sejam representados de forma consistente no código e nas conversas.",
+      "prompt": "O que é linguagem ubíqua no contexto de Domain-Driven Design (DDD)?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4162,7 +4162,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que é blast radius?",
+      "question": "O que significa o termo blast radius no contexto de arquitetura de software?",
       "options": [
         "O impacto de um deploy independente",
         "A quantidade de dados replicados entre serviços",
@@ -4170,8 +4170,8 @@
         "A distância entre dois bounded contexts"
       ],
       "answer": "O impacto de um deploy independente",
-      "explanation": "O tópico define blast radius como o impacto de um deploy independente.",
-      "prompt": "Segundo o tópico, o que é blast radius?",
+      "explanation": "Blast radius refere-se ao escopo de impacto causado por uma falha ou mudança; em microsserviços, cada serviço tem deploy independente, o que limita o blast radius a um contexto menor do sistema.",
+      "prompt": "O que significa o termo blast radius no contexto de arquitetura de software?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4189,7 +4189,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que caracteriza um monolito, segundo o tópico?",
+      "question": "Qual das alternativas melhor descreve a estrutura de um monólito?",
       "options": [
         "Uma aplicação em uma única unidade lógica, normalmente com mesma base de código, processo e banco de dados",
         "Um conjunto de serviços independentes, cada um com deploy e banco próprios",
@@ -4197,8 +4197,8 @@
         "Uma divisão do sistema baseada apenas na estrutura organizacional"
       ],
       "answer": "Uma aplicação em uma única unidade lógica, normalmente com mesma base de código, processo e banco de dados",
-      "explanation": "Monolito é uma unidade lógica única, com compartilhamento típico de código, processo e banco.",
-      "prompt": "O que caracteriza um monolito, segundo o tópico?",
+      "explanation": "Um monólito agrupa toda a aplicação em uma única unidade lógica implantada de forma conjunta, compartilhando normalmente a mesma base de código, processo em execução e banco de dados.",
+      "prompt": "Qual das alternativas melhor descreve a estrutura de um monólito?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4216,7 +4216,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual cenário favorece mais um monolito, de acordo com o conteúdo?",
+      "question": "Em qual cenário o uso de um monólito costuma ser mais adequado?",
       "options": [
         "MVPs, produtos novos e times pequenos, quando simplicidade e velocidade de entrega são prioridades",
         "Múltiplos times autônomos com domínios maduros e necessidade forte de deploy independente",
@@ -4224,8 +4224,8 @@
         "Casos em que a principal meta é reduzir o blast radius por serviço"
       ],
       "answer": "MVPs, produtos novos e times pequenos, quando simplicidade e velocidade de entrega são prioridades",
-      "explanation": "O tópico associa monolito a simplicidade, teste e deploy mais fáceis, especialmente em MVPs, produtos novos e times pequenos.",
-      "prompt": "Qual cenário favorece mais um monolito, de acordo com o conteúdo?",
+      "explanation": "O monólito é mais adequado quando a prioridade é simplicidade e velocidade — como em MVPs ou times pequenos — pois simplifica o desenvolvimento, o deploy e o debugging sem a complexidade operacional dos microsserviços.",
+      "prompt": "Em qual cenário o uso de um monólito costuma ser mais adequado?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4243,7 +4243,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que o DDD ajuda a definir, conforme o tópico?",
+      "question": "Quais são os principais elementos que o Domain-Driven Design (DDD) ajuda a definir em um sistema?",
       "options": [
         "Domínios, limites de responsabilidade e linguagem ubíqua",
         "Somente a tecnologia de banco de dados mais adequada",
@@ -4251,8 +4251,8 @@
         "A estratégia de cache e invalidação entre réplicas"
       ],
       "answer": "Domínios, limites de responsabilidade e linguagem ubíqua",
-      "explanation": "DDD é apresentado como uma abordagem para organizar o sistema a partir do domínio, dos limites de responsabilidade e da linguagem comum do negócio.",
-      "prompt": "O que o DDD ajuda a definir, conforme o tópico?",
+      "explanation": "DDD organiza o sistema a partir do domínio de negócio, estabelecendo bounded contexts que delimitam responsabilidades e uma linguagem ubíqua que alinha equipes técnicas e de negócio.",
+      "prompt": "Quais são os principais elementos que o Domain-Driven Design (DDD) ajuda a definir em um sistema?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4297,7 +4297,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o principal trade-off entre monolito e microsserviços descrito no tópico?",
+      "question": "Qual é o principal trade-off entre a arquitetura monolítica e a de microsserviços?",
       "options": [
         "Simplicidade e consistência versus distribuição, autonomia e resiliência",
         "Menor uso de memória versus maior uso de CPU",
@@ -4305,8 +4305,8 @@
         "Cache local versus cache distribuído como regra geral"
       ],
       "answer": "Simplicidade e consistência versus distribuição, autonomia e resiliência",
-      "explanation": "O tópico contrasta a simplicidade e consistência do monolito com a autonomia e resiliência associadas aos microsserviços.",
-      "prompt": "Qual é o principal trade-off entre monolito e microsserviços descrito no tópico?",
+      "explanation": "O monólito oferece menor complexidade operacional e consistência de dados mais fácil de garantir, enquanto microsserviços trazem autonomia de deploy e resiliência por isolamento de falhas — mas ao custo de comunicação distribuída, eventual consistency e complexidade operacional elevada.",
+      "prompt": "Qual é o principal trade-off entre a arquitetura monolítica e a de microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4324,7 +4324,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o conteúdo, o que caracteriza um monolito?",
+      "question": "O que caracteriza uma arquitetura monolítica em relação à organização dos seus componentes?",
       "options": [
         "Funcionalidades e componentes vivem na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
         "O sistema é dividido em serviços menores e independentes, cada um com deploy independente",
@@ -4332,8 +4332,8 @@
         "A aplicação é sempre distribuída em múltiplos bancos de dados para aumentar a autonomia"
       ],
       "answer": "Funcionalidades e componentes vivem na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
-      "explanation": "Essa é a definição apresentada no tópico para monolito.",
-      "prompt": "Segundo o conteúdo, o que caracteriza um monolito?",
+      "explanation": "No monólito, todos os componentes coexistem na mesma unidade de implantação, o que facilita a comunicação interna mas cria acoplamento que pode dificultar a escala independente de partes do sistema.",
+      "prompt": "O que caracteriza uma arquitetura monolítica em relação à organização dos seus componentes?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4351,7 +4351,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa descreve melhor microsserviços, conforme o tópico?",
+      "question": "O que define uma arquitetura de microsserviços em relação à divisão do sistema?",
       "options": [
         "Sistema composto por serviços menores e independentes, cada um cobrindo um recorte específico de negócio",
         "Uma única aplicação centralizada que prioriza consistência de dados acima de tudo",
@@ -4359,8 +4359,8 @@
         "Uma forma de organizar apenas o banco de dados, sem impacto na aplicação"
       ],
       "answer": "Sistema composto por serviços menores e independentes, cada um cobrindo um recorte específico de negócio",
-      "explanation": "O tópico define microsserviços como serviços menores e independentes, ligados a um recorte de negócio.",
-      "prompt": "Qual alternativa descreve melhor microsserviços, conforme o tópico?",
+      "explanation": "Microsserviços decompõem a aplicação em serviços autônomos alinhados a contextos de negócio, permitindo que cada um evolua, escale e seja implantado de forma independente.",
+      "prompt": "O que define uma arquitetura de microsserviços em relação à divisão do sistema?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4378,7 +4378,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é a ideia central da Lei de Conway, segundo o conteúdo?",
+      "question": "Qual é a ideia central da Lei de Conway?",
       "options": [
         "A arquitetura do sistema tende a refletir a estrutura de comunicação da organização que o constrói",
         "Sistemas distribuídos sempre exigem múltiplos bancos de dados para funcionar",
@@ -4386,8 +4386,8 @@
         "A estrutura da equipe não influencia decisões arquiteturais"
       ],
       "answer": "A arquitetura do sistema tende a refletir a estrutura de comunicação da organização que o constrói",
-      "explanation": "A Lei de Conway é apresentada exatamente como a relação entre comunicação organizacional e arquitetura.",
-      "prompt": "Qual é a ideia central da Lei de Conway, segundo o conteúdo?",
+      "explanation": "A Lei de Conway estabelece que organizações produzem sistemas que espelham sua estrutura de comunicação interna — times separados tendem a criar componentes separados, enquanto times integrados tendem a produzir sistemas mais coesos.",
+      "prompt": "Qual é a ideia central da Lei de Conway?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4405,7 +4405,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em que cenário o tópico indica que microsserviços tendem a fazer mais sentido?",
+      "question": "Em que cenário microsserviços tendem a fazer mais sentido como escolha arquitetural?",
       "options": [
         "Quando há domínios maduros, cargas distintas e necessidade de autonomia operacional",
         "Quando a prioridade é manter tudo em uma única base de código para simplificar a consistência",
@@ -4413,8 +4413,8 @@
         "Quando a aplicação precisa ser sempre monolítica para reduzir a comunicação entre times"
       ],
       "answer": "Quando há domínios maduros, cargas distintas e necessidade de autonomia operacional",
-      "explanation": "O conteúdo associa microsserviços a domínios maduros, cargas distintas e autonomia operacional.",
-      "prompt": "Em que cenário o tópico indica que microsserviços tendem a fazer mais sentido?",
+      "explanation": "Microsserviços entregam mais valor quando os limites de domínio já estão bem definidos, há necessidade de escalar partes independentemente e times precisam de autonomia para fazer deploy sem coordenação central.",
+      "prompt": "Em que cenário microsserviços tendem a fazer mais sentido como escolha arquitetural?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4432,7 +4432,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual trade-off o conteúdo destaca ao comparar monolito e microsserviços?",
+      "question": "Qual é o principal trade-off entre arquitetura monolítica e microsserviços?",
       "options": [
         "Monolito favorece simplicidade e consistência de dados; microsserviços favorecem autonomia operacional",
         "Monolito favorece deploy independente; microsserviços favorecem uma única base de código",
@@ -4440,8 +4440,8 @@
         "Monolito elimina a influência da organização; microsserviços a tornam irrelevante"
       ],
       "answer": "Monolito favorece simplicidade e consistência de dados; microsserviços favorecem autonomia operacional",
-      "explanation": "Essa é a comparação central explicitada no tópico entre as duas abordagens.",
-      "prompt": "Qual trade-off o conteúdo destaca ao comparar monolito e microsserviços?",
+      "explanation": "O monolito reduz a complexidade de comunicação entre módulos e facilita transações ACID, enquanto microsserviços permitem que times façam deploy e escale partes do sistema de forma independente, ao custo de maior complexidade operacional.",
+      "prompt": "Qual é o principal trade-off entre arquitetura monolítica e microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4459,7 +4459,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No caso de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
+      "question": "Em um sistema de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
       "options": [
         "Porque a consistência de dados é crítica e o monólito favorece esse objetivo",
         "Porque monólitos sempre escalam melhor horizontalmente do que microsserviços",
@@ -4467,8 +4467,8 @@
         "Porque monólitos reduzem automaticamente o blast radius de qualquer falha"
       ],
       "answer": "Porque a consistência de dados é crítica e o monólito favorece esse objetivo",
-      "explanation": "O tópico destaca core banking como um domínio em que consistência de dados é crítica, tornando o monólito uma opção inicial plausível.",
-      "prompt": "No caso de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
+      "explanation": "Em core banking, operações financeiras exigem garantias fortes de consistência e atomicidade — propriedades mais fáceis de alcançar em um monólito, onde transações ocorrem dentro do mesmo processo sem necessidade de coordenação distribuída.",
+      "prompt": "Em um sistema de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4486,7 +4486,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em que condição o tópico sugere que microsserviços passam a ser mais adequados do que um monólito?",
+      "question": "Em que condição microsserviços passam a ser mais adequados do que um monólito em sistemas que começaram centralizados?",
       "options": [
         "Quando a escala horizontal exige maior divisão do sistema",
         "Quando a equipe quer evitar qualquer modelagem de domínio",
@@ -4494,8 +4494,8 @@
         "Quando o sistema precisa ser sempre implementado como serviços independentes desde o início"
       ],
       "answer": "Quando a escala horizontal exige maior divisão do sistema",
-      "explanation": "A migração para microsserviços é apresentada como mais adequada quando a escala horizontal passa a exigir divisão do sistema.",
-      "prompt": "Em que condição o tópico sugere que microsserviços passam a ser mais adequados do que um monólito?",
+      "explanation": "A migração para microsserviços se justifica quando diferentes partes do sistema têm requisitos de escala distintos e o monólito se torna um gargalo — escalar o sistema inteiro passa a ser menos eficiente do que escalar partes específicas de forma independente.",
+      "prompt": "Em que condição microsserviços passam a ser mais adequados do que um monólito em sistemas que começaram centralizados?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4540,7 +4540,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o papel de domínios e entidades antes de criar serviços independentes?",
+      "question": "Qual é o papel de definir domínios e entidades antes de criar serviços independentes em uma arquitetura de microsserviços?",
       "options": [
         "Explicitar responsabilidades de negócio para orientar uma divisão coerente",
         "Substituir a necessidade de linguagem ubíqua no time",
@@ -4548,8 +4548,8 @@
         "Permitir que a divisão seja feita apenas por conveniência técnica"
       ],
       "answer": "Explicitar responsabilidades de negócio para orientar uma divisão coerente",
-      "explanation": "O conteúdo afirma que domínios e entidades devem ser definidos com clareza antes da criação de serviços independentes.",
-      "prompt": "Qual é o papel de domínios e entidades antes de criar serviços independentes?",
+      "explanation": "Sem fronteiras de domínio bem definidas, a divisão em serviços tende a ser arbitrária e gera acoplamento implícito; mapear responsabilidades de negócio primeiro garante que cada serviço tenha uma razão coesa para existir.",
+      "prompt": "Qual é o papel de definir domínios e entidades antes de criar serviços independentes em uma arquitetura de microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4567,7 +4567,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual benefício está associado a uma segmentação correta em microsserviços, segundo o tópico?",
+      "question": "Qual benefício está associado a uma segmentação correta de responsabilidades em microsserviços?",
       "options": [
         "Deploy independente com redução do blast radius",
         "Eliminação total da necessidade de resiliência",
@@ -4575,8 +4575,8 @@
         "Centralização completa de todas as responsabilidades em um único serviço"
       ],
       "answer": "Deploy independente com redução do blast radius",
-      "explanation": "A segmentação adequada é associada a deploy independente e menor blast radius, sem comprometer resiliência ou autonomia operacional.",
-      "prompt": "Qual benefício está associado a uma segmentação correta em microsserviços, segundo o tópico?",
+      "explanation": "Quando os serviços têm fronteiras bem definidas, uma falha ou um deploy mal-sucedido afeta apenas aquele serviço específico, reduzindo o blast radius e permitindo que o restante do sistema continue operando normalmente.",
+      "prompt": "Qual benefício está associado a uma segmentação correta de responsabilidades em microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4621,7 +4621,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que o DDD ajuda a definir quando se pensa em microsserviços?",
+      "question": "O que o Domain-Driven Design (DDD) ajuda a definir ao projetar uma arquitetura de microsserviços?",
       "options": [
         "Bounded contexts, responsabilidades e linguagem comum",
         "TTL, LRU e política de eviction",
@@ -4629,8 +4629,8 @@
         "Somente o tipo de banco de dados a ser usado"
       ],
       "answer": "Bounded contexts, responsabilidades e linguagem comum",
-      "explanation": "O DDD é usado para identificar limites de contexto, responsabilidades e uma linguagem compartilhada entre negócio e engenharia.",
-      "prompt": "Segundo o tópico, o que o DDD ajuda a definir quando se pensa em microsserviços?",
+      "explanation": "O DDD fornece ferramentas conceituais como bounded contexts e linguagem ubíqua para identificar os limites naturais de cada subdomínio, tornando a divisão em microsserviços mais alinhada ao negócio e menos arbitrária.",
+      "prompt": "O que o Domain-Driven Design (DDD) ajuda a definir ao projetar uma arquitetura de microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4675,7 +4675,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação descreve melhor o papel dos eventos de domínio no tópico?",
+      "question": "Qual é o papel dos eventos de domínio em uma arquitetura de microsserviços?",
       "options": [
         "São um mecanismo de comunicação entre serviços separados",
         "São uma técnica de cache para reduzir latência",
@@ -4683,8 +4683,8 @@
         "Substituem a necessidade de bounded contexts"
       ],
       "answer": "São um mecanismo de comunicação entre serviços separados",
-      "explanation": "O conteúdo cita eventos de domínio como forma de comunicação entre serviços em uma arquitetura segregada.",
-      "prompt": "Qual afirmação descreve melhor o papel dos eventos de domínio no tópico?",
+      "explanation": "Eventos de domínio permitem que serviços se comuniquem de forma assíncrona e desacoplada — um serviço publica um evento ao alterar seu estado, e outros serviços interessados o consomem sem precisar de chamadas diretas entre si.",
+      "prompt": "Qual é o papel dos eventos de domínio em uma arquitetura de microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4702,7 +4702,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o trade-off central entre monólito e microsserviços destacado no tópico?",
+      "question": "Qual é o trade-off central entre arquitetura monolítica e microsserviços?",
       "options": [
         "Simplicidade e consistência versus distribuição, autonomia e resiliência",
         "Menor uso de memória versus maior uso de CPU",
@@ -4710,8 +4710,8 @@
         "Cache local versus cache distribuído"
       ],
       "answer": "Simplicidade e consistência versus distribuição, autonomia e resiliência",
-      "explanation": "O tópico contrasta a simplicidade do monólito com a autonomia e a resiliência potencial dos microsserviços, ao custo de maior complexidade.",
-      "prompt": "Qual é o trade-off central entre monólito e microsserviços destacado no tópico?",
+      "explanation": "O monólito oferece menor complexidade operacional e consistência de dados mais fácil de garantir, enquanto microsserviços permitem autonomia de times e maior resiliência por isolamento de falhas — mas ao custo de comunicação distribuída, eventual consistency e complexidade operacional elevada.",
+      "prompt": "Qual é o trade-off central entre arquitetura monolítica e microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4729,7 +4729,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, qual é a função principal de um load balancer?",
+      "question": "Qual é a função principal de um load balancer?",
       "options": [
         "Receber requisições em um ponto único e distribuí-las entre múltiplos servidores back-end",
         "Armazenar respostas para reduzir latência em leituras repetidas",
@@ -4737,8 +4737,8 @@
         "Substituir a necessidade de múltiplas réplicas da aplicação"
       ],
       "answer": "Receber requisições em um ponto único e distribuí-las entre múltiplos servidores back-end",
-      "explanation": "O load balancer atua como ponto único de entrada e distribui o tráfego entre vários hosts, apoiando escalabilidade e resiliência.",
-      "prompt": "Segundo o tópico, qual é a função principal de um load balancer?",
+      "explanation": "O load balancer atua como ponto único de entrada da rede e distribui o tráfego entre vários servidores back-end, promovendo escalabilidade horizontal e resiliência a falhas.",
+      "prompt": "Qual é a função principal de um load balancer?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4756,7 +4756,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação melhor descreve a relação entre load balancer e escalabilidade horizontal?",
+      "question": "Como o load balancer se relaciona com a escalabilidade horizontal?",
       "options": [
         "Ele facilita adicionar ou remover réplicas conforme a demanda",
         "Ele impede a criação de novas réplicas para manter consistência",
@@ -4764,8 +4764,8 @@
         "Ele substitui a necessidade de balanceamento quando há mais de um host"
       ],
       "answer": "Ele facilita adicionar ou remover réplicas conforme a demanda",
-      "explanation": "O tópico destaca que o load balancer apoia arquiteturas elásticas com número dinâmico de réplicas.",
-      "prompt": "Qual afirmação melhor descreve a relação entre load balancer e escalabilidade horizontal?",
+      "explanation": "O load balancer é peça central em arquiteturas elásticas porque abstrai o pool de servidores do cliente, permitindo que réplicas sejam adicionadas ou removidas dinamicamente sem impacto nas requisições.",
+      "prompt": "Como o load balancer se relaciona com a escalabilidade horizontal?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4864,7 +4864,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
+      "question": "Qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
       "options": [
         "Load balancer é um pattern ideal para distribuir requisições entre múltiplos hosts/backends, enquanto proxy reverso é um pattern distinto que pode encaminhar requisições de forma semelhante",
         "Load balancer é sempre uma tecnologia de Layer 7, enquanto proxy reverso é sempre uma tecnologia de Layer 4",
@@ -4872,8 +4872,8 @@
         "Load balancer e proxy reverso são sinônimos completos e não têm diferença conceitual"
       ],
       "answer": "Load balancer é um pattern ideal para distribuir requisições entre múltiplos hosts/backends, enquanto proxy reverso é um pattern distinto que pode encaminhar requisições de forma semelhante",
-      "explanation": "A aula destaca que ambos podem parecer semelhantes no encaminhamento, mas o load balancer é associado à distribuição entre múltiplos backends e o proxy reverso é tratado como pattern distinto.",
-      "prompt": "Segundo o tópico, qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
+      "explanation": "Embora ambos encaminhem requisições, o load balancer é focado em distribuir carga entre múltiplos backends, enquanto o proxy reverso é um padrão com propósitos mais amplos — como cache, terminação TLS e roteamento — que pode ou não envolver múltiplos hosts.",
+      "prompt": "Qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4918,7 +4918,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual cenário o tópico descreve o load balancer como mais adequado?",
+      "question": "Em qual cenário o load balancer é mais adequado?",
       "options": [
         "Quando há múltiplos hosts ou instâncias no pool de requisições e é preciso distribuir a carga entre eles",
         "Quando existe apenas um backend e o objetivo principal é cache de respostas",
@@ -4926,8 +4926,8 @@
         "Quando o sistema não possui nenhum servidor interno para encaminhamento"
       ],
       "answer": "Quando há múltiplos hosts ou instâncias no pool de requisições e é preciso distribuir a carga entre eles",
-      "explanation": "A definição curta do tópico para load balancer é justamente distribuir carga entre múltiplos backends/hosts.",
-      "prompt": "Em qual cenário o tópico descreve o load balancer como mais adequado?",
+      "explanation": "O load balancer só faz sentido quando existem múltiplos backends disponíveis; seu propósito fundamental é justamente evitar que um único servidor concentre toda a carga de trabalho.",
+      "prompt": "Em qual cenário o load balancer é mais adequado?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4945,7 +4945,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual arquitetura mista é citada como comum no tópico?",
+      "question": "Qual arquitetura mista combinando load balancer e proxy reverso é comum em sistemas distribuídos?",
       "options": [
         "Um load balancer na frente distribuindo para vários hosts, e cada host com seu próprio proxy reverso",
         "Um proxy reverso central sem nenhum host interno atrás dele",
@@ -4953,8 +4953,8 @@
         "Um único host sem intermediários, para evitar qualquer encaminhamento"
       ],
       "answer": "Um load balancer na frente distribuindo para vários hosts, e cada host com seu próprio proxy reverso",
-      "explanation": "O conteúdo principal cita explicitamente essa combinação como uma arquitetura comum, mostrando coexistência dos dois patterns.",
-      "prompt": "Qual arquitetura mista é citada como comum no tópico?",
+      "explanation": "Essa combinação é comum porque o load balancer cuida da distribuição de tráfego entre instâncias, enquanto cada proxy reverso local pode lidar com preocupações específicas do host, como roteamento interno, cache ou offloading TLS.",
+      "prompt": "Qual arquitetura mista combinando load balancer e proxy reverso é comum em sistemas distribuídos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4972,7 +4972,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação melhor descreve a relação entre load balancer e proxy reverso no tópico?",
+      "question": "Como load balancer e proxy reverso se relacionam em uma mesma arquitetura?",
       "options": [
         "Eles podem coexistir na mesma arquitetura e até ser implementados pela mesma tecnologia, dependendo do papel assumido",
         "Eles são mutuamente exclusivos e nunca aparecem juntos",
@@ -4980,8 +4980,8 @@
         "Load balancer só faz sentido quando não há múltiplos hosts"
       ],
       "answer": "Eles podem coexistir na mesma arquitetura e até ser implementados pela mesma tecnologia, dependendo do papel assumido",
-      "explanation": "A aula destaca coexistência e também que a mesma tecnologia pode atuar como load balancer ou proxy reverso conforme a função.",
-      "prompt": "Qual afirmação melhor descreve a relação entre load balancer e proxy reverso no tópico?",
+      "explanation": "A mesma tecnologia (como Nginx ou HAProxy) pode atuar como load balancer ou proxy reverso dependendo da configuração e do papel na arquitetura, e os dois patterns frequentemente coexistem em sistemas de maior escala.",
+      "prompt": "Como load balancer e proxy reverso se relacionam em uma mesma arquitetura?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5107,7 +5107,7 @@
       "topic_title": "Round Robin",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com Round Robin, segundo o conteúdo do tópico?",
+      "question": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com o algoritmo Round Robin?",
       "options": [
         "A carga pode se concentrar em um único servidor durante a janela temporal",
         "O algoritmo passa a considerar automaticamente o peso de cada requisição",
@@ -5115,8 +5115,8 @@
         "O balanceador deixa de encaminhar requisições até o pico terminar"
       ],
       "answer": "A carga pode se concentrar em um único servidor durante a janela temporal",
-      "explanation": "A janela temporal do Round Robin pode concentrar muitas requisições em um servidor durante um pico.",
-      "prompt": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com Round Robin, segundo o conteúdo do tópico?",
+      "explanation": "O Round Robin distribui requisições em ciclo fixo, sem levar em conta o estado atual dos servidores; durante um pico intenso e curto, muitas requisições podem ser enviadas ao mesmo servidor dentro da mesma janela de rotação, concentrando a carga.",
+      "prompt": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com o algoritmo Round Robin?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5161,16 +5161,16 @@
       "topic_title": "Least Request",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual cenário o Least Request tende a funcionar melhor?",
+      "question": "Em qual tipo de workload o algoritmo Least Request tende a funcionar melhor?",
       "options": [
         "Workloads com requisições curtas, rápidas e uniformes",
-        "Workloads com requisições muito pesadas e de custo muito متفاوتe",
+        "Workloads com requisições muito pesadas e de custo muito variável",
         "Cenários em que o tempo de resposta é a principal métrica de decisão",
         "Ambientes em que a carga real é sempre proporcional ao número de conexões"
       ],
       "answer": "Workloads com requisições curtas, rápidas e uniformes",
-      "explanation": "O texto destaca que o algoritmo brilha quando as requisições têm peso semelhante e alta frequência.",
-      "prompt": "Em qual cenário o Least Request tende a funcionar melhor?",
+      "explanation": "O Least Request distribui novas requisições para o servidor com menor número de requisições ativas; esse indicador é mais confiável quando as requisições são homogêneas em custo e duração, pois aí a contagem de requisições reflete bem a carga real.",
+      "prompt": "Em qual tipo de workload o algoritmo Least Request tende a funcionar melhor?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5323,7 +5323,7 @@
       "topic_title": "Least Connection",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em relação à carga e saturação do servidor, qual é a melhor leitura do Least Connection?",
+      "question": "Como o algoritmo Least Connection aborda a questão de carga e saturação dos servidores?",
       "options": [
         "Ele tenta ser mais inteligente que uma distribuição puramente uniforme ao observar conexões ativas",
         "Ele ignora completamente o estado atual dos servidores",
@@ -5331,8 +5331,8 @@
         "Ele escolhe o servidor com maior número de conexões para maximizar throughput"
       ],
       "answer": "Ele tenta ser mais inteligente que uma distribuição puramente uniforme ao observar conexões ativas",
-      "explanation": "O conteúdo descreve Least Connection como mais sofisticado porque leva em conta um indicador atual de carga: conexões ativas.",
-      "prompt": "Em relação à carga e saturação do servidor, qual é a melhor leitura do Least Connection?",
+      "explanation": "Ao encaminhar novas conexões para o servidor com menos conexões abertas no momento, o Least Connection usa um proxy em tempo real da carga atual — tornando-o mais adaptativo do que algoritmos cíclicos como Round Robin.",
+      "prompt": "Como o algoritmo Least Connection aborda a questão de carga e saturação dos servidores?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5350,7 +5350,7 @@
       "topic_title": "Least Connection",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual confusão comum deve ser evitada ao estudar Least Connection?",
+      "question": "Qual confusão conceitual é comum ao estudar o algoritmo Least Connection?",
       "options": [
         "Confundir Least Connection com Least Request",
         "Confundir Least Connection com healthcheck",
@@ -5358,8 +5358,8 @@
         "Confundir Least Connection com roteamento por path"
       ],
       "answer": "Confundir Least Connection com Least Request",
-      "explanation": "O tópico destaca explicitamente a confusão entre Least Connection e Least Request, que são algoritmos distintos.",
-      "prompt": "Qual confusão comum deve ser evitada ao estudar Least Connection?",
+      "explanation": "Apesar dos nomes parecidos, Least Connection observa o número de conexões TCP abertas, enquanto Least Request observa o número de requisições ativas em andamento — são métricas distintas que levam a decisões de roteamento diferentes.",
+      "prompt": "Qual confusão conceitual é comum ao estudar o algoritmo Least Connection?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5377,7 +5377,7 @@
       "topic_title": "Least Connection",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Sobre Least Request, qual afirmação está sustentada pelo conteúdo do tópico?",
+      "question": "Qual afirmação descreve corretamente o algoritmo de balanceamento Least Request?",
       "options": [
         "Ele tenta distribuir a carga de forma uniforme, mas não leva em conta a carga/saturação dos servidores",
         "Ele escolhe o servidor com menos conexões ativas no momento",
@@ -5385,8 +5385,8 @@
         "Ele depende de IP Hash para decidir o destino"
       ],
       "answer": "Ele tenta distribuir a carga de forma uniforme, mas não leva em conta a carga/saturação dos servidores",
-      "explanation": "O conteúdo apresenta Least Request como um algoritmo de distribuição uniforme, sem afirmar que ele considere carga ou conexões ativas.",
-      "prompt": "Sobre Least Request, qual afirmação está sustentada pelo conteúdo do tópico?",
+      "explanation": "Least Request distribui requisições de forma uniforme entre os servidores, mas não monitora a carga real ou a saturação de cada um, o que o diferencia de algoritmos mais adaptativos como LOR.",
+      "prompt": "Qual afirmação descreve corretamente o algoritmo de balanceamento Least Request?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5431,7 +5431,7 @@
       "topic_title": "Least Outstanding Requests (LOR)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é a principal diferença entre LOR e Least Connect, segundo o conteúdo?",
+      "question": "Qual é a principal diferença entre os algoritmos LOR (Least Outstanding Requests) e Least Connections?",
       "options": [
         "LOR considera requisições pendentes; Least Connect considera conexões ativas",
         "LOR considera apenas conexões UDP; Least Connect considera conexões TCP",
@@ -5439,8 +5439,8 @@
         "LOR exige healthcheck; Least Connect não pode usar healthcheck"
       ],
       "answer": "LOR considera requisições pendentes; Least Connect considera conexões ativas",
-      "explanation": "A distinção central é que LOR tenta refletir trabalho em andamento, enquanto Least Connect olha apenas conexões abertas.",
-      "prompt": "Qual é a principal diferença entre LOR e Least Connect, segundo o conteúdo?",
+      "explanation": "LOR (Least Outstanding Requests) reflete o trabalho em andamento monitorando requisições ainda não concluídas, enquanto Least Connections apenas conta o número de conexões abertas, sem considerar se as requisições já foram processadas.",
+      "prompt": "Qual é a principal diferença entre os algoritmos LOR (Least Outstanding Requests) e Least Connections?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5485,7 +5485,7 @@
       "topic_title": "Least Outstanding Requests (LOR)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual é o principal trade-off associado ao uso de LOR?",
+      "question": "Qual é o principal trade-off associado ao uso do algoritmo LOR (Least Outstanding Requests)?",
       "options": [
         "Mais precisão no roteamento, mas maior complexidade e carga no balanceador",
         "Menor precisão no roteamento, mas menor uso de memória no backend",
@@ -5493,8 +5493,8 @@
         "Eliminação total da necessidade de balanceamento entre servidores"
       ],
       "answer": "Mais precisão no roteamento, mas maior complexidade e carga no balanceador",
-      "explanation": "O conteúdo destaca que LOR exige monitoramento detalhado e aumenta o custo operacional do balanceador.",
-      "prompt": "Qual é o principal trade-off associado ao uso de LOR?",
+      "explanation": "LOR oferece decisões de roteamento mais precisas ao rastrear requisições pendentes, mas isso exige monitoramento contínuo do estado de cada servidor, aumentando a complexidade e o custo operacional do balanceador.",
+      "prompt": "Qual é o principal trade-off associado ao uso do algoritmo LOR (Least Outstanding Requests)?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5512,7 +5512,7 @@
       "topic_title": "Least Outstanding Requests (LOR)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual cenário o conteúdo sugere que o LOR pode ser uma boa opção?",
+      "question": "Em qual cenário o algoritmo LOR (Least Outstanding Requests) tende a ser mais vantajoso?",
       "options": [
         "Quando há requisições muito diversas e alto throughput",
         "Quando todas as requisições têm exatamente o mesmo custo",
@@ -5520,8 +5520,8 @@
         "Quando o objetivo principal é apenas dividir conexões igualmente"
       ],
       "answer": "Quando há requisições muito diversas e alto throughput",
-      "explanation": "O tópico associa LOR a cenários com workloads heterogêneos e maior volume de tráfego, apesar do custo extra no balanceador.",
-      "prompt": "Em qual cenário o conteúdo sugere que o LOR pode ser uma boa opção?",
+      "explanation": "LOR se destaca em workloads heterogêneos com alto volume de tráfego, pois a diversidade de requisições faz com que o monitoramento do trabalho pendente seja mais relevante para evitar sobrecarregar servidores mais lentos.",
+      "prompt": "Em qual cenário o algoritmo LOR (Least Outstanding Requests) tende a ser mais vantajoso?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5728,7 +5728,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em qual situação a inspeção de payload é mais compatível com o comportamento descrito no tópico?",
+      "question": "Em qual situação a inspeção de payload pelo balanceador de carga é necessária?",
       "options": [
         "Quando o balanceador precisa decidir com base em campos da requisição",
         "Quando o balanceador só distribui tráfego por IP e porta",
@@ -5736,8 +5736,8 @@
         "Quando o balanceador atua apenas como um roteador físico"
       ],
       "answer": "Quando o balanceador precisa decidir com base em campos da requisição",
-      "explanation": "Inspeção de payload é característica de Layer 7, que pode tomar decisões com base no conteúdo da requisição.",
-      "prompt": "Em qual situação a inspeção de payload é mais compatível com o comportamento descrito no tópico?",
+      "explanation": "A inspeção de payload é característica de balanceadores Layer 7, que precisam analisar o conteúdo da requisição (como headers HTTP, paths ou cookies) para tomar decisões de roteamento mais granulares.",
+      "prompt": "Em qual situação a inspeção de payload pelo balanceador de carga é necessária?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5755,7 +5755,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação descreve corretamente o trade-off entre Layer 4 e Layer 7?",
+      "question": "Qual afirmação descreve corretamente o trade-off entre balanceamento de carga Layer 4 e Layer 7?",
       "options": [
         "Layer 4 prioriza desempenho; Layer 7 prioriza capacidade de decisão e roteamento avançado",
         "Layer 4 sempre é mais inteligente que Layer 7, mas menos rápido",
@@ -5763,8 +5763,8 @@
         "Layer 4 depende de inspeção de payload para funcionar"
       ],
       "answer": "Layer 4 prioriza desempenho; Layer 7 prioriza capacidade de decisão e roteamento avançado",
-      "explanation": "O tópico destaca exatamente esse trade-off: eficiência e baixa latência em Layer 4 versus flexibilidade em Layer 7.",
-      "prompt": "Qual afirmação descreve corretamente o trade-off entre Layer 4 e Layer 7?",
+      "explanation": "Balanceadores Layer 4 operam com base em IP e porta, o que garante baixa latência e alta eficiência; já os Layer 7 inspecionam o conteúdo da requisição, permitindo roteamento inteligente mas com maior custo de processamento.",
+      "prompt": "Qual afirmação descreve corretamente o trade-off entre balanceamento de carga Layer 4 e Layer 7?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5782,7 +5782,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual opção associa corretamente os exemplos AWS às camadas descritas no tópico?",
+      "question": "Na AWS, qual serviço de balanceamento de carga opera em Layer 4 e qual opera em Layer 7?",
       "options": [
         "NLB é Layer 4; ALB é Layer 7",
         "NLB é Layer 7; ALB é Layer 4",
@@ -5790,8 +5790,8 @@
         "Ambos são exclusivamente Layer 7"
       ],
       "answer": "NLB é Layer 4; ALB é Layer 7",
-      "explanation": "O conteúdo cita NLB como exemplo de balanceamento Layer 4 e ALB como exemplo de Layer 7.",
-      "prompt": "Qual opção associa corretamente os exemplos AWS às camadas descritas no tópico?",
+      "explanation": "O Network Load Balancer (NLB) atua na camada de transporte (Layer 4), roteando tráfego por IP e porta com ultra-baixa latência; o Application Load Balancer (ALB) atua na camada de aplicação (Layer 7), suportando roteamento baseado em HTTP, paths e headers.",
+      "prompt": "Na AWS, qual serviço de balanceamento de carga opera em Layer 4 e qual opera em Layer 7?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5809,7 +5809,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No contexto do tópico, qual descrição melhor caracteriza o Envoy?",
+      "question": "O que melhor descreve o Envoy no contexto de balanceamento de carga e proxies modernos?",
       "options": [
         "Um proxy de alta performance, cloud native, usado como base para outras tecnologias",
         "Um balanceador exclusivamente de Layer 4, sem uso em ecossistemas modernos",
@@ -5817,8 +5817,8 @@
         "Um load balancer proprietário focado somente em ambientes on-premises"
       ],
       "answer": "Um proxy de alta performance, cloud native, usado como base para outras tecnologias",
-      "explanation": "O tópico descreve o Envoy como proxy de alta performance, cloud native e base para outras soluções.",
-      "prompt": "No contexto do tópico, qual descrição melhor caracteriza o Envoy?",
+      "explanation": "O Envoy é um proxy de alta performance projetado para ambientes cloud native, com APIs abertas e extensíveis que o tornam a base de diversas soluções modernas, como service meshes (ex: Istio) e gateways de API.",
+      "prompt": "O que melhor descreve o Envoy no contexto de balanceamento de carga e proxies modernos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5836,7 +5836,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o tópico, o que significa cloud native nesse contexto?",
+      "question": "No contexto de infraestrutura moderna, o que caracteriza uma tecnologia como 'cloud native'?",
       "options": [
         "Tecnologias extensíveis, com APIs abertas, escaláveis e reutilizáveis como base para outras soluções",
         "Tecnologias que só funcionam em provedores públicos de nuvem",
@@ -5844,8 +5844,8 @@
         "Soluções que eliminam a necessidade de APIs por completo"
       ],
       "answer": "Tecnologias extensíveis, com APIs abertas, escaláveis e reutilizáveis como base para outras soluções",
-      "explanation": "No tópico, cloud native não é apenas “rodar na nuvem”; envolve extensibilidade, APIs abertas e escalabilidade.",
-      "prompt": "Segundo o tópico, o que significa cloud native nesse contexto?",
+      "explanation": "Cloud native vai além de simplesmente executar na nuvem: envolve arquiteturas extensíveis com APIs abertas, alta escalabilidade e a capacidade de servir como base para outras soluções, seguindo os princípios da CNCF.",
+      "prompt": "No contexto de infraestrutura moderna, o que caracteriza uma tecnologia como 'cloud native'?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5863,7 +5863,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação sobre o HAProxy está mais alinhada ao tópico?",
+      "question": "O que melhor descreve o HAProxy e seus casos de uso?",
       "options": [
         "É um load balancer open source, muito performático, e também pode atuar como proxy reverso",
         "É uma solução apenas de proxy reverso, sem foco em balanceamento",
@@ -5871,8 +5871,8 @@
         "É um produto gerenciado de cloud provider, sem versão open source"
       ],
       "answer": "É um load balancer open source, muito performático, e também pode atuar como proxy reverso",
-      "explanation": "O tópico destaca o HAProxy como solução open source, tradicionalmente forte como load balancer, mas capaz de atuar como proxy reverso.",
-      "prompt": "Qual afirmação sobre o HAProxy está mais alinhada ao tópico?",
+      "explanation": "O HAProxy é uma solução open source amplamente reconhecida por sua performance e confiabilidade como load balancer, sendo também capaz de atuar como proxy reverso em arquiteturas de alta disponibilidade.",
+      "prompt": "O que melhor descreve o HAProxy e seus casos de uso?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5890,7 +5890,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual opção descreve melhor os load balancers fornecidos por cloud providers, segundo o tópico?",
+      "question": "Qual opção descreve melhor os load balancers fornecidos por cloud providers?",
       "options": [
         "São alternativas gerenciadas que podem oferecer health check dinâmico e offload de SSL",
         "São soluções que só funcionam para tráfego interno entre pods",
@@ -5898,8 +5898,8 @@
         "São ferramentas que substituem completamente a necessidade de qualquer roteamento"
       ],
       "answer": "São alternativas gerenciadas que podem oferecer health check dinâmico e offload de SSL",
-      "explanation": "O tópico cita load balancers de AWS/GCP como opções gerenciadas com health check dinâmico e offload de SSL.",
-      "prompt": "Qual opção descreve melhor os load balancers fornecidos por cloud providers, segundo o tópico?",
+      "explanation": "Load balancers gerenciados por cloud providers (como AWS ALB ou GCP Load Balancer) abstraem a infraestrutura e oferecem recursos nativos como health check dinâmico e offload de SSL, reduzindo a carga operacional das aplicações.",
+      "prompt": "Qual opção descreve melhor os load balancers fornecidos por cloud providers?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5917,7 +5917,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No tópico, qual é a principal diferença prática entre usar uma tecnologia como load balancer e como proxy reverso?",
+      "question": "Na prática, qual é a principal diferença entre usar uma tecnologia como load balancer e como proxy reverso?",
       "options": [
         "A mesma tecnologia pode assumir ambos os papéis; a diferença depende da forma de implementação",
         "Load balancer e proxy reverso são funções incompatíveis entre si",
@@ -5925,8 +5925,8 @@
         "Load balancer sempre faz cache, enquanto proxy reverso sempre faz compressão"
       ],
       "answer": "A mesma tecnologia pode assumir ambos os papéis; a diferença depende da forma de implementação",
-      "explanation": "O tópico reforça que algumas soluções podem atuar como load balancer e proxy reverso, dependendo da implementação.",
-      "prompt": "No tópico, qual é a principal diferença prática entre usar uma tecnologia como load balancer e como proxy reverso?",
+      "explanation": "Ferramentas como Nginx e Envoy são polivalentes: atuam como load balancer quando distribuem tráfego entre múltiplos backends, e como proxy reverso quando ficam na frente de um serviço específico — o papel é definido pela configuração, não pela tecnologia em si.",
+      "prompt": "Na prática, qual é a principal diferença entre usar uma tecnologia como load balancer e como proxy reverso?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5944,7 +5944,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No laboratório, qual é a diferença principal entre usar o Envoy como load balancer e como proxy reverso?",
+      "question": "Ao usar o Envoy, qual é a diferença principal entre configurá-lo como load balancer e como proxy reverso?",
       "options": [
         "Como load balancer, ele distribui requisições entre app1, app2 e app3; como proxy reverso, ele fica na frente de cada backend com controle mais individual",
         "Como load balancer, ele faz cache de respostas; como proxy reverso, ele apenas replica tráfego entre instâncias",
@@ -5952,8 +5952,8 @@
         "Como load balancer, ele elimina a necessidade de backends; como proxy reverso, ele substitui o cliente"
       ],
       "answer": "Como load balancer, ele distribui requisições entre app1, app2 e app3; como proxy reverso, ele fica na frente de cada backend com controle mais individual",
-      "explanation": "O tópico destaca que a mesma tecnologia muda de papel conforme a configuração: no balanceador, distribui tráfego; no proxy reverso, controla cada backend de forma mais granular.",
-      "prompt": "No laboratório, qual é a diferença principal entre usar o Envoy como load balancer e como proxy reverso?",
+      "explanation": "No papel de load balancer, o Envoy distribui o tráfego horizontalmente entre múltiplas instâncias; no papel de proxy reverso, ele atua na frente de um backend específico, permitindo controle granular sobre roteamento, autenticação e observabilidade daquele serviço.",
+      "prompt": "Ao usar o Envoy, qual é a diferença principal entre configurá-lo como load balancer e como proxy reverso?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -6052,7 +6052,7 @@
       "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No modelo de bucket/tokens descrito no tópico, qual afirmação está mais alinhada ao comportamento do rate limit?",
+      "question": "No algoritmo de token bucket para rate limiting, qual afirmação descreve corretamente seu comportamento?",
       "options": [
         "Cada requisição consome tokens e o bucket é reposto periodicamente",
         "Cada requisição cria tokens novos e o bucket nunca se esgota",
@@ -6060,8 +6060,8 @@
         "O bucket só é usado para decidir o caminho de roteamento por host"
       ],
       "answer": "Cada requisição consome tokens e o bucket é reposto periodicamente",
-      "explanation": "O tópico usa bucket/tokens para explicar consumo de capacidade e reposição ao longo do tempo, até ocorrer throttling quando esgota.",
-      "prompt": "No modelo de bucket/tokens descrito no tópico, qual afirmação está mais alinhada ao comportamento do rate limit?",
+      "explanation": "No token bucket, cada requisição consome um token disponível no balde; os tokens são repostos a uma taxa fixa ao longo do tempo. Quando o bucket se esgota, novas requisições são bloqueadas (throttling), garantindo que o volume de tráfego não ultrapasse a capacidade definida.",
+      "prompt": "No algoritmo de token bucket para rate limiting, qual afirmação descreve corretamente seu comportamento?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {

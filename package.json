@@ -2,6 +2,14 @@
   "name": "study-app",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://simulado.rick.wiki/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardo6142dh/sd-study-questions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricardo6142dh/sd-study-questions/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

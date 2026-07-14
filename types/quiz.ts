@@ -43,6 +43,7 @@ export type ExamFilters = {
   modules: string[];
   topics: string[];
   difficulties: string[];
+  seed?: string;
 };
 
 export type BuiltExam = {

@@ -2,6 +2,8 @@
 
 Este app recebe cursos e questões em JSON, lista os simulados disponíveis, deixa o usuário responder e mostra o resultado final.
 
+Produção: [simulado.rick.wiki](https://simulado.rick.wiki/)
+
 ![Study App home](public/screenshots/study-app-home.png)
 
 ## Como adicionar um curso

@@ -29,10 +29,10 @@ export default async function HomePage() {
                   <span className="catalog-tag">{course.provider}</span>
                 </div>
                 <h2>{course.title}</h2>
-                <Link href={`/courses/${course.slug}`} className="catalog-link">
-                  ver home do curso
-                </Link>
                 <p className="catalog-subtitle">Instrutor: {course.instructor}</p>
+                <a href={course.landingPage} className="catalog-link">
+                  ver home do curso
+                </a>
                 <div className="catalog-meta">
                   <span>{course.moduleCount} módulos</span>
                   <span>{course.topicCount} tópicos</span>

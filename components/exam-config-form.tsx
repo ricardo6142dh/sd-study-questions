@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { formatModuleLabel, formatTopicLabel } from "@/lib/display-label";
 import type { QuizQuestion } from "@/types/quiz";
 
@@ -29,6 +29,7 @@ export function ExamConfigForm({
   const [selectedDifficulties, setSelectedDifficulties] = useState<string[]>([]);
   const [count, setCount] = useState(Math.min(Math.max(questions.length, 1), 20));
   const [hasEditedCount, setHasEditedCount] = useState(false);
+  const seedInputRef = useRef<HTMLInputElement>(null);
 
   const availableQuestions = useMemo(() => {
     return questions.filter((question) => {
@@ -93,7 +94,16 @@ export function ExamConfigForm({
   }
 
   return (
-    <form action={action} className="course-config-form">
+    <form
+      action={action}
+      className="course-config-form"
+      onSubmit={() => {
+        if (seedInputRef.current) {
+          seedInputRef.current.value = crypto.randomUUID();
+        }
+      }}
+    >
+      <input ref={seedInputRef} type="hidden" name="seed" defaultValue="initial" />
       <div className="course-config-grid">
         <section className="course-panel course-config-panel">
           <div className="course-option-group">

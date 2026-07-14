@@ -17,6 +17,14 @@ function normalizeSelection(values: string[]) {
   return values.map((value) => value.trim()).filter(Boolean);
 }
 
+function firstValue(value: string | string[] | undefined) {
+  if (Array.isArray(value)) {
+    return value[0];
+  }
+
+  return value;
+}
+
 function hashString(input: string) {
   let hash = 0;
 
@@ -34,6 +42,57 @@ function deterministicSort<T>(items: T[], seed: string, getKey: (item: T) => str
     const rightScore = hashString(`${seed}:${getKey(right)}`);
     return leftScore - rightScore;
   });
+}
+
+function topicKey(question: QuizQuestion) {
+  return question.topic_key || question.topic_title;
+}
+
+function selectBalancedQuestions(questions: QuizQuestion[], count: number, seed: string) {
+  const groupedByTopic = new Map<string, QuizQuestion[]>();
+
+  for (const question of questions) {
+    const key = topicKey(question);
+    groupedByTopic.set(key, [...(groupedByTopic.get(key) ?? []), question]);
+  }
+
+  const topicBuckets = deterministicSort(
+    [...groupedByTopic.entries()].map(([topic, items]) => ({
+      topic,
+      items: deterministicSort(items, seed, (question) => question.id)
+    })),
+    seed,
+    (bucket) => bucket.topic
+  );
+
+  const selected: QuizQuestion[] = [];
+  let round = 0;
+
+  while (selected.length < count) {
+    let addedInRound = false;
+
+    for (const bucket of topicBuckets) {
+      const question = bucket.items[round];
+      if (!question) {
+        continue;
+      }
+
+      selected.push(question);
+      addedInRound = true;
+
+      if (selected.length >= count) {
+        break;
+      }
+    }
+
+    if (!addedInRound) {
+      break;
+    }
+
+    round += 1;
+  }
+
+  return selected;
 }
 
 export async function loadQuizBank(): Promise<QuizBank> {
@@ -88,12 +147,14 @@ export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank
 
 export function parseExamFilters(searchParams: Record<string, string | string[] | undefined>): ExamFilters {
   const countValue = Number(searchParams.count);
+  const seed = firstValue(searchParams.seed)?.trim();
 
   return {
     count: Number.isFinite(countValue) && countValue > 0 ? countValue : 10,
     modules: normalizeSelection(toArray(searchParams.module)),
     topics: normalizeSelection(toArray(searchParams.topic)),
-    difficulties: normalizeSelection(toArray(searchParams.difficulty))
+    difficulties: normalizeSelection(toArray(searchParams.difficulty)),
+    seed: seed || `${Date.now()}`
   };
 }
 
@@ -110,8 +171,11 @@ export function buildExam(questions: QuizQuestion[], filters: ExamFilters): Buil
   });
 
   const seed = JSON.stringify(filters);
-  const sorted = deterministicSort(filtered, seed, (question) => question.id);
-  const selectedQuestions = sorted.slice(0, Math.min(filters.count, sorted.length));
+  const selectedQuestions = selectBalancedQuestions(
+    filtered,
+    Math.min(filters.count, filtered.length),
+    seed
+  );
 
   const filterSummaryParts = [
     filters.modules.length > 0 ? `${filters.modules.length} módulo(s)` : null,
