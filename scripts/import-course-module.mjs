@@ -199,8 +199,7 @@ async function main() {
   const previousQuestions = (existingBank.questions ?? []).filter((question) => {
     return !(
       question.module_title === importedModule.title ||
-      question.module_key === importedModule.key ||
-      question.module_order === importedModule.order
+      question.module_key === importedModule.key
     );
   });
 
@@ -213,13 +212,7 @@ async function main() {
     ).values()
   );
 
-  const mergedFiles = uniqueSorted([
-    ...((existingBank.files ?? []).filter((value) => typeof value === "string")),
-    ...quizFiles.map((filePath) => path.relative(APP_DIR, filePath))
-  ]);
-
   const nextBank = {
-    ...(mergedFiles.length > 0 ? { files: mergedFiles } : {}),
     questions: mergedQuestions
   };
 

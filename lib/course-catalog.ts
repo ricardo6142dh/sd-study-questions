@@ -2,13 +2,9 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import type { CourseCatalogEntry, CourseCatalogMetadata } from "@/types/course";
 import { loadQuizBankByCourse } from "@/lib/quiz-bank";
+import { safeReadJson } from "@/lib/fs-utils";
 
 const COURSE_BANKS_DIR = path.resolve(process.cwd(), "data/course-banks");
-
-async function safeReadJson<T>(filePath: string): Promise<T> {
-  const content = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(content) as T;
-}
 
 function countTopics(modules: CourseCatalogMetadata["modules"]) {
   return modules.reduce((total, module) => total + module.topics.length, 0);

@@ -62,9 +62,6 @@ async function validateCourseBank(courseDir) {
 
   validateMetadata(metadata, dirName);
   assert(Array.isArray(bank.questions), `${dirName}: question-bank.questions must be an array`);
-  if (bank.files !== undefined) {
-    assert(Array.isArray(bank.files), `${dirName}: question-bank.files must be an array when provided`);
-  }
 
   bank.questions.forEach((question, index) => validateQuestion(question, dirName, index));
 

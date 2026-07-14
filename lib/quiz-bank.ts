@@ -1,13 +1,9 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import type { BuiltExam, ExamFilters, QuizBank, QuizQuestion } from "@/types/quiz";
+import { safeReadJson } from "@/lib/fs-utils";
 
 const COURSE_BANKS_DIR = path.resolve(process.cwd(), "data/course-banks");
-
-async function safeReadJson<T>(filePath: string): Promise<T> {
-  const content = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(content) as T;
-}
 
 function toArray(value: string | string[] | undefined) {
   if (value === undefined) {
@@ -49,25 +45,23 @@ export async function loadQuizBank(): Promise<QuizBank> {
         const stats = await fs.stat(courseDir);
 
         if (!stats.isDirectory()) {
-          return { files: [], questions: [] } satisfies QuizBank;
+          return { questions: [] } satisfies QuizBank;
         }
 
         return safeReadJson<QuizBank>(path.join(courseDir, "question-bank.json"));
       })
     );
 
-    const files = banks.flatMap((bank) => bank.files ?? []);
     const questions = banks.flatMap((bank) => bank.questions);
 
     return {
-      files,
       questions: Array.from(
         new Map(questions.map((question) => [question.id, question])).values()
       )
     };
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return { files: [], questions: [] };
+      return { questions: [] };
     }
 
     throw error;
@@ -81,12 +75,11 @@ export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank
     );
 
     return {
-      files: bank.files ?? [],
       questions: bank.questions
     };
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return { files: [], questions: [] };
+      return { questions: [] };
     }
 
     throw error;

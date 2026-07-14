@@ -56,6 +56,12 @@ export function ExamConfigForm({
     });
   }, [availableCount, hasEditedCount]);
 
+  const DIFFICULTIES = [
+    { value: "easy", label: "Fácil" },
+    { value: "medium", label: "Médio" },
+    { value: "hard", label: "Difícil" }
+  ];
+
   function toggleValue(
     value: string,
     selected: string[],
@@ -169,6 +175,27 @@ export function ExamConfigForm({
                   </div>
                 );
               })}
+            </div>
+          </div>
+
+          <div className="course-option-group">
+            <div className="course-option-heading">
+              <h2>Dificuldade</h2>
+              <p>Filtre por nível de dificuldade.</p>
+            </div>
+            <div className="course-chip-grid">
+              {DIFFICULTIES.map(({ value, label }) => (
+                <label key={value} className="course-chip">
+                  <input
+                    type="checkbox"
+                    name="difficulty"
+                    value={value}
+                    checked={selectedDifficulties.includes(value)}
+                    onChange={() => toggleValue(value, selectedDifficulties, setSelectedDifficulties)}
+                  />
+                  <span>{label}</span>
+                </label>
+              ))}
             </div>
           </div>
 

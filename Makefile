@@ -1,6 +1,6 @@
 SHELL := /bin/zsh
 
-APP_DIR := /Users/ricardolopes/sd/study_app
+APP_DIR := $(CURDIR)
 
 .PHONY: help import validate build
 

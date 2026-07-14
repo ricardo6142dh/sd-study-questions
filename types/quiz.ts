@@ -35,7 +35,6 @@ export type QuizQuestion = {
 };
 
 export type QuizBank = {
-  files?: string[];
   questions: QuizQuestion[];
 };
 

@@ -1,12 +1,12 @@
 # Study App
 
-`study_app` recebe cursos e questões em JSON, lista os simulados disponíveis, deixa o usuário responder e mostra o resultado final.
+Este app recebe cursos e questões em JSON, lista os simulados disponíveis, deixa o usuário responder e mostra o resultado final.
 
 ## Como adicionar um curso
 
 Crie uma pasta em:
 
-`study_app/data/course-banks/<slug>/`
+`data/course-banks/<slug>/`
 
 Dentro dela, adicione:
 
@@ -19,7 +19,7 @@ O app detecta automaticamente esse novo curso na home.
 
 As questões ficam em:
 
-`study_app/data/course-banks/<slug>/question-bank.json`
+`data/course-banks/<slug>/question-bank.json`
 
 Formato:
 
@@ -91,12 +91,19 @@ Campos extras são permitidos. Se você gerar mais metadados, o app simplesmente
 
 ## Exemplo
 
-- [metadata.json](/Users/ricardolopes/sd/study_app/examples/course-bank-example/metadata.json)
-- [question-bank.json](/Users/ricardolopes/sd/study_app/examples/course-bank-example/question-bank.json)
+- [question-bank.json](examples/course-bank-example/question-bank.json)
+- [metadata.json](examples/course-bank-example/metadata.json)
 
 ## Validação
 
 ```bash
-cd /Users/ricardolopes/sd/study_app
 npm run validate:banks
+```
+
+## Import opcional
+
+Se você ainda usa um pipeline externo para gerar `quiz.json`, pode importar um módulo inteiro para o banco local:
+
+```bash
+make import COURSE="system_design" MODULE="day_05_estrategias_de_cache"
 ```
