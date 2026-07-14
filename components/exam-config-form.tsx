@@ -169,27 +169,6 @@ export function ExamConfigForm({
             </details>
           </div>
 
-          <div className="course-option-group">
-            <div className="course-option-heading">
-              <h2>Dificuldade</h2>
-              <p>Filtre por nível de dificuldade.</p>
-            </div>
-            <div className="course-chip-grid">
-              {DIFFICULTIES.map(({ value, label }) => (
-                <label key={value} className="course-chip">
-                  <input
-                    type="checkbox"
-                    name="difficulty"
-                    value={value}
-                    checked={selectedDifficulties.includes(value)}
-                    onChange={() => toggleValue(value, selectedDifficulties, setSelectedDifficulties)}
-                  />
-                  <span>{label}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
           <label className="course-field">
             <span>Quantidade de questões</span>
             <small className="course-field-note">
