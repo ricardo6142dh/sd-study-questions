@@ -11,7 +11,6 @@ type ExamConfigFormProps = {
     module: string;
     topics: string[];
   }>;
-  topicCount: number;
   questions: QuizQuestion[];
 };
 
@@ -23,13 +22,11 @@ export function ExamConfigForm({
   action,
   modules,
   moduleTopics,
-  topicCount,
   questions
 }: ExamConfigFormProps) {
   const [selectedModules, setSelectedModules] = useState<string[]>([]);
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [selectedDifficulties, setSelectedDifficulties] = useState<string[]>([]);
-  const [openModules, setOpenModules] = useState<string[]>([]);
   const [count, setCount] = useState(Math.min(Math.max(questions.length, 1), 20));
   const [hasEditedCount, setHasEditedCount] = useState(false);
 
@@ -57,6 +54,14 @@ export function ExamConfigForm({
     });
   }, [availableCount, hasEditedCount]);
 
+  const visibleTopicGroups = useMemo(() => {
+    if (selectedModules.length === 0) {
+      return moduleTopics;
+    }
+
+    return moduleTopics.filter(({ module }) => selectedModules.includes(module));
+  }, [moduleTopics, selectedModules]);
+
   const DIFFICULTIES = [
     { value: "easy", label: "Fácil" },
     { value: "medium", label: "Médio" },
@@ -75,31 +80,20 @@ export function ExamConfigForm({
     );
   }
 
-  function toggleOpenModule(module: string) {
-    setOpenModules((current) =>
-      current.includes(module)
-        ? current.filter((entry) => entry !== module)
-        : [...current, module]
-    );
+  function selectionSummary(count: number, emptyLabel: string, singularLabel: string, pluralLabel: string) {
+    if (count === 0) {
+      return emptyLabel;
+    }
+
+    if (count === 1) {
+      return `1 ${singularLabel}`;
+    }
+
+    return `${count} ${pluralLabel}`;
   }
 
   return (
     <form action={action} className="course-config-form">
-      <section className="course-kpi-grid">
-        <article className="course-kpi-card">
-          <span className="course-kpi-label">Questões disponíveis</span>
-          <strong>{availableCount}</strong>
-        </article>
-        <article className="course-kpi-card">
-          <span className="course-kpi-label">Módulos</span>
-          <strong>{modules.length}</strong>
-        </article>
-        <article className="course-kpi-card">
-          <span className="course-kpi-label">Tópicos</span>
-          <strong>{topicCount}</strong>
-        </article>
-      </section>
-
       <div className="course-config-grid">
         <section className="course-panel course-config-panel">
           <div className="course-option-group">
@@ -107,76 +101,62 @@ export function ExamConfigForm({
               <h2>Módulos</h2>
               <p>Selecione um ou mais blocos do treinamento.</p>
             </div>
-            <div className="course-chip-grid">
-              {modules.map((module) => (
-                <label key={module} className="course-chip">
-                  <input
-                    type="checkbox"
-                    name="module"
-                    value={module}
-                    checked={selectedModules.includes(module)}
-                    onChange={() => toggleValue(module, selectedModules, setSelectedModules)}
-                  />
-                  <span>{formatModuleLabel(module)}</span>
-                </label>
-              ))}
-            </div>
+            <details className="filter-dropdown">
+              <summary className="filter-dropdown-trigger">
+                <span>{selectionSummary(selectedModules.length, "Todos os módulos", "módulo", "módulos")}</span>
+                <strong>▾</strong>
+              </summary>
+              <div className="filter-dropdown-panel course-chip-grid">
+                {modules.map((module) => (
+                  <label key={module} className="course-chip">
+                    <input
+                      type="checkbox"
+                      name="module"
+                      value={module}
+                      checked={selectedModules.includes(module)}
+                      onChange={() => toggleValue(module, selectedModules, setSelectedModules)}
+                    />
+                    <span>{formatModuleLabel(module)}</span>
+                  </label>
+                ))}
+              </div>
+            </details>
           </div>
 
           <div className="course-option-group">
             <div className="course-option-heading">
               <h2>Tópicos</h2>
-              <p>Marque o módulo inteiro ou expanda apenas os tópicos dele.</p>
+              <p>Abra a lista e marque apenas os tópicos que quiser incluir.</p>
             </div>
-            <div className="module-tree">
-              {moduleTopics.map(({ module, topics }) => {
-                const isOpen = openModules.includes(module);
-
-                return (
-                  <div key={module} className="module-node">
-                    <div className="module-node-row">
-                      <label className="course-chip module-chip">
-                        <input
-                          type="checkbox"
-                          checked={selectedModules.includes(module)}
-                          onChange={() =>
-                            toggleValue(module, selectedModules, setSelectedModules)
-                          }
-                        />
-                        <span>{formatModuleLabel(module)}</span>
-                      </label>
-                      <button
-                        type="button"
-                        className={`module-expand-button ${isOpen ? "open" : ""}`}
-                        onClick={() => toggleOpenModule(module)}
-                        aria-expanded={isOpen}
-                        aria-label={isOpen ? `Recolher ${module}` : `Expandir ${module}`}
-                      >
-                        <span>▾</span>
-                      </button>
+            <details className="filter-dropdown">
+              <summary className="filter-dropdown-trigger">
+                <span>{selectionSummary(selectedTopics.length, "Todos os tópicos", "tópico", "tópicos")}</span>
+                <strong>▾</strong>
+              </summary>
+              <div className="filter-dropdown-panel topic-dropdown-panel">
+                {visibleTopicGroups.map(({ module, topics }) => (
+                  <div key={module} className="topic-group">
+                    <span className="topic-group-label">{formatModuleLabel(module)}</span>
+                    <div className="course-chip-grid">
+                      {topics.map((topic) => (
+                        <label key={`${module}-${topic}`} className="course-chip course-chip-subtle">
+                          <input
+                            type="checkbox"
+                            name="topic"
+                            value={topic}
+                            checked={selectedTopics.includes(topic)}
+                            onChange={() =>
+                              toggleValue(topic, selectedTopics, setSelectedTopics)
+                            }
+                          />
+                          <span>{formatTopicLabel(topic)}</span>
+                        </label>
+                      ))}
                     </div>
-                    {isOpen ? (
-                      <div className="module-topics-grid">
-                        {topics.map((topic) => (
-                          <label key={`${module}-${topic}`} className="course-chip course-chip-subtle">
-                            <input
-                              type="checkbox"
-                              name="topic"
-                              value={topic}
-                              checked={selectedTopics.includes(topic)}
-                              onChange={() =>
-                                toggleValue(topic, selectedTopics, setSelectedTopics)
-                              }
-                            />
-                            <span>{formatTopicLabel(topic)}</span>
-                          </label>
-                        ))}
-                      </div>
-                    ) : null}
                   </div>
-                );
-              })}
-            </div>
+                ))}
+              </div>
+            </details>
           </div>
 
           <div className="course-option-group">

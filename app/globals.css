@@ -669,6 +669,64 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.filter-dropdown {
+  display: grid;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.filter-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--course-text);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+  position: relative;
+  z-index: 2;
+  list-style: none;
+}
+
+.filter-dropdown-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.filter-dropdown-trigger:hover {
+  transform: translateY(-1px);
+}
+
+.filter-dropdown-trigger strong {
+  font-size: 1rem;
+  transition: transform 160ms ease;
+}
+
+.filter-dropdown[open] .filter-dropdown-trigger strong {
+  transform: rotate(180deg);
+}
+
+.filter-dropdown-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  position: relative;
+  z-index: 2;
+}
+
 .course-chip {
   display: flex;
   align-items: center;
@@ -683,60 +741,23 @@ h3 {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.module-tree {
+.topic-dropdown-panel {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
-.module-node {
+.topic-group {
   display: grid;
   gap: 12px;
 }
 
-.module-node-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 48px;
-  gap: 12px;
-  align-items: stretch;
-}
-
-.module-chip {
-  min-height: 52px;
-}
-
-.module-expand-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--course-text);
-  cursor: pointer;
-  transition:
-    transform 160ms ease,
-    background-color 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease;
-}
-
-.module-expand-button:hover {
-  transform: translateY(-1px);
-}
-
-.module-expand-button span {
-  display: inline-flex;
-  transition: transform 160ms ease;
-}
-
-.module-expand-button.open span {
-  transform: rotate(180deg);
-}
-
-.module-topics-grid {
-  display: grid;
-  gap: 10px;
-  padding-left: 14px;
+.topic-group-label {
+  color: var(--course-muted);
+  font-family: var(--terminal-font);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .course-form-actions {

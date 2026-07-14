@@ -58,7 +58,6 @@ export default async function CourseExamsPage({
           action={`/courses/${course.slug}/exams/start`}
           modules={modules}
           moduleTopics={moduleTopics}
-          topicCount={topics.length}
           questions={bank.questions}
         />
       </div>
