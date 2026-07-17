@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { cache } from "react";
 import type { CourseCatalogEntry, CourseCatalogMetadata } from "@/types/course";
 import { loadQuizBankByCourse } from "@/lib/quiz-bank";
 import { safeReadJson } from "@/lib/fs-utils";
@@ -10,7 +11,7 @@ function countTopics(modules: CourseCatalogMetadata["modules"]) {
   return modules.reduce((total, module) => total + module.topics.length, 0);
 }
 
-export async function loadCourseCatalog(): Promise<CourseCatalogEntry[]> {
+const loadCourseCatalogCached = cache(async (): Promise<CourseCatalogEntry[]> => {
   try {
     const courseDirs = await fs.readdir(COURSE_BANKS_DIR);
     const entries = await Promise.all(
@@ -47,6 +48,10 @@ export async function loadCourseCatalog(): Promise<CourseCatalogEntry[]> {
 
     throw error;
   }
+});
+
+export async function loadCourseCatalog(): Promise<CourseCatalogEntry[]> {
+  return loadCourseCatalogCached();
 }
 
 export async function loadCourseBySlug(courseSlug: string) {

@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { cache } from "react";
 import type { BuiltExam, ExamFilters, QuizBank, QuizQuestion } from "@/types/quiz";
 import { safeReadJson } from "@/lib/fs-utils";
 
@@ -42,6 +43,29 @@ function deterministicSort<T>(items: T[], seed: string, getKey: (item: T) => str
     const rightScore = hashString(`${seed}:${getKey(right)}`);
     return leftScore - rightScore;
   });
+}
+
+function shuffleQuestionOptions(question: QuizQuestion, seed: string): QuizQuestion {
+  const indexedOptions = question.options.map((option, index) => ({
+    option,
+    originalIndex: index
+  }));
+
+  const shuffledOptions = deterministicSort(
+    indexedOptions,
+    `${seed}:${question.id}:options`,
+    ({ option, originalIndex }) => `${originalIndex}:${option}`
+  );
+
+  const nextCorrectOption = shuffledOptions.findIndex(
+    ({ originalIndex }) => originalIndex === question.correct_option
+  );
+
+  return {
+    ...question,
+    options: shuffledOptions.map(({ option }) => option),
+    correct_option: nextCorrectOption
+  };
 }
 
 function topicKey(question: QuizQuestion) {
@@ -95,7 +119,7 @@ function selectBalancedQuestions(questions: QuizQuestion[], count: number, seed:
   return selected;
 }
 
-export async function loadQuizBank(): Promise<QuizBank> {
+const loadQuizBankCached = cache(async (): Promise<QuizBank> => {
   try {
     const courseDirs = await fs.readdir(COURSE_BANKS_DIR);
     const banks = await Promise.all(
@@ -125,9 +149,13 @@ export async function loadQuizBank(): Promise<QuizBank> {
 
     throw error;
   }
+});
+
+export async function loadQuizBank(): Promise<QuizBank> {
+  return loadQuizBankCached();
 }
 
-export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank> {
+const loadQuizBankByCourseCached = cache(async (courseSlug: string): Promise<QuizBank> => {
   try {
     const bank = await safeReadJson<QuizBank>(
       path.join(COURSE_BANKS_DIR, courseSlug, "question-bank.json")
@@ -143,6 +171,10 @@ export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank
 
     throw error;
   }
+});
+
+export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank> {
+  return loadQuizBankByCourseCached(courseSlug);
 }
 
 export function parseExamFilters(searchParams: Record<string, string | string[] | undefined>): ExamFilters {
@@ -188,6 +220,6 @@ export function buildExam(questions: QuizQuestion[], filters: ExamFilters): Buil
     filterSummary:
       filterSummaryParts.length > 0 ? filterSummaryParts.join(" • ") : "Banco completo",
     filters,
-    questions: selectedQuestions
+    questions: selectedQuestions.map((question) => shuffleQuestionOptions(question, seed))
   };
 }
