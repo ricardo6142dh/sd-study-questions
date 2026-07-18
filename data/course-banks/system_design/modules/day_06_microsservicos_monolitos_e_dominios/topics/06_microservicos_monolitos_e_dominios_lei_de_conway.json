@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+  "questions": [
+    {
+      "id": "06_microservicos_monolitos_e_dominios_lei_de_conway_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+      "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza uma arquitetura monolítica em relação à organização dos seus componentes?",
+      "options": [
+        "Funcionalidades e componentes vivem na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
+        "O sistema é dividido em serviços menores e independentes, cada um com deploy independente",
+        "Cada equipe escolhe livremente sua própria tecnologia sem qualquer integração",
+        "A aplicação é sempre distribuída em múltiplos bancos de dados para aumentar a autonomia"
+      ],
+      "answer": "Funcionalidades e componentes vivem na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
+      "explanation": "No monólito, todos os componentes coexistem na mesma unidade de implantação, o que facilita a comunicação interna mas cria acoplamento que pode dificultar a escala independente de partes do sistema.",
+      "prompt": "O que caracteriza uma arquitetura monolítica em relação à organização dos seus componentes?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_microservicos_monolitos_e_dominios_lei_de_conway_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+      "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que define uma arquitetura de microsserviços em relação à divisão do sistema?",
+      "options": [
+        "Sistema composto por serviços menores e independentes, cada um cobrindo um recorte específico de negócio",
+        "Uma única aplicação centralizada que prioriza consistência de dados acima de tudo",
+        "Uma técnica de cache para reduzir latência entre requisições",
+        "Uma forma de organizar apenas o banco de dados, sem impacto na aplicação"
+      ],
+      "answer": "Sistema composto por serviços menores e independentes, cada um cobrindo um recorte específico de negócio",
+      "explanation": "Microsserviços decompõem a aplicação em serviços autônomos alinhados a contextos de negócio, permitindo que cada um evolua, escale e seja implantado de forma independente.",
+      "prompt": "O que define uma arquitetura de microsserviços em relação à divisão do sistema?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_microservicos_monolitos_e_dominios_lei_de_conway_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+      "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a ideia central da Lei de Conway?",
+      "options": [
+        "A arquitetura do sistema tende a refletir a estrutura de comunicação da organização que o constrói",
+        "Sistemas distribuídos sempre exigem múltiplos bancos de dados para funcionar",
+        "Toda aplicação deve ser dividida em serviços para acompanhar o crescimento",
+        "A estrutura da equipe não influencia decisões arquiteturais"
+      ],
+      "answer": "A arquitetura do sistema tende a refletir a estrutura de comunicação da organização que o constrói",
+      "explanation": "A Lei de Conway estabelece que organizações produzem sistemas que espelham sua estrutura de comunicação interna — times separados tendem a criar componentes separados, enquanto times integrados tendem a produzir sistemas mais coesos.",
+      "prompt": "Qual é a ideia central da Lei de Conway?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_microservicos_monolitos_e_dominios_lei_de_conway_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+      "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em que cenário microsserviços tendem a fazer mais sentido como escolha arquitetural?",
+      "options": [
+        "Quando há domínios maduros, cargas distintas e necessidade de autonomia operacional",
+        "Quando a prioridade é manter tudo em uma única base de código para simplificar a consistência",
+        "Quando o sistema ainda não tem recortes de negócio claros e a equipe quer evitar decisões",
+        "Quando a aplicação precisa ser sempre monolítica para reduzir a comunicação entre times"
+      ],
+      "answer": "Quando há domínios maduros, cargas distintas e necessidade de autonomia operacional",
+      "explanation": "Microsserviços entregam mais valor quando os limites de domínio já estão bem definidos, há necessidade de escalar partes independentemente e times precisam de autonomia para fazer deploy sem coordenação central.",
+      "prompt": "Em que cenário microsserviços tendem a fazer mais sentido como escolha arquitetural?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_microservicos_monolitos_e_dominios_lei_de_conway_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "06_microservicos_monolitos_e_dominios_lei_de_conway",
+      "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off entre arquitetura monolítica e microsserviços?",
+      "options": [
+        "Monolito favorece simplicidade e consistência de dados; microsserviços favorecem autonomia operacional",
+        "Monolito favorece deploy independente; microsserviços favorecem uma única base de código",
+        "Monolito é sempre melhor para escala; microsserviços são sempre piores para resiliência",
+        "Monolito elimina a influência da organização; microsserviços a tornam irrelevante"
+      ],
+      "answer": "Monolito favorece simplicidade e consistência de dados; microsserviços favorecem autonomia operacional",
+      "explanation": "O monolito reduz a complexidade de comunicação entre módulos e facilita transações ACID, enquanto microsserviços permitem que times façam deploy e escale partes do sistema de forma independente, ao custo de maior complexidade operacional.",
+      "prompt": "Qual é o principal trade-off entre arquitetura monolítica e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Lei de Conway",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "02_tipos_de_bancos_de_dados",
+  "questions": [
+    {
+      "id": "02_tipos_de_bancos_de_dados_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "02_tipos_de_bancos_de_dados",
+      "topic_title": "Tipos de Bancos de Dados",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa descreve corretamente um banco de dados relacional?",
+      "options": [
+        "Usa tabelas e relacionamentos entre tabelas, sendo associado a SQL e ACID",
+        "É sempre orientado a documentos e prioriza escalabilidade horizontal acima de consistência",
+        "Não possui estrutura de dados definida e não usa consultas",
+        "É definido principalmente por indexação por tempo e padrão append-only"
+      ],
+      "answer": "Usa tabelas e relacionamentos entre tabelas, sendo associado a SQL e ACID",
+      "explanation": "Bancos relacionais organizam dados em tabelas com relacionamentos explícitos entre elas, utilizam SQL como linguagem de consulta e seguem as propriedades ACID para garantir consistência forte nas transações.",
+      "prompt": "Qual alternativa descreve corretamente um banco de dados relacional?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Tipos de Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_tipos_de_bancos_de_dados_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "02_tipos_de_bancos_de_dados",
+      "topic_title": "Tipos de Bancos de Dados",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal característica dos bancos de dados não relacionais (NoSQL)?",
+      "options": [
+        "Maior flexibilidade e uso quando se busca escalabilidade horizontal",
+        "Uso obrigatório de tabelas com relacionamentos explícitos",
+        "Garantia de consistência forte no mesmo sentido dos relacionais",
+        "Dependência exclusiva de SQL para consultas"
+      ],
+      "answer": "Maior flexibilidade e uso quando se busca escalabilidade horizontal",
+      "explanation": "Bancos NoSQL renunciam ao esquema rígido e às garantias ACID dos relacionais em favor de maior flexibilidade de modelagem e capacidade de escalar horizontalmente, distribuindo dados por múltiplos nós com menor fricção.",
+      "prompt": "Qual é a principal característica dos bancos de dados não relacionais (NoSQL)?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Tipos de Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_tipos_de_bancos_de_dados_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "02_tipos_de_bancos_de_dados",
+      "topic_title": "Tipos de Bancos de Dados",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação melhor descreve o papel de ACID em bancos de dados relacionais?",
+      "options": [
+        "É o termo usado para descrever a consistência em bancos relacionais",
+        "É um princípio citado apenas para bancos não relacionais",
+        "É um mecanismo de indexação por tempo",
+        "É sinônimo de escalabilidade horizontal"
+      ],
+      "answer": "É o termo usado para descrever a consistência em bancos relacionais",
+      "explanation": "ACID (Atomicidade, Consistência, Isolamento, Durabilidade) é o conjunto de propriedades que os bancos relacionais garantem para cada transação, sendo a base do modelo de consistência forte desses sistemas.",
+      "prompt": "Qual afirmação melhor descreve o papel de ACID em bancos de dados relacionais?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Tipos de Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_tipos_de_bancos_de_dados_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "02_tipos_de_bancos_de_dados",
+      "topic_title": "Tipos de Bancos de Dados",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é o Teorema CAP?",
+      "options": [
+        "É o trade-off entre consistência, disponibilidade e tolerância a partições em sistemas distribuídos",
+        "É um modelo de tabelas e relacionamentos entre tabelas",
+        "É um princípio exclusivo de bancos relacionais",
+        "É uma técnica de indexação para reduzir custo de escrita"
+      ],
+      "answer": "É o trade-off entre consistência, disponibilidade e tolerância a partições em sistemas distribuídos",
+      "explanation": "O Teorema CAP estabelece que um sistema distribuído consegue garantir, no máximo, duas das três propriedades simultaneamente: Consistência (C), Disponibilidade (A) e Tolerância a Partições (P), forçando designers a escolher quais sacrificar em cenários de falha de rede.",
+      "prompt": "O que é o Teorema CAP?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Tipos de Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_tipos_de_bancos_de_dados_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "02_tipos_de_bancos_de_dados",
+      "topic_title": "Tipos de Bancos de Dados",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a relação entre modelos de dados e indexação em bancos de dados?",
+      "options": [
+        "Modelos de dados influenciam a indexação",
+        "Indexação independe totalmente do modelo de dados",
+        "Somente bancos relacionais usam indexação",
+        "Indexação substitui a necessidade de modelo de dados"
+      ],
+      "answer": "Modelos de dados influenciam a indexação",
+      "explanation": "A forma como os dados são estruturados (orientado a linhas, colunas, documentos, grafos etc.) determina quais estratégias de indexação são mais adequadas e eficientes, pois o layout físico dos dados impacta diretamente o desempenho das leituras.",
+      "prompt": "Qual é a relação entre modelos de dados e indexação em bancos de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Tipos de Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

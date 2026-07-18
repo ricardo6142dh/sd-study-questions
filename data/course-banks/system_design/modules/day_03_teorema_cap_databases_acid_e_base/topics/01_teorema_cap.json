@@ -1,0 +1,115 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "01_teorema_cap",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_teorema_cap",
+      "question": "Por que a formulação do Teorema CAP como 'escolha 2 de 3' é considerada uma simplificação didática em sistemas distribuídos modernos?",
+      "options": [
+        "Porque a Tolerância a Partições (P) é uma escolha opcional que o arquiteto pode decidir não implementar.",
+        "Porque em sistemas distribuídos a partição de rede é um evento inevitável, tornando a escolha real entre Consistência (C) e Disponibilidade (A) durante falhas.",
+        "Porque o teorema CAP só se aplica a bancos de dados relacionais e não a sistemas distribuídos.",
+        "Porque a Disponibilidade (A) e a Consistência (C) podem ser garantidas simultaneamente em qualquer escala sem impacto na latência."
+      ],
+      "answer": "Porque em sistemas distribuídos a partição de rede é um evento inevitável, tornando a escolha real entre Consistência (C) e Disponibilidade (A) durante falhas.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-01_teorema_cap-q001",
+      "prompt": "Por que a formulação do Teorema CAP como 'escolha 2 de 3' é considerada uma simplificação didática em sistemas distribuídos modernos?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Porque em sistemas distribuídos a partição de rede é um evento inevitável, tornando a escolha real entre Consistência (C) e Disponibilidade (A) durante falhas.",
+      "recommended_review": {
+        "topic_title": "Teorema CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_teorema_cap",
+      "question": "Qual é a principal diferença entre os modelos ACID e BASE no contexto de sistemas distribuídos?",
+      "options": [
+        "ACID prioriza a escalabilidade horizontal, enquanto BASE prioriza a integridade transacional estrita.",
+        "ACID é utilizado apenas em sistemas NoSQL, enquanto BASE é exclusivo de bancos de dados relacionais.",
+        "ACID foca na confiabilidade transacional e consistência forte, enquanto BASE foca em disponibilidade e escalabilidade através da consistência eventual.",
+        "ACID e BASE são modelos idênticos, sendo BASE apenas um nome comercial para ACID em nuvem."
+      ],
+      "answer": "ACID foca na confiabilidade transacional e consistência forte, enquanto BASE foca em disponibilidade e escalabilidade através da consistência eventual.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-01_teorema_cap-q002",
+      "prompt": "Qual é a principal diferença entre os modelos ACID e BASE no contexto de sistemas distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: ACID foca na confiabilidade transacional e consistência forte, enquanto BASE foca em disponibilidade e escalabilidade através da consistência eventual.",
+      "recommended_review": {
+        "topic_title": "Teorema CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_teorema_cap",
+      "question": "O que o modelo PACELC adiciona à discussão que o Teorema CAP não cobre?",
+      "options": [
+        "Ele introduz o trade-off entre Latência (L) e Consistência (C) em cenários de operação normal, quando não há partição de rede.",
+        "Ele substitui completamente o CAP, tornando o conceito de partição de rede irrelevante para o design de sistemas.",
+        "Ele foca exclusivamente em como otimizar o hardware dos servidores para evitar falhas de rede.",
+        "Ele define que a consistência deve ser sempre priorizada, independentemente da latência ou disponibilidade."
+      ],
+      "answer": "Ele introduz o trade-off entre Latência (L) e Consistência (C) em cenários de operação normal, quando não há partição de rede.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-01_teorema_cap-q003",
+      "prompt": "O que o modelo PACELC adiciona à discussão que o Teorema CAP não cobre?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "explanation": "Gabarito: Ele introduz o trade-off entre Latência (L) e Consistência (C) em cenários de operação normal, quando não há partição de rede.",
+      "recommended_review": {
+        "topic_title": "Teorema CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_teorema_cap",
+      "question": "Em um sistema distribuído, um banco de dados classificado como CP (Consistency + Partition Tolerance) prioriza:",
+      "options": [
+        "A resposta imediata para o usuário, mesmo que o dado retornado esteja desatualizado.",
+        "A integridade dos dados, podendo sacrificar a disponibilidade do sistema caso não consiga garantir a consistência entre os nós durante uma partição.",
+        "A latência mínima, ignorando completamente a necessidade de sincronização entre réplicas.",
+        "A disponibilidade total, permitindo que cada nó responda independentemente sem verificar o estado dos outros."
+      ],
+      "answer": "A integridade dos dados, podendo sacrificar a disponibilidade do sistema caso não consiga garantir a consistência entre os nós durante uma partição.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-01_teorema_cap-q005",
+      "prompt": "Em um sistema distribuído, um banco de dados classificado como CP (Consistency + Partition Tolerance) prioriza:",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: A integridade dos dados, podendo sacrificar a disponibilidade do sistema caso não consiga garantir a consistência entre os nós durante uma partição.",
+      "recommended_review": {
+        "topic_title": "Teorema CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

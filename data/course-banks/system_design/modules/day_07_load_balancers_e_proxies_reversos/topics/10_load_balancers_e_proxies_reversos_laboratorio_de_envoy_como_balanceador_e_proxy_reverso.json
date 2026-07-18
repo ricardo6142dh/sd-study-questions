@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+  "questions": [
+    {
+      "id": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+      "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Ao usar o Envoy, qual é a diferença principal entre configurá-lo como load balancer e como proxy reverso?",
+      "options": [
+        "Como load balancer, ele distribui requisições entre app1, app2 e app3; como proxy reverso, ele fica na frente de cada backend com controle mais individual",
+        "Como load balancer, ele faz cache de respostas; como proxy reverso, ele apenas replica tráfego entre instâncias",
+        "Como load balancer, ele atua somente em Layer 4; como proxy reverso, ele atua somente em Layer 2",
+        "Como load balancer, ele elimina a necessidade de backends; como proxy reverso, ele substitui o cliente"
+      ],
+      "answer": "Como load balancer, ele distribui requisições entre app1, app2 e app3; como proxy reverso, ele fica na frente de cada backend com controle mais individual",
+      "explanation": "No papel de load balancer, o Envoy distribui o tráfego horizontalmente entre múltiplas instâncias; no papel de proxy reverso, ele atua na frente de um backend específico, permitindo controle granular sobre roteamento, autenticação e observabilidade daquele serviço.",
+      "prompt": "Ao usar o Envoy, qual é a diferença principal entre configurá-lo como load balancer e como proxy reverso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+      "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que o load balancing weight altera no comportamento do Envoy como balanceador?",
+      "options": [
+        "A distribuição de tráfego entre os destinos, fazendo alguns receberem mais requisições que outros",
+        "A quantidade de backends existentes, criando novos nós automaticamente",
+        "O protocolo de transporte, trocando TCP por UDP",
+        "O tempo de vida do cliente, encerrando conexões ociosas"
+      ],
+      "answer": "A distribuição de tráfego entre os destinos, fazendo alguns receberem mais requisições que outros",
+      "explanation": "O peso serve para influenciar a distribuição, quebrando a ideia de que o balanceamento precisa ser uniforme.",
+      "prompt": "O que o load balancing weight altera no comportamento do Envoy como balanceador?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+      "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto do laboratório, o que melhor descreve o timeout?",
+      "options": [
+        "Um limite de tempo para aguardar resposta, configurável no balanceador e também de forma segregada por backend/proxy",
+        "Um mecanismo de priorização de requisições com base em peso",
+        "Uma técnica para compactar payload antes do envio",
+        "Um contador de conexões abertas por cliente"
+      ],
+      "answer": "Um limite de tempo para aguardar resposta, configurável no balanceador e também de forma segregada por backend/proxy",
+      "explanation": "O tópico mostra timeout como limite temporal, com configuração em níveis diferentes e comportamento granular por backend.",
+      "prompt": "No contexto do laboratório, o que melhor descreve o timeout?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+      "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quando o rate limit local de um proxy reverso é excedido no laboratório, qual efeito é esperado?",
+      "options": [
+        "Throttling, com rejeição ou corte de requisições acima da capacidade",
+        "Failover automático para outro cluster global",
+        "Aumento imediato do bucket sem reposição periódica",
+        "Conversão do proxy reverso em load balancer"
+      ],
+      "answer": "Throttling, com rejeição ou corte de requisições acima da capacidade",
+      "explanation": "Quando o rate limit é excedido, o proxy reverso aplica throttling: requisições acima da capacidade são rejeitadas ou descartadas, protegendo os backends de sobrecarga.",
+      "prompt": "Quando o rate limit local de um proxy reverso é excedido no laboratório, qual efeito é esperado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "10_load_balancers_e_proxies_reversos_laboratorio_de_envoy_como_balanceador_e_proxy_reverso",
+      "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No algoritmo de token bucket para rate limiting, qual afirmação descreve corretamente seu comportamento?",
+      "options": [
+        "Cada requisição consome tokens e o bucket é reposto periodicamente",
+        "Cada requisição cria tokens novos e o bucket nunca se esgota",
+        "Os tokens são compartilhados globalmente entre todos os clientes sem limite",
+        "O bucket só é usado para decidir o caminho de roteamento por host"
+      ],
+      "answer": "Cada requisição consome tokens e o bucket é reposto periodicamente",
+      "explanation": "No token bucket, cada requisição consome um token disponível no balde; os tokens são repostos a uma taxa fixa ao longo do tempo. Quando o bucket se esgota, novas requisições são bloqueadas (throttling), garantindo que o volume de tráfego não ultrapasse a capacidade definida.",
+      "prompt": "No algoritmo de token bucket para rate limiting, qual afirmação descreve corretamente seu comportamento?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Laboratorio de Envoy como Balanceador e Proxy Reverso",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

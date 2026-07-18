@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+  "questions": [
+    {
+      "id": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+      "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza a evicção de cache?",
+      "options": [
+        "Remover itens quando o cache atinge sua capacidade máxima para liberar espaço",
+        "Remover itens apenas quando a origem dos dados é atualizada",
+        "Marcar itens como inválidos sem liberar espaço",
+        "Aumentar o TTL dos itens para evitar misses"
+      ],
+      "answer": "Remover itens quando o cache atinge sua capacidade máxima para liberar espaço",
+      "explanation": "Evicção ocorre por falta de espaço no cache, não por mudança na origem.",
+      "prompt": "O que caracteriza a evicção de cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+      "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa descreve melhor a diferença entre invalidação e evicção de cache?",
+      "options": [
+        "Invalidação remove ou marca itens como inválidos; evicção libera espaço quando o cache lota",
+        "Invalidação acontece só quando o cache lota; evicção acontece só por TTL",
+        "Invalidação e evicção são sinônimos e sempre ocorrem pelo mesmo motivo",
+        "Evicção sempre atualiza o item no cache; invalidação sempre o preserva"
+      ],
+      "answer": "Invalidação remove ou marca itens como inválidos; evicção libera espaço quando o cache lota",
+      "explanation": "A distinção central é motivo: invalidação reage ao dado, evicção reage à capacidade.",
+      "prompt": "Qual alternativa descreve melhor a diferença entre invalidação e evicção de cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+      "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como a política LRU decide qual item remover?",
+      "options": [
+        "Remove o item menos usado recentemente",
+        "Remove o item menos frequentemente acessado",
+        "Remove o item mais antigo inserido",
+        "Remove um item aleatoriamente"
+      ],
+      "answer": "Remove o item menos usado recentemente",
+      "explanation": "LRU usa recência de acesso como critério de remoção.",
+      "prompt": "Como a política LRU decide qual item remover?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+      "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal diferença entre LRU e LFU?",
+      "options": [
+        "LRU usa recência de acesso; LFU usa frequência de acesso",
+        "LRU usa frequência de acesso; LFU usa recência de acesso",
+        "LRU remove por ordem de inserção; LFU remove aleatoriamente",
+        "LRU e LFU são equivalentes, mudando apenas o nome"
+      ],
+      "answer": "LRU usa recência de acesso; LFU usa frequência de acesso",
+      "explanation": "LRU olha para o último uso; LFU olha para quantas vezes o item foi acessado.",
+      "prompt": "Qual é a principal diferença entre LRU e LFU?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "03_estrategias_de_cache_politicas_de_eviccao_e_invalidacao_de_cache",
+      "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em uma política FIFO, qual item é removido quando há necessidade de liberar espaço?",
+      "options": [
+        "O item mais antigo inserido",
+        "O item menos usado recentemente",
+        "O item menos frequentemente acessado",
+        "Um item escolhido aleatoriamente"
+      ],
+      "answer": "O item mais antigo inserido",
+      "explanation": "FIFO segue a ordem de entrada: primeiro a entrar, primeiro a sair.",
+      "prompt": "Em uma política FIFO, qual item é removido quando há necessidade de liberar espaço?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Politicas de Eviccao e Invalidacao de Cache",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+  "questions": [
+    {
+      "id": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual das alternativas melhor descreve a estrutura de um monólito?",
+      "options": [
+        "Uma aplicação em uma única unidade lógica, normalmente com mesma base de código, processo e banco de dados",
+        "Um conjunto de serviços independentes, cada um com deploy e banco próprios",
+        "Uma arquitetura definida principalmente por bounded contexts e linguagem ubíqua",
+        "Uma divisão do sistema baseada apenas na estrutura organizacional"
+      ],
+      "answer": "Uma aplicação em uma única unidade lógica, normalmente com mesma base de código, processo e banco de dados",
+      "explanation": "Um monólito agrupa toda a aplicação em uma única unidade lógica implantada de forma conjunta, compartilhando normalmente a mesma base de código, processo em execução e banco de dados.",
+      "prompt": "Qual das alternativas melhor descreve a estrutura de um monólito?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual cenário o uso de um monólito costuma ser mais adequado?",
+      "options": [
+        "MVPs, produtos novos e times pequenos, quando simplicidade e velocidade de entrega são prioridades",
+        "Múltiplos times autônomos com domínios maduros e necessidade forte de deploy independente",
+        "Sistemas que exigem fragmentação máxima desde o início, mesmo sem clareza de domínio",
+        "Casos em que a principal meta é reduzir o blast radius por serviço"
+      ],
+      "answer": "MVPs, produtos novos e times pequenos, quando simplicidade e velocidade de entrega são prioridades",
+      "explanation": "O monólito é mais adequado quando a prioridade é simplicidade e velocidade — como em MVPs ou times pequenos — pois simplifica o desenvolvimento, o deploy e o debugging sem a complexidade operacional dos microsserviços.",
+      "prompt": "Em qual cenário o uso de um monólito costuma ser mais adequado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quais são os principais elementos que o Domain-Driven Design (DDD) ajuda a definir em um sistema?",
+      "options": [
+        "Domínios, limites de responsabilidade e linguagem ubíqua",
+        "Somente a tecnologia de banco de dados mais adequada",
+        "A ordem exata de deploy dos serviços em produção",
+        "A estratégia de cache e invalidação entre réplicas"
+      ],
+      "answer": "Domínios, limites de responsabilidade e linguagem ubíqua",
+      "explanation": "DDD organiza o sistema a partir do domínio de negócio, estabelecendo bounded contexts que delimitam responsabilidades e uma linguagem ubíqua que alinha equipes técnicas e de negócio.",
+      "prompt": "Quais são os principais elementos que o Domain-Driven Design (DDD) ajuda a definir em um sistema?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve melhor a linguagem ubíqua no contexto do DDD?",
+      "options": [
+        "Uma linguagem comum entre equipe técnica e negócio",
+        "Uma linguagem usada apenas na camada de infraestrutura",
+        "Um protocolo de comunicação entre microsserviços",
+        "Um padrão de persistência para compartilhar banco de dados"
+      ],
+      "answer": "Uma linguagem comum entre equipe técnica e negócio",
+      "explanation": "A linguagem ubíqua é a linguagem compartilhada entre negócio e equipe técnica para alinhar entendimento e modelagem.",
+      "prompt": "Qual afirmação descreve melhor a linguagem ubíqua no contexto do DDD?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "05_microservicos_monolitos_e_dominios_domain_driven_design_conceitos_e_componentes",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off entre a arquitetura monolítica e a de microsserviços?",
+      "options": [
+        "Simplicidade e consistência versus distribuição, autonomia e resiliência",
+        "Menor uso de memória versus maior uso de CPU",
+        "SQL versus NoSQL como escolha obrigatória",
+        "Cache local versus cache distribuído como regra geral"
+      ],
+      "answer": "Simplicidade e consistência versus distribuição, autonomia e resiliência",
+      "explanation": "O monólito oferece menor complexidade operacional e consistência de dados mais fácil de garantir, enquanto microsserviços trazem autonomia de deploy e resiliência por isolamento de falhas — mas ao custo de comunicação distribuída, eventual consistency e complexidade operacional elevada.",
+      "prompt": "Qual é o principal trade-off entre a arquitetura monolítica e a de microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design, Conceitos e Componentes",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

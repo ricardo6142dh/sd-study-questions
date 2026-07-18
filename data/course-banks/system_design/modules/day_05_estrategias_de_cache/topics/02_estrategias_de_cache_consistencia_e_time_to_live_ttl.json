@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+  "questions": [
+    {
+      "id": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+      "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em uma estratégia de cache, o que melhor descreve a consistência em relação à fonte original (golden source)?",
+      "options": [
+        "O grau em que o cache reflete o estado atual da fonte original",
+        "A capacidade do cache de aumentar a capacidade de armazenamento da fonte original",
+        "A garantia de que o cache sempre terá a versão mais nova antes da fonte original",
+        "A política usada para liberar espaço quando o cache atinge o limite"
+      ],
+      "answer": "O grau em que o cache reflete o estado atual da fonte original",
+      "explanation": "Consistência mede o quanto o cache acompanha a fonte original; ele pode divergir e ficar desatualizado.",
+      "prompt": "Em uma estratégia de cache, o que melhor descreve a consistência em relação à fonte original (golden source)?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+      "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é stale data em um cache?",
+      "options": [
+        "Um dado em cache que ficou desatualizado em relação à fonte original",
+        "Um dado que foi removido do cache por falta de capacidade",
+        "Um dado que nunca foi lido e por isso não pode ser usado",
+        "Um dado que foi atualizado automaticamente pela aplicação"
+      ],
+      "answer": "Um dado em cache que ficou desatualizado em relação à fonte original",
+      "explanation": "Stale data é a cópia antiga que permanece no cache após a mudança na fonte original.",
+      "prompt": "O que é stale data em um cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+      "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel da invalidação de cache quando a fonte original muda?",
+      "options": [
+        "Remover ou tornar inválida a entrada de cache associada ao dado alterado",
+        "Aumentar o TTL para evitar novas leituras na origem",
+        "Duplicar o dado em outra camada para garantir consistência forte",
+        "Manter a entrada no cache até que ocorra uma falha de leitura"
+      ],
+      "answer": "Remover ou tornar inválida a entrada de cache associada ao dado alterado",
+      "explanation": "A invalidação reage à mudança na origem para reduzir a chance de servir stale data.",
+      "prompt": "Qual é o papel da invalidação de cache quando a fonte original muda?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+      "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que o TTL (Time To Live) controla em uma entrada de cache?",
+      "options": [
+        "O tempo de vida útil da entrada antes de expirar",
+        "A ordem em que as entradas serão removidas por capacidade",
+        "A frequência com que a fonte original é atualizada",
+        "A quantidade máxima de réplicas que podem ler o dado"
+      ],
+      "answer": "O tempo de vida útil da entrada antes de expirar",
+      "explanation": "TTL define por quanto tempo o item pode permanecer válido no cache.",
+      "prompt": "O que o TTL (Time To Live) controla em uma entrada de cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "02_estrategias_de_cache_consistencia_e_time_to_live_ttl",
+      "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação melhor resume a relação entre TTL e consistência de cache?",
+      "options": [
+        "TTL ajuda a limitar stale data, mas não substitui totalmente a invalidação quando a precisão é crítica",
+        "TTL garante consistência forte porque remove qualquer divergência imediatamente",
+        "TTL elimina a necessidade de consultar a fonte original em qualquer cenário",
+        "TTL só faz sentido em cache local e não em sistemas distribuídos"
+      ],
+      "answer": "TTL ajuda a limitar stale data, mas não substitui totalmente a invalidação quando a precisão é crítica",
+      "explanation": "O TTL reduz a permanência do dado velho, mas não corrige a divergência no instante da mudança.",
+      "prompt": "Qual afirmação melhor resume a relação entre TTL e consistência de cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Consistencia e Time To Live (TTL)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

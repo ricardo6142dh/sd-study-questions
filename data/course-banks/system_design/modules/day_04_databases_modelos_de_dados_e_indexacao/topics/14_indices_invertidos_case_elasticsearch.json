@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "14_indices_invertidos_case_elasticsearch",
+  "questions": [
+    {
+      "id": "14_indices_invertidos_case_elasticsearch_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "14_indices_invertidos_case_elasticsearch",
+      "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um índice invertido no contexto do Elasticsearch?",
+      "options": [
+        "Uma estrutura que mapeia cada palavra para os documentos em que ela aparece",
+        "Uma estrutura que organiza os dados primeiro por documento e depois por palavra",
+        "Um mecanismo de compressão de documentos para reduzir o tamanho do índice",
+        "Uma tabela que armazena apenas metadados de schema sem relação com termos"
+      ],
+      "answer": "Uma estrutura que mapeia cada palavra para os documentos em que ela aparece",
+      "explanation": "O índice invertido associa termos aos documentos correspondentes, o que acelera buscas por palavras.",
+      "prompt": "O que caracteriza um índice invertido no contexto do Elasticsearch?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "14_indices_invertidos_case_elasticsearch_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "14_indices_invertidos_case_elasticsearch",
+      "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal benefício do índice invertido para buscas textuais no Elasticsearch?",
+      "options": [
+        "Acelerar buscas por palavras em texto",
+        "Eliminar a necessidade de indexação",
+        "Garantir consistência forte em qualquer carga de escrita",
+        "Substituir completamente o armazenamento dos documentos"
+      ],
+      "answer": "Acelerar buscas por palavras em texto",
+      "explanation": "O índice invertido mapeia cada termo às posições em que ocorre nos documentos, tornando a busca por palavras praticamente instantânea mesmo em grandes coleções, pois elimina a necessidade de varredura sequencial.",
+      "prompt": "Qual é o principal benefício do índice invertido para buscas textuais no Elasticsearch?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "14_indices_invertidos_case_elasticsearch_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "14_indices_invertidos_case_elasticsearch",
+      "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que representa o processo de indexação no Elasticsearch?",
+      "options": [
+        "Criar o mapeamento entre palavras e os documentos correspondentes",
+        "Ordenar os documentos apenas por data de inserção",
+        "Compactar os dados para reduzir o uso de disco",
+        "Executar consultas sem preparar nenhuma estrutura auxiliar"
+      ],
+      "answer": "Criar o mapeamento entre palavras e os documentos correspondentes",
+      "explanation": "Ao indexar um documento, o Elasticsearch analisa seu conteúdo, extrai os termos e registra em qual documento cada termo aparece, construindo assim o índice invertido que viabiliza buscas eficientes.",
+      "prompt": "O que representa o processo de indexação no Elasticsearch?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "14_indices_invertidos_case_elasticsearch_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "14_indices_invertidos_case_elasticsearch",
+      "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa descreve melhor a diferença conceitual entre um índice invertido e uma organização por documento?",
+      "options": [
+        "O índice invertido organiza por termo; a organização por documento organiza por registro",
+        "O índice invertido armazena apenas números; a organização por documento armazena apenas texto",
+        "O índice invertido elimina a necessidade de documentos; a organização por documento elimina a necessidade de termos",
+        "Não existe diferença conceitual entre as duas abordagens"
+      ],
+      "answer": "O índice invertido organiza por termo; a organização por documento organiza por registro",
+      "explanation": "A ideia central é inverter a organização: do documento para o termo que aponta para documentos.",
+      "prompt": "Qual alternativa descreve melhor a diferença conceitual entre um índice invertido e uma organização por documento?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "14_indices_invertidos_case_elasticsearch_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "14_indices_invertidos_case_elasticsearch",
+      "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o índice invertido se relaciona com dados estruturados?",
+      "options": [
+        "Tende a ser menos eficiente para dados estruturados do que para dados não estruturados, como texto livre",
+        "É a solução ideal para indexar tabelas com muitos campos e relacionamentos",
+        "Dados estruturados não podem ser indexados de nenhuma forma",
+        "O Elasticsearch foi projetado exclusivamente para dados estruturados"
+      ],
+      "answer": "Tende a ser menos eficiente para dados estruturados do que para dados não estruturados, como texto livre",
+      "explanation": "O índice invertido foi concebido para mapear termos a documentos em coleções de texto não estruturado; para dados com esquema bem definido e consultas por campos específicos, estruturas como B-tree ou índices de hash costumam ser mais apropriadas.",
+      "prompt": "Como o índice invertido se relaciona com dados estruturados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indices Invertidos e o Caso Elasticsearch",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

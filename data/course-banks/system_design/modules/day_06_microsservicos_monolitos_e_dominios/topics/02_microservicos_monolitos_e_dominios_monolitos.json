@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "02_microservicos_monolitos_e_dominios_monolitos",
+  "questions": [
+    {
+      "id": "02_microservicos_monolitos_e_dominios_monolitos_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "02_microservicos_monolitos_e_dominios_monolitos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza uma arquitetura monolítica?",
+      "options": [
+        "Componentes e funcionalidades ficam na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
+        "Serviços independentes se comunicam apenas por eventos assíncronos",
+        "Cada módulo é implantado separadamente com contratos de rede explícitos",
+        "A aplicação é dividida em domínios isolados sem qualquer compartilhamento"
+      ],
+      "answer": "Componentes e funcionalidades ficam na mesma unidade lógica, normalmente compartilhando base de código, processo e banco de dados",
+      "explanation": "No monólito, toda a aplicação é uma única unidade deployável onde módulos compartilham o mesmo processo e, geralmente, o mesmo banco de dados, o que simplifica a consistência mas limita escala independente.",
+      "prompt": "O que caracteriza uma arquitetura monolítica?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_microservicos_monolitos_e_dominios_monolitos_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "02_microservicos_monolitos_e_dominios_monolitos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a diferença central entre monólito e microsserviços do ponto de vista de consistência e escalabilidade?",
+      "options": [
+        "Monólito favorece consistência de dados; microsserviços favorecem escala horizontal por serviço",
+        "Monólito sempre escala melhor; microsserviços sempre têm consistência mais simples",
+        "Monólito exige contratos explícitos; microsserviços compartilham o mesmo banco por padrão",
+        "Monólito é sempre distribuído; microsserviços são sempre uma única unidade lógica"
+      ],
+      "answer": "Monólito favorece consistência de dados; microsserviços favorecem escala horizontal por serviço",
+      "explanation": "O banco de dados compartilhado do monólito torna transações e consistência mais simples, enquanto microsserviços permitem escalar e evoluir cada serviço de forma independente, ao custo de maior complexidade de consistência distribuída.",
+      "prompt": "Qual é a diferença central entre monólito e microsserviços do ponto de vista de consistência e escalabilidade?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_microservicos_monolitos_e_dominios_monolitos_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "02_microservicos_monolitos_e_dominios_monolitos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a consistência de dados tende a ser mais fácil em monólitos do que em microsserviços?",
+      "options": [
+        "Porque funcionalidades e componentes compartilham a mesma unidade lógica, frequentemente com banco de dados comum",
+        "Porque cada serviço é isolado por rede e não precisa coordenar dados",
+        "Porque a comunicação por contratos explícitos elimina qualquer necessidade de consistência",
+        "Porque a divisão em vários processos reduz automaticamente conflitos de escrita"
+      ],
+      "answer": "Porque funcionalidades e componentes compartilham a mesma unidade lógica, frequentemente com banco de dados comum",
+      "explanation": "Com um único banco de dados compartilhado, transações ACID cobrem múltiplos módulos sem necessidade de coordenação distribuída, tornando a consistência intrinsecamente mais simples.",
+      "prompt": "Por que a consistência de dados tende a ser mais fácil em monólitos do que em microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_microservicos_monolitos_e_dominios_monolitos_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "02_microservicos_monolitos_e_dominios_monolitos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel do Domain-Driven Design (DDD) na definição de arquiteturas de software?",
+      "options": [
+        "Ajudar a definir limites de domínio e organizar responsabilidades com uma linguagem comum entre negócio e engenharia",
+        "Substituir a necessidade de contratos explícitos entre serviços",
+        "Garantir que todo sistema deva ser dividido em microsserviços",
+        "Eliminar a influência da estrutura organizacional sobre a arquitetura"
+      ],
+      "answer": "Ajudar a definir limites de domínio e organizar responsabilidades com uma linguagem comum entre negócio e engenharia",
+      "explanation": "DDD usa conceitos como Bounded Context e Ubiquitous Language para alinhar o modelo de software com o domínio de negócio, facilitando a divisão clara de responsabilidades entre times e serviços.",
+      "prompt": "Qual é o papel do Domain-Driven Design (DDD) na definição de arquiteturas de software?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_microservicos_monolitos_e_dominios_monolitos_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "02_microservicos_monolitos_e_dominios_monolitos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "De acordo com a Lei de Conway, qual consideração deve influenciar a divisão técnica do sistema?",
+      "options": [
+        "Times e ownership, porque a estrutura do sistema tende a refletir a estrutura organizacional",
+        "Apenas o número de tabelas no banco de dados",
+        "Somente a linguagem de programação escolhida",
+        "A quantidade de endpoints públicos expostos"
+      ],
+      "answer": "Times e ownership, porque a estrutura do sistema tende a refletir a estrutura organizacional",
+      "explanation": "A Lei de Conway relaciona arquitetura e organização, então a divisão técnica deve considerar times e ownership.",
+      "prompt": "De acordo com a Lei de Conway, qual consideração deve influenciar a divisão técnica do sistema?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Monolitos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "03_niveis_de_consistencia",
+  "questions": [
+    {
+      "id": "03_niveis_de_consistencia_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "03_niveis_de_consistencia",
+      "topic_title": "Niveis de Consistencia",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a relação entre alta disponibilidade e consistência em sistemas distribuídos?",
+      "options": [
+        "Buscar alta disponibilidade pode levar à perda de consistência",
+        "Alta disponibilidade sempre aumenta a consistência",
+        "Consistência forte elimina qualquer necessidade de disponibilidade",
+        "Disponibilidade e consistência são independentes e não entram em trade-off"
+      ],
+      "answer": "Buscar alta disponibilidade pode levar à perda de consistência",
+      "explanation": "Pelo Teorema CAP, em caso de partição de rede um sistema distribuído deve escolher entre continuar respondendo (disponibilidade) ou garantir que todos os nós vejam os mesmos dados (consistência), tornando esses dois atributos fundamentalmente conflitantes.",
+      "prompt": "Qual é a relação entre alta disponibilidade e consistência em sistemas distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Niveis de Consistencia",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_niveis_de_consistencia_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "03_niveis_de_consistencia",
+      "topic_title": "Niveis de Consistencia",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o modelo ACID é caracterizado em sistemas de banco de dados?",
+      "options": [
+        "Como um modelo associado à consistência forte",
+        "Como um modelo descrito como mais flexível que BASE",
+        "Como um modelo focado em reduzir consistência para ganhar disponibilidade",
+        "Como um modelo definido apenas por latência baixa"
+      ],
+      "answer": "Como um modelo associado à consistência forte",
+      "explanation": "ACID prioriza a integridade dos dados acima de tudo: cada transação é atômica, mantém o banco em estado consistente, é isolada de outras transações concorrentes e torna as mudanças duráveis, o que resulta em consistência forte.",
+      "prompt": "Como o modelo ACID é caracterizado em sistemas de banco de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Niveis de Consistencia",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_niveis_de_consistencia_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "03_niveis_de_consistencia",
+      "topic_title": "Niveis de Consistencia",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off associado ao uso do modelo ACID?",
+      "options": [
+        "Pode aumentar a latência",
+        "Elimina completamente a necessidade de consistência",
+        "Impede qualquer forma de armazenamento durável",
+        "Garante alta disponibilidade sem custo"
+      ],
+      "answer": "Pode aumentar a latência",
+      "explanation": "As garantias de atomicidade e isolamento do ACID exigem coordenação entre transações — via bloqueios ou controle de concorrência multiversão — o que introduz overhead e pode elevar a latência, especialmente sob alta carga de escrita concorrente.",
+      "prompt": "Qual é o principal trade-off associado ao uso do modelo ACID?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Niveis de Consistencia",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_niveis_de_consistencia_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "03_niveis_de_consistencia",
+      "topic_title": "Niveis de Consistencia",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o modelo BASE se diferencia do ACID em sistemas de banco de dados?",
+      "options": [
+        "Como um modelo mais flexível",
+        "Como um modelo que garante consistência forte",
+        "Como um modelo equivalente a CAP",
+        "Como um modelo focado principalmente em reduzir latência de escrita"
+      ],
+      "answer": "Como um modelo mais flexível",
+      "explanation": "BASE (Basically Available, Soft state, Eventually consistent) abre mão das garantias rígidas do ACID em troca de maior disponibilidade e escalabilidade, aceitando que o sistema pode ficar temporariamente inconsistente até atingir consistência eventual.",
+      "prompt": "Como o modelo BASE se diferencia do ACID em sistemas de banco de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Niveis de Consistencia",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_niveis_de_consistencia_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "03_niveis_de_consistencia",
+      "topic_title": "Niveis de Consistencia",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Segundo a entrada, o que pode ser afirmado com segurança sobre PACELC?",
+      "options": [
+        "É citado como um modelo mais flexível que CAP",
+        "É definido em detalhes como substituto direto de ACID",
+        "É apresentado como sinônimo de alta disponibilidade",
+        "É descrito como um mecanismo de indexação"
+      ],
+      "answer": "É citado como um modelo mais flexível que CAP",
+      "explanation": "O conteúdo só sustenta a comparação de flexibilidade com CAP; não detalha o restante.",
+      "prompt": "Segundo a entrada, o que pode ser afirmado com segurança sobre PACELC?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Niveis de Consistencia",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

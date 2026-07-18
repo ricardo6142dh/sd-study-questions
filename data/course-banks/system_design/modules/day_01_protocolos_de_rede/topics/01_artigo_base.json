@@ -1,0 +1,85 @@
+{
+  "course": "system_design",
+  "module_slug": "day_01_protocolos_de_rede",
+  "topic_slug": "01_artigo_base",
+  "questions": [
+    {
+      "topic_key": "01_artigo_base",
+      "question": "No contexto de System Design, qual é a principal diferença entre o TCP e o UDP em relação à entrega de dados?",
+      "format": "multiple_choice",
+      "options": [
+        "O TCP garante a entrega e ordenação dos pacotes, enquanto o UDP prioriza a baixa latência com entrega 'best-effort'.",
+        "O UDP utiliza o 'three-way handshake' para garantir a integridade, enquanto o TCP é um protocolo sem conexão.",
+        "O TCP possui menor overhead que o UDP, sendo ideal para aplicações de tempo real.",
+        "Ambos garantem a entrega, mas o UDP é mais lento devido ao controle de fluxo."
+      ],
+      "answer": "O TCP garante a entrega e ordenação dos pacotes, enquanto o UDP prioriza a baixa latência com entrega 'best-effort'.",
+      "course": "system_design",
+      "module_order": 1,
+      "module_key": "network_protocols",
+      "module_title": "Day 01 - System Design: Protocolos de Rede",
+      "topic_title": "Artigo Base - Protocolos de Rede",
+      "id": "system_design-network_protocols-01_artigo_base-q001",
+      "prompt": "No contexto de System Design, qual é a principal diferença entre o TCP e o UDP em relação à entrega de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "explanation": "Gabarito: O TCP garante a entrega e ordenação dos pacotes, enquanto o UDP prioriza a baixa latência com entrega 'best-effort'.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Protocolos de Rede",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "topic_key": "01_artigo_base",
+      "question": "Qual das alternativas descreve corretamente uma característica do IPv6 em arquiteturas de larga escala?",
+      "format": "multiple_choice",
+      "options": [
+        "O IPv6 é idêntico ao IPv4, apenas com um cabeçalho maior.",
+        "O IPv6 resolve limitações de escala do IPv4, sendo o 'dual stack' uma estratégia comum de transição.",
+        "O IPv6 substitui a necessidade de protocolos de transporte como TCP e UDP.",
+        "O IPv6 elimina a necessidade de roteamento em redes distribuídas."
+      ],
+      "answer": "O IPv6 resolve limitações de escala do IPv4, sendo o 'dual stack' uma estratégia comum de transição.",
+      "course": "system_design",
+      "module_order": 1,
+      "module_key": "network_protocols",
+      "module_title": "Day 01 - System Design: Protocolos de Rede",
+      "topic_title": "Artigo Base - Protocolos de Rede",
+      "id": "system_design-network_protocols-01_artigo_base-q003",
+      "prompt": "Qual das alternativas descreve corretamente uma característica do IPv6 em arquiteturas de larga escala?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O IPv6 resolve limitações de escala do IPv4, sendo o 'dual stack' uma estratégia comum de transição.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Protocolos de Rede",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "topic_key": "01_artigo_base",
+      "question": "Ao escolher entre TCP e UDP, qual é o trade-off fundamental que um engenheiro de sistemas deve considerar?",
+      "format": "multiple_choice",
+      "options": [
+        "O TCP é sempre mais rápido que o UDP em qualquer cenário de rede.",
+        "O UDP é mais confiável, porém exige mais processamento de CPU que o TCP.",
+        "A confiabilidade do TCP introduz latência e overhead, enquanto o UDP transfere a responsabilidade de controle para a camada de aplicação.",
+        "O TCP não permite o uso de IPv6, sendo restrito apenas ao IPv4."
+      ],
+      "answer": "A confiabilidade do TCP introduz latência e overhead, enquanto o UDP transfere a responsabilidade de controle para a camada de aplicação.",
+      "course": "system_design",
+      "module_order": 1,
+      "module_key": "network_protocols",
+      "module_title": "Day 01 - System Design: Protocolos de Rede",
+      "topic_title": "Artigo Base - Protocolos de Rede",
+      "id": "system_design-network_protocols-01_artigo_base-q005",
+      "prompt": "Ao escolher entre TCP e UDP, qual é o trade-off fundamental que um engenheiro de sistemas deve considerar?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: A confiabilidade do TCP introduz latência e overhead, enquanto o UDP transfere a responsabilidade de controle para a camada de aplicação.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Protocolos de Rede",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+  "questions": [
+    {
+      "id": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto de core banking, qual é a principal razão para considerar a segregação de serviços em vez de manter tudo em um monólito?",
+      "options": [
+        "Quando a escala, os domínios e a organização justificam a fragmentação",
+        "Sempre que o sistema usa banco relacional",
+        "Quando se quer evitar qualquer consistência de dados",
+        "Sempre que houver necessidade de cache distribuído"
+      ],
+      "answer": "Quando a escala, os domínios e a organização justificam a fragmentação",
+      "explanation": "A decisão depende de escala, domínio, equipe e maturidade técnica; não é automática nem baseada só em tecnologia.",
+      "prompt": "No contexto de core banking, qual é a principal razão para considerar a segregação de serviços em vez de manter tudo em um monólito?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que o Domain-Driven Design (DDD) ajuda a definir ao projetar uma arquitetura de microsserviços?",
+      "options": [
+        "Bounded contexts, responsabilidades e linguagem comum",
+        "TTL, LRU e política de eviction",
+        "Apenas a infraestrutura de rede entre serviços",
+        "Somente o tipo de banco de dados a ser usado"
+      ],
+      "answer": "Bounded contexts, responsabilidades e linguagem comum",
+      "explanation": "O DDD fornece ferramentas conceituais como bounded contexts e linguagem ubíqua para identificar os limites naturais de cada subdomínio, tornando a divisão em microsserviços mais alinhada ao negócio e menos arbitrária.",
+      "prompt": "O que o Domain-Driven Design (DDD) ajuda a definir ao projetar uma arquitetura de microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o risco mais alinhado ao conteúdo quando a segregação de serviços é feita sem limites de domínio bem definidos?",
+      "options": [
+        "Fragmentação excessiva e acoplamentos ruins reproduzidos em vários serviços",
+        "Redução automática da complexidade operacional",
+        "Eliminação completa da necessidade de consistência de dados",
+        "Garantia de deploy independente sem custo adicional"
+      ],
+      "answer": "Fragmentação excessiva e acoplamentos ruins reproduzidos em vários serviços",
+      "explanation": "Sem bounded contexts claros, a divisão pode apenas espalhar o acoplamento em vez de resolvê-lo.",
+      "prompt": "Qual é o risco mais alinhado ao conteúdo quando a segregação de serviços é feita sem limites de domínio bem definidos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel dos eventos de domínio em uma arquitetura de microsserviços?",
+      "options": [
+        "São um mecanismo de comunicação entre serviços separados",
+        "São uma técnica de cache para reduzir latência",
+        "São usados apenas para particionar tabelas em banco relacional",
+        "Substituem a necessidade de bounded contexts"
+      ],
+      "answer": "São um mecanismo de comunicação entre serviços separados",
+      "explanation": "Eventos de domínio permitem que serviços se comuniquem de forma assíncrona e desacoplada — um serviço publica um evento ao alterar seu estado, e outros serviços interessados o consomem sem precisar de chamadas diretas entre si.",
+      "prompt": "Qual é o papel dos eventos de domínio em uma arquitetura de microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "08_microservicos_monolitos_e_dominios_case_de_core_banking_segregacao_de_servicos_e_eventos_de_dominio",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o trade-off central entre arquitetura monolítica e microsserviços?",
+      "options": [
+        "Simplicidade e consistência versus distribuição, autonomia e resiliência",
+        "Menor uso de memória versus maior uso de CPU",
+        "SQL versus NoSQL",
+        "Cache local versus cache distribuído"
+      ],
+      "answer": "Simplicidade e consistência versus distribuição, autonomia e resiliência",
+      "explanation": "O monólito oferece menor complexidade operacional e consistência de dados mais fácil de garantir, enquanto microsserviços permitem autonomia de times e maior resiliência por isolamento de falhas — mas ao custo de comunicação distribuída, eventual consistency e complexidade operacional elevada.",
+      "prompt": "Qual é o trade-off central entre arquitetura monolítica e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Segregacao de Servicos e Eventos de Dominio",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

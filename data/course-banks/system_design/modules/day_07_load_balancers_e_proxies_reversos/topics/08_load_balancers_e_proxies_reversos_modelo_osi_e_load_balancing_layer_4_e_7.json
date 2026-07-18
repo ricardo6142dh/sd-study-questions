@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+  "questions": [
+    {
+      "id": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+      "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto do modelo OSI, o que caracteriza um balanceador Layer 4?",
+      "options": [
+        "Ele atua na camada de transporte e distribui tráfego sem interpretar o payload da aplicação",
+        "Ele atua na camada de aplicação e decide com base em regras de host e path",
+        "Ele sempre faz cache de respostas e compressão de conteúdo",
+        "Ele precisa inspecionar o conteúdo da requisição para rotear corretamente"
+      ],
+      "answer": "Ele atua na camada de transporte e distribui tráfego sem interpretar o payload da aplicação",
+      "explanation": "Layer 4 opera na camada de transporte e prioriza rapidez, sem analisar o conteúdo da aplicação.",
+      "prompt": "No contexto do modelo OSI, o que caracteriza um balanceador Layer 4?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+      "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal vantagem de um balanceador Layer 7 em relação a um Layer 4?",
+      "options": [
+        "Permitir roteamento mais inteligente com base em regras da aplicação",
+        "Eliminar completamente a necessidade de servidores backend",
+        "Garantir sempre menor latência em qualquer cenário",
+        "Operar apenas com IP e porta, sem depender da aplicação"
+      ],
+      "answer": "Permitir roteamento mais inteligente com base em regras da aplicação",
+      "explanation": "Layer 7 entende a requisição em nível de aplicação e consegue aplicar regras mais granulares.",
+      "prompt": "Qual é a principal vantagem de um balanceador Layer 7 em relação a um Layer 4?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+      "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual situação a inspeção de payload pelo balanceador de carga é necessária?",
+      "options": [
+        "Quando o balanceador precisa decidir com base em campos da requisição",
+        "Quando o balanceador só distribui tráfego por IP e porta",
+        "Quando o balanceador ignora completamente a camada de aplicação",
+        "Quando o balanceador atua apenas como um roteador físico"
+      ],
+      "answer": "Quando o balanceador precisa decidir com base em campos da requisição",
+      "explanation": "A inspeção de payload é característica de balanceadores Layer 7, que precisam analisar o conteúdo da requisição (como headers HTTP, paths ou cookies) para tomar decisões de roteamento mais granulares.",
+      "prompt": "Em qual situação a inspeção de payload pelo balanceador de carga é necessária?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+      "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve corretamente o trade-off entre balanceamento de carga Layer 4 e Layer 7?",
+      "options": [
+        "Layer 4 prioriza desempenho; Layer 7 prioriza capacidade de decisão e roteamento avançado",
+        "Layer 4 sempre é mais inteligente que Layer 7, mas menos rápido",
+        "Layer 7 não pode fazer roteamento por regras granulares",
+        "Layer 4 depende de inspeção de payload para funcionar"
+      ],
+      "answer": "Layer 4 prioriza desempenho; Layer 7 prioriza capacidade de decisão e roteamento avançado",
+      "explanation": "Balanceadores Layer 4 operam com base em IP e porta, o que garante baixa latência e alta eficiência; já os Layer 7 inspecionam o conteúdo da requisição, permitindo roteamento inteligente mas com maior custo de processamento.",
+      "prompt": "Qual afirmação descreve corretamente o trade-off entre balanceamento de carga Layer 4 e Layer 7?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "08_load_balancers_e_proxies_reversos_modelo_osi_e_load_balancing_layer_4_e_7",
+      "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Na AWS, qual serviço de balanceamento de carga opera em Layer 4 e qual opera em Layer 7?",
+      "options": [
+        "NLB é Layer 4; ALB é Layer 7",
+        "NLB é Layer 7; ALB é Layer 4",
+        "Ambos são exclusivamente Layer 4",
+        "Ambos são exclusivamente Layer 7"
+      ],
+      "answer": "NLB é Layer 4; ALB é Layer 7",
+      "explanation": "O Network Load Balancer (NLB) atua na camada de transporte (Layer 4), roteando tráfego por IP e porta com ultra-baixa latência; o Application Load Balancer (ALB) atua na camada de aplicação (Layer 7), suportando roteamento baseado em HTTP, paths e headers.",
+      "prompt": "Na AWS, qual serviço de balanceamento de carga opera em Layer 4 e qual opera em Layer 7?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Modelo OSI e Load Balancing Layer 4 e 7",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

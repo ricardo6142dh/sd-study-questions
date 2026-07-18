@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "03_microservicos_monolitos_e_dominios_microservicos",
+  "questions": [
+    {
+      "id": "03_microservicos_monolitos_e_dominios_microservicos_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "03_microservicos_monolitos_e_dominios_microservicos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quais fatores devem orientar a decisão entre adotar monólito ou microsserviços?",
+      "options": [
+        "Escala, maturidade técnica, tamanho da equipe e necessidade de autonomia operacional",
+        "Usar sempre a tecnologia mais recente disponível",
+        "Preferir microsserviços em qualquer sistema com múltiplas telas",
+        "Separar o sistema apenas pela linguagem de programação"
+      ],
+      "answer": "Escala, maturidade técnica, tamanho da equipe e necessidade de autonomia operacional",
+      "explanation": "Não existe escolha universalmente correta: microsserviços trazem complexidade operacional que só compensa quando a equipe tem maturidade técnica, escala real e necessidade de deployar serviços de forma independente.",
+      "prompt": "Quais fatores devem orientar a decisão entre adotar monólito ou microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_microservicos_monolitos_e_dominios_microservicos_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "03_microservicos_monolitos_e_dominios_microservicos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é Domain-Driven Design (DDD) e qual seu principal objetivo?",
+      "options": [
+        "Identificar domínios, definir limites de responsabilidade e alinhar linguagem entre negócio e engenharia",
+        "Substituir a necessidade de modelar o negócio",
+        "Garantir automaticamente deploy independente",
+        "Eliminar a complexidade de sistemas distribuídos"
+      ],
+      "answer": "Identificar domínios, definir limites de responsabilidade e alinhar linguagem entre negócio e engenharia",
+      "explanation": "DDD é uma abordagem de modelagem que parte do domínio de negócio para guiar decisões de design, usando Bounded Contexts para separar responsabilidades e Ubiquitous Language para reduzir ambiguidades entre times.",
+      "prompt": "O que é Domain-Driven Design (DDD) e qual seu principal objetivo?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_microservicos_monolitos_e_dominios_microservicos_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "03_microservicos_monolitos_e_dominios_microservicos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a relação correta entre DDD e microsserviços?",
+      "options": [
+        "DDD ajuda a identificar domínios e limites, mas não é apresentado como sinônimo de microsserviços",
+        "DDD é equivalente a microsserviços em qualquer contexto",
+        "DDD só faz sentido quando o sistema já está distribuído",
+        "DDD elimina a necessidade de limites de responsabilidade"
+      ],
+      "answer": "DDD ajuda a identificar domínios e limites, mas não é apresentado como sinônimo de microsserviços",
+      "explanation": "DDD é uma ferramenta de modelagem agnóstica à arquitetura: seus conceitos de domínio e Bounded Context são úteis tanto em monólitos modulares quanto em microsserviços, sem exigir distribuição.",
+      "prompt": "Qual é a relação correta entre DDD e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_microservicos_monolitos_e_dominios_microservicos_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "03_microservicos_monolitos_e_dominios_microservicos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quando microsserviços tendem a fazer mais sentido?",
+      "options": [
+        "Quando existem domínios maduros e relativamente independentes, workloads diferentes e times com autonomia real",
+        "Quando o sistema ainda não tem limites de domínio claros",
+        "Quando a prioridade principal é reduzir a consistência entre componentes",
+        "Quando a equipe quer evitar qualquer custo operacional adicional"
+      ],
+      "answer": "Quando existem domínios maduros e relativamente independentes, workloads diferentes e times com autonomia real",
+      "explanation": "Essas condições justificam a fragmentação e o custo extra de uma arquitetura distribuída.",
+      "prompt": "Quando microsserviços tendem a fazer mais sentido?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_microservicos_monolitos_e_dominios_microservicos_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "03_microservicos_monolitos_e_dominios_microservicos",
+      "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa melhor resume o trade-off central entre monólito e microsserviços?",
+      "options": [
+        "Monólito favorece simplicidade e consistência; microsserviços favorecem autonomia, distribuição e resiliência",
+        "Monólito sempre escala melhor; microsserviços sempre são mais simples",
+        "Microsserviços eliminam a necessidade de coordenação entre equipes",
+        "Monólito e microsserviços são escolhas equivalentes em qualquer cenário"
+      ],
+      "answer": "Monólito favorece simplicidade e consistência; microsserviços favorecem autonomia, distribuição e resiliência",
+      "explanation": "O tópico contrasta essas vantagens como parte do trade-off arquitetural, sem superioridade absoluta.",
+      "prompt": "Qual alternativa melhor resume o trade-off central entre monólito e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

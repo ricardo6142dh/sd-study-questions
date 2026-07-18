@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "11_lsm_trees_log_structured_merge_tree",
+  "questions": [
+    {
+      "id": "11_lsm_trees_log_structured_merge_tree_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "11_lsm_trees_log_structured_merge_tree",
+      "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o objetivo principal de uma estrutura LSM tree em bancos de dados?",
+      "options": [
+        "Otimizar a eficiência de escrita",
+        "Maximizar a consistência forte em leituras",
+        "Eliminar a necessidade de indexação",
+        "Priorizar consultas analíticas complexas"
+      ],
+      "answer": "Otimizar a eficiência de escrita",
+      "explanation": "A LSM tree (Log-Structured Merge-tree) foi projetada para maximizar a taxa de escrita ao acumular mutações sequencialmente em memória e disco, adiando a reorganização dos dados para operações de merge periódicas.",
+      "prompt": "Qual é o objetivo principal de uma estrutura LSM tree em bancos de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "11_lsm_trees_log_structured_merge_tree_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "11_lsm_trees_log_structured_merge_tree",
+      "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No LSM tree, como os dados são gravados inicialmente?",
+      "options": [
+        "De forma sequencial em blocos de log estruturados",
+        "Diretamente em um índice consolidado",
+        "Em páginas aleatórias para acelerar a leitura",
+        "Somente após o merge periódico"
+      ],
+      "answer": "De forma sequencial em blocos de log estruturados",
+      "explanation": "Gravações sequenciais em log eliminam buscas de disco aleatórias, que são muito mais lentas; ao escrever sempre no final do log, a LSM tree atinge alta taxa de throughput de escrita.",
+      "prompt": "No LSM tree, como os dados são gravados inicialmente?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "11_lsm_trees_log_structured_merge_tree_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "11_lsm_trees_log_structured_merge_tree",
+      "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que o processo de merge realiza em uma LSM tree?",
+      "options": [
+        "Combina os blocos em um índice",
+        "Remove a necessidade de escrita sequencial",
+        "Transforma o banco em uma B-tree",
+        "Executa apenas consultas de leitura"
+      ],
+      "answer": "Combina os blocos em um índice",
+      "explanation": "O merge consolida os vários blocos de log acumulados em um índice organizado, eliminando entradas obsoletas e melhorando a eficiência das leituras futuras.",
+      "prompt": "O que o processo de merge realiza em uma LSM tree?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "11_lsm_trees_log_structured_merge_tree_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "11_lsm_trees_log_structured_merge_tree",
+      "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que o merge é executado periodicamente em uma LSM tree?",
+      "options": [
+        "Para reduzir o número de blocos e melhorar a performance",
+        "Para impedir qualquer escrita sequencial",
+        "Para substituir o armazenamento em log por memória volátil",
+        "Para tornar o índice desnecessário"
+      ],
+      "answer": "Para reduzir o número de blocos e melhorar a performance",
+      "explanation": "À medida que novos blocos se acumulam, leituras precisam varrer mais arquivos; o merge periódico compacta esses blocos, reduzindo amplificação de leitura e mantendo a performance geral do sistema.",
+      "prompt": "Por que o merge é executado periodicamente em uma LSM tree?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "11_lsm_trees_log_structured_merge_tree_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "11_lsm_trees_log_structured_merge_tree",
+      "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off de uma LSM tree em comparação com estruturas de índice tradicionais?",
+      "options": [
+        "Eficiência de escrita com reorganização posterior via merge",
+        "Leitura imediata com ausência total de manutenção",
+        "Consistência detalhada com latência explicitamente definida",
+        "Indexação sem custo adicional em escrita"
+      ],
+      "answer": "Eficiência de escrita com reorganização posterior via merge",
+      "explanation": "A LSM tree favorece escritas rápidas e sequenciais ao custo de um processo de merge posterior; estruturas como B-trees fazem o oposto — mantêm o índice sempre organizado, pagando o custo na escrita.",
+      "prompt": "Qual é o principal trade-off de uma LSM tree em comparação com estruturas de índice tradicionais?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "LSM Trees (Log-Structured Merge Tree)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

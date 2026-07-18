@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+  "questions": [
+    {
+      "id": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+      "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
+      "options": [
+        "Load balancer é um pattern ideal para distribuir requisições entre múltiplos hosts/backends, enquanto proxy reverso é um pattern distinto que pode encaminhar requisições de forma semelhante",
+        "Load balancer é sempre uma tecnologia de Layer 7, enquanto proxy reverso é sempre uma tecnologia de Layer 4",
+        "Proxy reverso só pode existir quando não há múltiplos hosts no pool",
+        "Load balancer e proxy reverso são sinônimos completos e não têm diferença conceitual"
+      ],
+      "answer": "Load balancer é um pattern ideal para distribuir requisições entre múltiplos hosts/backends, enquanto proxy reverso é um pattern distinto que pode encaminhar requisições de forma semelhante",
+      "explanation": "Embora ambos encaminhem requisições, o load balancer é focado em distribuir carga entre múltiplos backends, enquanto o proxy reverso é um padrão com propósitos mais amplos — como cache, terminação TLS e roteamento — que pode ou não envolver múltiplos hosts.",
+      "prompt": "Qual é a distinção arquitetural mais importante entre load balancer e proxy reverso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+      "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a aula insiste que load balancer e proxy reverso não devem ser tratados como tecnologias?",
+      "options": [
+        "Porque eles são design patterns; tecnologias como Nginx e Envoy podem implementá-los dependendo do papel assumido",
+        "Porque ambos são apenas nomes diferentes para o mesmo algoritmo de distribuição",
+        "Porque só existem em arquiteturas monolíticas e não em sistemas distribuídos",
+        "Porque são componentes exclusivos de cache e compressão"
+      ],
+      "answer": "Porque eles são design patterns; tecnologias como Nginx e Envoy podem implementá-los dependendo do papel assumido",
+      "explanation": "O tópico enfatiza que load balancer e proxy reverso são patterns arquiteturais, e a mesma tecnologia pode materializar qualquer um dos dois papéis.",
+      "prompt": "Por que a aula insiste que load balancer e proxy reverso não devem ser tratados como tecnologias?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+      "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual cenário o load balancer é mais adequado?",
+      "options": [
+        "Quando há múltiplos hosts ou instâncias no pool de requisições e é preciso distribuir a carga entre eles",
+        "Quando existe apenas um backend e o objetivo principal é cache de respostas",
+        "Quando o tráfego precisa ser roteado apenas por path sem considerar instâncias",
+        "Quando o sistema não possui nenhum servidor interno para encaminhamento"
+      ],
+      "answer": "Quando há múltiplos hosts ou instâncias no pool de requisições e é preciso distribuir a carga entre eles",
+      "explanation": "O load balancer só faz sentido quando existem múltiplos backends disponíveis; seu propósito fundamental é justamente evitar que um único servidor concentre toda a carga de trabalho.",
+      "prompt": "Em qual cenário o load balancer é mais adequado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+      "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual arquitetura mista combinando load balancer e proxy reverso é comum em sistemas distribuídos?",
+      "options": [
+        "Um load balancer na frente distribuindo para vários hosts, e cada host com seu próprio proxy reverso",
+        "Um proxy reverso central sem nenhum host interno atrás dele",
+        "Vários load balancers em série sem nenhum backend",
+        "Um único host sem intermediários, para evitar qualquer encaminhamento"
+      ],
+      "answer": "Um load balancer na frente distribuindo para vários hosts, e cada host com seu próprio proxy reverso",
+      "explanation": "Essa combinação é comum porque o load balancer cuida da distribuição de tráfego entre instâncias, enquanto cada proxy reverso local pode lidar com preocupações específicas do host, como roteamento interno, cache ou offloading TLS.",
+      "prompt": "Qual arquitetura mista combinando load balancer e proxy reverso é comum em sistemas distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "02_load_balancers_e_proxies_reversos_load_balancers_vs_proxies_reversos",
+      "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como load balancer e proxy reverso se relacionam em uma mesma arquitetura?",
+      "options": [
+        "Eles podem coexistir na mesma arquitetura e até ser implementados pela mesma tecnologia, dependendo do papel assumido",
+        "Eles são mutuamente exclusivos e nunca aparecem juntos",
+        "Proxy reverso só existe para substituir completamente o load balancer",
+        "Load balancer só faz sentido quando não há múltiplos hosts"
+      ],
+      "answer": "Eles podem coexistir na mesma arquitetura e até ser implementados pela mesma tecnologia, dependendo do papel assumido",
+      "explanation": "A mesma tecnologia (como Nginx ou HAProxy) pode atuar como load balancer ou proxy reverso dependendo da configuração e do papel na arquitetura, e os dois patterns frequentemente coexistem em sistemas de maior escala.",
+      "prompt": "Como load balancer e proxy reverso se relacionam em uma mesma arquitetura?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Load Balancers vs Proxies Reversos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

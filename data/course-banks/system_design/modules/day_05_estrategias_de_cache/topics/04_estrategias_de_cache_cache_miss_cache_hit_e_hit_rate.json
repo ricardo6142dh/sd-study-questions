@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+  "questions": [
+    {
+      "id": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+      "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um cache hit?",
+      "options": [
+        "A requisição encontra o dado no cache e é atendida diretamente dali",
+        "A requisição não encontra o dado no cache e precisa consultar a origem",
+        "A requisição sempre atualiza o cache antes de responder",
+        "A requisição só é considerada válida se o dado vier da origem"
+      ],
+      "answer": "A requisição encontra o dado no cache e é atendida diretamente dali",
+      "explanation": "Cache hit é quando o dado está no cache e a resposta sai dali, sem acessar a origem.",
+      "prompt": "O que caracteriza um cache hit?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+      "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que acontece em um cache miss?",
+      "options": [
+        "O sistema encontra o dado no cache e evita a origem",
+        "O sistema precisa buscar o dado na origem porque ele não está no cache",
+        "O cache é automaticamente destruído e recriado",
+        "A taxa de acerto passa a ser calculada apenas sobre os hits"
+      ],
+      "answer": "O sistema precisa buscar o dado na origem porque ele não está no cache",
+      "explanation": "Cache miss significa ausência do dado no cache, então a origem precisa ser consultada.",
+      "prompt": "O que acontece em um cache miss?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+      "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o hit rate é calculado?",
+      "options": [
+        "hits / total de requisições",
+        "misses / hits",
+        "hits / misses",
+        "total de requisições / hits"
+      ],
+      "answer": "hits / total de requisições",
+      "explanation": "Hit rate é a proporção de hits sobre o total de requisições, normalmente expressa em porcentagem.",
+      "prompt": "Como o hit rate é calculado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+      "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Se um sistema teve 800 cache hits e 200 cache misses, qual é o hit rate?",
+      "options": [
+        "20%",
+        "50%",
+        "80%",
+        "100%"
+      ],
+      "answer": "80%",
+      "explanation": "O total é 1000 requisições; 800 / 1000 = 0,8, ou 80%.",
+      "prompt": "Se um sistema teve 800 cache hits e 200 cache misses, qual é o hit rate?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "04_estrategias_de_cache_cache_miss_cache_hit_e_hit_rate",
+      "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Após uma limpeza total ou parcial do cache, o que é esperado observar temporariamente?",
+      "options": [
+        "Aumento de cache hits até a reconstrução dos itens",
+        "Pico de cache misses até a reconstrução dos itens",
+        "Hit rate fixo e estável imediatamente",
+        "Eliminação definitiva da necessidade de consultar a origem"
+      ],
+      "answer": "Pico de cache misses até a reconstrução dos itens",
+      "explanation": "A limpeza remove itens do cache, então os acessos seguintes tendem a gerar mais misses até o cache ser reconstruído.",
+      "prompt": "Após uma limpeza total ou parcial do cache, o que é esperado observar temporariamente?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

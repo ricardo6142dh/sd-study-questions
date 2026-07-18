@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "10_page_size_e_indexacao_colunar",
+  "questions": [
+    {
+      "id": "10_page_size_e_indexacao_colunar_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "10_page_size_e_indexacao_colunar",
+      "topic_title": "Page Size e Indexacao Colunar",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em bancos de dados colunares, qual é o papel do tamanho de página na eficiência de leitura?",
+      "options": [
+        "É um fator relevante para a eficiência de leitura e pode ser ajustado para melhorar desempenho",
+        "É sempre fixo em 4 KB em qualquer banco de dados",
+        "Serve apenas para controlar a integridade referencial entre tabelas",
+        "Não influencia a velocidade de consulta em sistemas colunares"
+      ],
+      "answer": "É um fator relevante para a eficiência de leitura e pode ser ajustado para melhorar desempenho",
+      "explanation": "Em sistemas colunares, páginas maiores permitem ler mais dados de uma única coluna em cada operação de I/O, reduzindo o número de acessos ao disco e melhorando o desempenho de consultas analíticas.",
+      "prompt": "Em bancos de dados colunares, qual é o papel do tamanho de página na eficiência de leitura?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Page Size e Indexacao Colunar",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_page_size_e_indexacao_colunar_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "10_page_size_e_indexacao_colunar",
+      "topic_title": "Page Size e Indexacao Colunar",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como páginas de 4 KB e 128 KB se comparam em termos de uso em sistemas colunares?",
+      "options": [
+        "4 KB é citado como comum em armazenamento, enquanto 128 KB é um exemplo de ajuste em sistemas colunares para otimizar leitura",
+        "128 KB é o tamanho padrão universal de qualquer banco relacional",
+        "4 KB é sempre mais eficiente para leitura colunar do que 128 KB",
+        "Os dois tamanhos são equivalentes e não afetam a consulta"
+      ],
+      "answer": "4 KB é citado como comum em armazenamento, enquanto 128 KB é um exemplo de ajuste em sistemas colunares para otimizar leitura",
+      "explanation": "Sistemas de armazenamento geralmente usam páginas de 4 KB por padrão, mas bancos colunares frequentemente aumentam esse tamanho para 128 KB ou mais, pois leituras sequenciais de colunas inteiras se beneficiam de páginas maiores ao reduzir o overhead de I/O.",
+      "prompt": "Como páginas de 4 KB e 128 KB se comparam em termos de uso em sistemas colunares?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Page Size e Indexacao Colunar",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_page_size_e_indexacao_colunar_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "10_page_size_e_indexacao_colunar",
+      "topic_title": "Page Size e Indexacao Colunar",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é indexação por colunas em bancos de dados?",
+      "options": [
+        "Organização de dados em estruturas que permitem consultas específicas por coluna",
+        "Criação de índices apenas para acelerar escrita",
+        "Armazenamento obrigatório de todos os dados em uma única linha",
+        "Uso exclusivo de páginas de 4 KB em qualquer cenário"
+      ],
+      "answer": "Organização de dados em estruturas que permitem consultas específicas por coluna",
+      "explanation": "Indexação por colunas organiza os dados de forma que cada coluna seja armazenada e indexada separadamente, tornando consultas analíticas que acessam apenas algumas colunas muito mais eficientes do que o modelo orientado a linhas.",
+      "prompt": "O que é indexação por colunas em bancos de dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Page Size e Indexacao Colunar",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_page_size_e_indexacao_colunar_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "10_page_size_e_indexacao_colunar",
+      "topic_title": "Page Size e Indexacao Colunar",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que o Apache Parquet usa páginas de 128 KB em vez do tamanho padrão de 4 KB?",
+      "options": [
+        "Porque usa páginas de 128 KB como exemplo de ajuste para otimizar leitura em sistemas colunares",
+        "Porque prova que 4 KB é o melhor tamanho para qualquer banco",
+        "Porque é um mecanismo de integridade referencial",
+        "Porque elimina a necessidade de indexação por colunas"
+      ],
+      "answer": "Porque usa páginas de 128 KB como exemplo de ajuste para otimizar leitura em sistemas colunares",
+      "explanation": "Sistemas colunares como o Parquet se beneficiam de páginas maiores porque leituras analíticas varrem grandes volumes de dados sequencialmente, reduzindo o overhead de I/O por página e aumentando o throughput de leitura.",
+      "prompt": "Por que o Apache Parquet usa páginas de 128 KB em vez do tamanho padrão de 4 KB?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Page Size e Indexacao Colunar",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "10_page_size_e_indexacao_colunar_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "10_page_size_e_indexacao_colunar",
+      "topic_title": "Page Size e Indexacao Colunar",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em que contexto a otimização da velocidade de consulta por ajuste do tamanho de página é mais relevante?",
+      "options": [
+        "Em cenários com alto volume de dados",
+        "Somente em bancos com schema rígido",
+        "Apenas em consultas transacionais de baixa latência",
+        "Exclusivamente em sistemas sem indexação"
+      ],
+      "answer": "Em cenários com alto volume de dados",
+      "explanation": "Com alto volume de dados, o custo de I/O por consulta se torna o principal gargalo; ajustar o tamanho da página para o padrão de acesso (sequencial vs. aleatório) reduz esse custo e melhora significativamente a velocidade de consulta.",
+      "prompt": "Em que contexto a otimização da velocidade de consulta por ajuste do tamanho de página é mais relevante?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Page Size e Indexacao Colunar",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "04_least_request",
+  "questions": [
+    {
+      "id": "04_least_request_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "04_least_request",
+      "topic_title": "Least Request",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No algoritmo Least Request, qual critério define o host que receberá a próxima requisição?",
+      "options": [
+        "O host com menor número de requisições acumuladas",
+        "O host com menor tempo médio de resposta",
+        "O host com maior capacidade nominal",
+        "O host com menos conexões TCP abertas"
+      ],
+      "answer": "O host com menor número de requisições acumuladas",
+      "explanation": "Least Request decide pela contagem acumulada de requests por host, não por tempo de resposta, capacidade nominal ou conexões abertas.",
+      "prompt": "No algoritmo Least Request, qual critério define o host que receberá a próxima requisição?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Request",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_least_request_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "04_least_request",
+      "topic_title": "Least Request",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual tipo de workload o algoritmo Least Request tende a funcionar melhor?",
+      "options": [
+        "Workloads com requisições curtas, rápidas e uniformes",
+        "Workloads com requisições muito pesadas e de custo muito variável",
+        "Cenários em que o tempo de resposta é a principal métrica de decisão",
+        "Ambientes em que a carga real é sempre proporcional ao número de conexões"
+      ],
+      "answer": "Workloads com requisições curtas, rápidas e uniformes",
+      "explanation": "O Least Request distribui novas requisições para o servidor com menor número de requisições ativas; esse indicador é mais confiável quando as requisições são homogêneas em custo e duração, pois aí a contagem de requisições reflete bem a carga real.",
+      "prompt": "Em qual tipo de workload o algoritmo Least Request tende a funcionar melhor?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Request",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_least_request_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "04_least_request",
+      "topic_title": "Least Request",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual limitação do Least Request é mais fiel ao conteúdo?",
+      "options": [
+        "Ele não considera a complexidade ou o custo real das requisições",
+        "Ele só funciona com tráfego UDP",
+        "Ele depende de inspeção do payload da aplicação",
+        "Ele exige que todos os hosts tenham exatamente a mesma CPU"
+      ],
+      "answer": "Ele não considera a complexidade ou o custo real das requisições",
+      "explanation": "A principal limitação é tratar requests simples e pesadas como equivalentes na contagem.",
+      "prompt": "Qual limitação do Least Request é mais fiel ao conteúdo?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Request",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_least_request_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "04_least_request",
+      "topic_title": "Least Request",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve melhor a diferença entre Least Request e Round Robin?",
+      "options": [
+        "Least Request escolhe pelo menor contador de requisições; Round Robin escolhe por rotação",
+        "Least Request escolhe pelo menor tempo de resposta; Round Robin escolhe pelo menor número de conexões",
+        "Least Request e Round Robin usam exatamente o mesmo critério",
+        "Least Request depende de healthcheck; Round Robin não pode ser usado com hosts saudáveis"
+      ],
+      "answer": "Least Request escolhe pelo menor contador de requisições; Round Robin escolhe por rotação",
+      "explanation": "A comparação central do texto é que Least Request usa contagem acumulada, enquanto Round Robin segue uma ordem rotativa.",
+      "prompt": "Qual afirmação descreve melhor a diferença entre Least Request e Round Robin?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Request",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_least_request_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "04_least_request",
+      "topic_title": "Least Request",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Ao adicionar ou remover réplicas, qual risco existe no Least Request se os contadores não forem tratados corretamente?",
+      "options": [
+        "Concentração temporária de tráfego em um host",
+        "Perda total de compatibilidade com Layer 7",
+        "Impossibilidade de usar qualquer healthcheck",
+        "Aumento obrigatório do tempo de resposta em todos os hosts"
+      ],
+      "answer": "Concentração temporária de tráfego em um host",
+      "explanation": "Mudanças na quantidade de réplicas podem desbalancear os contadores do Least Request, causando concentração temporária de tráfego em um único host até que os contadores se estabilizem.",
+      "prompt": "Ao adicionar ou remover réplicas, qual risco existe no Least Request se os contadores não forem tratados corretamente?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Request",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

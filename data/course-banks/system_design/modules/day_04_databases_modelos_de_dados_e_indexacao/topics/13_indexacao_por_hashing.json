@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "13_indexacao_por_hashing",
+  "questions": [
+    {
+      "id": "13_indexacao_por_hashing_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "13_indexacao_por_hashing",
+      "topic_title": "Indexacao por Hashing",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza a indexação por hashing?",
+      "options": [
+        "Usar uma função hash para mapear chaves para um índice",
+        "Organizar os dados apenas por ordem crescente de valores",
+        "Criar um índice baseado exclusivamente em tempo de inserção",
+        "Agrupar registros por relacionamento entre tabelas"
+      ],
+      "answer": "Usar uma função hash para mapear chaves para um índice",
+      "explanation": "Na indexação por hashing, a função hash transforma a chave em um índice.",
+      "prompt": "O que caracteriza a indexação por hashing?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao por Hashing",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "13_indexacao_por_hashing_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "13_indexacao_por_hashing",
+      "topic_title": "Indexacao por Hashing",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual propriedade é desejável em uma função hash usada para indexação?",
+      "options": [
+        "Ser rápida e distribuir os valores de forma uniforme",
+        "Ser lenta para reduzir colisões por processamento adicional",
+        "Gerar sempre o mesmo índice para qualquer chave",
+        "Depender do número de colunas da tabela"
+      ],
+      "answer": "Ser rápida e distribuir os valores de forma uniforme",
+      "explanation": "Velocidade minimiza o custo computacional de cada operação de indexação, enquanto a distribuição uniforme das chaves reduz colisões, evitando que o tempo de acesso degrade de O(1) para O(n) no pior caso.",
+      "prompt": "Qual propriedade é desejável em uma função hash usada para indexação?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao por Hashing",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "13_indexacao_por_hashing_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "13_indexacao_por_hashing",
+      "topic_title": "Indexacao por Hashing",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto de hashing, o que são colisões?",
+      "options": [
+        "Quando chaves diferentes acabam mapeadas para o mesmo índice",
+        "Quando uma chave é convertida em dois índices diferentes ao mesmo tempo",
+        "Quando o índice deixa de ser numérico",
+        "Quando a função hash retorna sempre o maior valor possível"
+      ],
+      "answer": "Quando chaves diferentes acabam mapeadas para o mesmo índice",
+      "explanation": "Colisão ocorre quando diferentes chaves caem no mesmo índice.",
+      "prompt": "No contexto de hashing, o que são colisões?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao por Hashing",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "13_indexacao_por_hashing_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "13_indexacao_por_hashing",
+      "topic_title": "Indexacao por Hashing",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a uniformidade da função hash é importante?",
+      "options": [
+        "Porque ajuda a espalhar as chaves de forma equilibrada e reduzir colisões",
+        "Porque elimina a necessidade de qualquer índice",
+        "Porque garante que dados mutáveis nunca sofram alterações",
+        "Porque substitui a necessidade de consultar dados"
+      ],
+      "answer": "Porque ajuda a espalhar as chaves de forma equilibrada e reduzir colisões",
+      "explanation": "Uma distribuição uniforme tende a diminuir a concentração de chaves no mesmo índice.",
+      "prompt": "Por que a uniformidade da função hash é importante?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao por Hashing",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "13_indexacao_por_hashing_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "13_indexacao_por_hashing",
+      "topic_title": "Indexacao por Hashing",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
+      "options": [
+        "Porque dados que mudam frequentemente exigem recálculo do hash, gerando índices desatualizados e overhead de manutenção",
+        "Porque hashing só funciona com dados imutáveis",
+        "Porque a função hash deixa de produzir índices",
+        "Porque dados mutáveis não podem ser indexados"
+      ],
+      "answer": "Porque dados que mudam frequentemente exigem recálculo do hash, gerando índices desatualizados e overhead de manutenção",
+      "explanation": "Quando um valor indexado por hash é alterado, o índice existente aponta para um local incorreto; corrigi-lo exige recalcular o hash e atualizar a estrutura do índice, gerando custo adicional proporcional à frequência de mudanças.",
+      "prompt": "Por que a indexação por hashing pode ser menos adequada para dados que mudam frequentemente?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao por Hashing",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "15_arquitetura_write_intensive_e_read_intensive",
+  "questions": [
+    {
+      "id": "15_arquitetura_write_intensive_e_read_intensive_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "15_arquitetura_write_intensive_e_read_intensive",
+      "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em uma arquitetura write-intensive, qual é a prioridade principal de design?",
+      "options": [
+        "Minimizar a latência de escrita",
+        "Maximizar a eficiência de leitura com indexação",
+        "Eliminar a necessidade de consistência",
+        "Normalizar ao máximo os dados para consultas"
+      ],
+      "answer": "Minimizar a latência de escrita",
+      "explanation": "Em sistemas write-intensive, o volume e a frequência de escritas são o gargalo dominante; reduzir a latência de escrita garante que o sistema consiga processar as operações sem acumular fila e degradar o throughput.",
+      "prompt": "Em uma arquitetura write-intensive, qual é a prioridade principal de design?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "15_arquitetura_write_intensive_e_read_intensive_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "15_arquitetura_write_intensive_e_read_intensive",
+      "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual abordagem de modelagem de dados é mais adequada para uma arquitetura write-intensive?",
+      "options": [
+        "Modelos de dados não normalizados (NoSQL)",
+        "Modelos de dados normalizados (SQL) com indexação adequada",
+        "Schema rígido com foco em leitura",
+        "Indexação como mecanismo principal de otimização de consulta"
+      ],
+      "answer": "Modelos de dados não normalizados (NoSQL)",
+      "explanation": "Modelos não normalizados evitam a necessidade de joins e atualizações em múltiplas tabelas a cada escrita, reduzindo o overhead por operação e permitindo maior taxa de gravação com menor latência.",
+      "prompt": "Qual abordagem de modelagem de dados é mais adequada para uma arquitetura write-intensive?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "15_arquitetura_write_intensive_e_read_intensive_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "15_arquitetura_write_intensive_e_read_intensive",
+      "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em uma arquitetura read-intensive, qual é o foco principal?",
+      "options": [
+        "Eficiência de leitura",
+        "Redução da latência de escrita",
+        "Eliminação de índices para simplificar manutenção",
+        "Uso obrigatório de modelos não normalizados"
+      ],
+      "answer": "Eficiência de leitura",
+      "explanation": "Read-intensive é descrita como arquitetura orientada à eficiência de leitura.",
+      "prompt": "Em uma arquitetura read-intensive, qual é o foco principal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "15_arquitetura_write_intensive_e_read_intensive_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "15_arquitetura_write_intensive_e_read_intensive",
+      "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual abordagem de modelagem de dados é mais associada a arquiteturas read-intensive?",
+      "options": [
+        "Modelos de dados normalizados (SQL) com indexação adequada",
+        "Modelos de dados não normalizados (NoSQL) para reduzir latência de escrita",
+        "Ausência de consistência como regra geral",
+        "Descarte de indexação para evitar custo de manutenção"
+      ],
+      "answer": "Modelos de dados normalizados (SQL) com indexação adequada",
+      "explanation": "O conteúdo relaciona read-intensive a modelos normalizados (SQL) e ressalta a importância da indexação adequada.",
+      "prompt": "Qual abordagem de modelagem de dados é mais associada a arquiteturas read-intensive?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "15_arquitetura_write_intensive_e_read_intensive_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "15_arquitetura_write_intensive_e_read_intensive",
+      "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual fator é tipicamente considerado crítico no design de sistemas distribuídos?",
+      "options": [
+        "Consistência",
+        "Compressão de dados",
+        "Replicação síncrona obrigatória",
+        "Particionamento por hash"
+      ],
+      "answer": "Consistência",
+      "explanation": "Em sistemas distribuídos, múltiplos nós operam de forma independente e falhas parciais são inevitáveis; garantir consistência — que todos os nós enxerguem os mesmos dados ao mesmo tempo — é um dos principais desafios de design e está no centro do teorema CAP.",
+      "prompt": "Qual fator é tipicamente considerado crítico no design de sistemas distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

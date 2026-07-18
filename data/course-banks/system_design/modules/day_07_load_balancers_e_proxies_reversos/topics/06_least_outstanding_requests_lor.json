@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "06_least_outstanding_requests_lor",
+  "questions": [
+    {
+      "id": "06_least_outstanding_requests_lor_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "06_least_outstanding_requests_lor",
+      "topic_title": "Least Outstanding Requests (LOR)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que o algoritmo Least Outstanding Requests (LOR) usa como critério principal para escolher o backend?",
+      "options": [
+        "O backend com menos requisições pendentes",
+        "O backend com menos conexões TCP abertas",
+        "O backend com maior capacidade nominal configurada",
+        "O backend com menor latência histórica média"
+      ],
+      "answer": "O backend com menos requisições pendentes",
+      "explanation": "LOR seleciona o servidor com menor número de requisições já iniciadas e ainda não concluídas.",
+      "prompt": "O que o algoritmo Least Outstanding Requests (LOR) usa como critério principal para escolher o backend?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Outstanding Requests (LOR)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_least_outstanding_requests_lor_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "06_least_outstanding_requests_lor",
+      "topic_title": "Least Outstanding Requests (LOR)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal diferença entre os algoritmos LOR (Least Outstanding Requests) e Least Connections?",
+      "options": [
+        "LOR considera requisições pendentes; Least Connect considera conexões ativas",
+        "LOR considera apenas conexões UDP; Least Connect considera conexões TCP",
+        "LOR distribui por IP; Least Connect distribui por path",
+        "LOR exige healthcheck; Least Connect não pode usar healthcheck"
+      ],
+      "answer": "LOR considera requisições pendentes; Least Connect considera conexões ativas",
+      "explanation": "LOR (Least Outstanding Requests) reflete o trabalho em andamento monitorando requisições ainda não concluídas, enquanto Least Connections apenas conta o número de conexões abertas, sem considerar se as requisições já foram processadas.",
+      "prompt": "Qual é a principal diferença entre os algoritmos LOR (Least Outstanding Requests) e Least Connections?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Outstanding Requests (LOR)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_least_outstanding_requests_lor_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "06_least_outstanding_requests_lor",
+      "topic_title": "Least Outstanding Requests (LOR)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que o LOR pode ser considerado mais eficiente que o Least Connect em alguns cenários?",
+      "options": [
+        "Porque evita tratar toda conexão ativa como se representasse a mesma carga",
+        "Porque sempre envia requisições para o servidor mais rápido",
+        "Porque elimina a necessidade de monitorar o estado dos backends",
+        "Porque garante divisão exatamente igual de requisições entre servidores"
+      ],
+      "answer": "Porque evita tratar toda conexão ativa como se representasse a mesma carga",
+      "explanation": "O LOR tenta aproximar melhor a carga real ao observar requisições pendentes, não apenas conexões abertas.",
+      "prompt": "Por que o LOR pode ser considerado mais eficiente que o Least Connect em alguns cenários?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Outstanding Requests (LOR)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_least_outstanding_requests_lor_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "06_least_outstanding_requests_lor",
+      "topic_title": "Least Outstanding Requests (LOR)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off associado ao uso do algoritmo LOR (Least Outstanding Requests)?",
+      "options": [
+        "Mais precisão no roteamento, mas maior complexidade e carga no balanceador",
+        "Menor precisão no roteamento, mas menor uso de memória no backend",
+        "Menor latência garantida, sem custo adicional de monitoramento",
+        "Eliminação total da necessidade de balanceamento entre servidores"
+      ],
+      "answer": "Mais precisão no roteamento, mas maior complexidade e carga no balanceador",
+      "explanation": "LOR oferece decisões de roteamento mais precisas ao rastrear requisições pendentes, mas isso exige monitoramento contínuo do estado de cada servidor, aumentando a complexidade e o custo operacional do balanceador.",
+      "prompt": "Qual é o principal trade-off associado ao uso do algoritmo LOR (Least Outstanding Requests)?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Outstanding Requests (LOR)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_least_outstanding_requests_lor_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "06_least_outstanding_requests_lor",
+      "topic_title": "Least Outstanding Requests (LOR)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual cenário o algoritmo LOR (Least Outstanding Requests) tende a ser mais vantajoso?",
+      "options": [
+        "Quando há requisições muito diversas e alto throughput",
+        "Quando todas as requisições têm exatamente o mesmo custo",
+        "Quando o balanceador precisa operar sem monitorar estado algum",
+        "Quando o objetivo principal é apenas dividir conexões igualmente"
+      ],
+      "answer": "Quando há requisições muito diversas e alto throughput",
+      "explanation": "LOR se destaca em workloads heterogêneos com alto volume de tráfego, pois a diversidade de requisições faz com que o monitoramento do trabalho pendente seja mais relevante para evitar sobrecarregar servidores mais lentos.",
+      "prompt": "Em qual cenário o algoritmo LOR (Least Outstanding Requests) tende a ser mais vantajoso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Outstanding Requests (LOR)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

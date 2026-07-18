@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+  "questions": [
+    {
+      "id": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+      "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a função principal de um load balancer?",
+      "options": [
+        "Receber requisições em um ponto único e distribuí-las entre múltiplos servidores back-end",
+        "Armazenar respostas para reduzir latência em leituras repetidas",
+        "Executar consultas SQL em nome dos servidores internos",
+        "Substituir a necessidade de múltiplas réplicas da aplicação"
+      ],
+      "answer": "Receber requisições em um ponto único e distribuí-las entre múltiplos servidores back-end",
+      "explanation": "O load balancer atua como ponto único de entrada da rede e distribui o tráfego entre vários servidores back-end, promovendo escalabilidade horizontal e resiliência a falhas.",
+      "prompt": "Qual é a função principal de um load balancer?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+      "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o load balancer se relaciona com a escalabilidade horizontal?",
+      "options": [
+        "Ele facilita adicionar ou remover réplicas conforme a demanda",
+        "Ele impede a criação de novas réplicas para manter consistência",
+        "Ele só funciona quando existe exatamente um servidor ativo",
+        "Ele substitui a necessidade de balanceamento quando há mais de um host"
+      ],
+      "answer": "Ele facilita adicionar ou remover réplicas conforme a demanda",
+      "explanation": "O load balancer é peça central em arquiteturas elásticas porque abstrai o pool de servidores do cliente, permitindo que réplicas sejam adicionadas ou removidas dinamicamente sem impacto nas requisições.",
+      "prompt": "Como o load balancer se relaciona com a escalabilidade horizontal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+      "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Para que serve um health check em um load balancer?",
+      "options": [
+        "Verificar se o host está saudável antes de enviar tráfego para ele",
+        "Medir o tamanho do payload de cada requisição",
+        "Criptografar respostas antes de retorná-las ao cliente",
+        "Garantir que todas as requisições sejam enviadas ao mesmo servidor"
+      ],
+      "answer": "Verificar se o host está saudável antes de enviar tráfego para ele",
+      "explanation": "Health checks permitem que o balanceador envie tráfego apenas para hosts saudáveis.",
+      "prompt": "Para que serve um health check em um load balancer?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+      "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é warmup no contexto de load balancers?",
+      "options": [
+        "Inserir uma nova réplica gradualmente no pool, sem mandar carga total de imediato",
+        "Remover um host do pool imediatamente após qualquer pico de latência",
+        "Aumentar o número de certificados TLS em cada servidor",
+        "Reiniciar todos os back-ends antes de aceitar novas conexões"
+      ],
+      "answer": "Inserir uma nova réplica gradualmente no pool, sem mandar carga total de imediato",
+      "explanation": "Warmup evita sobrecarregar uma réplica recém-subida logo no início.",
+      "prompt": "O que é warmup no contexto de load balancers?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "01_load_balancers_e_proxies_reversos_balanceadores_de_carga_escalabilidade_e_healthchecks",
+      "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o objetivo do SSL offload em um load balancer?",
+      "options": [
+        "Terminar SSL/TLS/HTTPS no balanceador, centralizando certificados e troca de chaves",
+        "Duplicar o tráfego criptografado para todos os servidores internos",
+        "Eliminar a necessidade de qualquer conexão segura na aplicação",
+        "Converter requisições HTTP em consultas ao banco de dados"
+      ],
+      "answer": "Terminar SSL/TLS/HTTPS no balanceador, centralizando certificados e troca de chaves",
+      "explanation": "O SSL offload concentra a terminação TLS no balanceador e reduz trabalho nos hosts internos.",
+      "prompt": "Qual é o objetivo do SSL offload em um load balancer?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Balanceadores de Carga, Escalabilidade e Healthchecks",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

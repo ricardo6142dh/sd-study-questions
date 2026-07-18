@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "05_modelos_orientados_a_documentos",
+  "questions": [
+    {
+      "id": "05_modelos_orientados_a_documentos_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "05_modelos_orientados_a_documentos",
+      "topic_title": "Modelos Orientados a Documentos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um modelo orientado a documentos?",
+      "options": [
+        "Um modelo NoSQL que armazena dados em documentos",
+        "Um modelo relacional baseado em tabelas, linhas e colunas",
+        "Um modelo focado apenas em dados temporais indexados por tempo",
+        "Um modelo que depende obrigatoriamente de schema rígido"
+      ],
+      "answer": "Um modelo NoSQL que armazena dados em documentos",
+      "explanation": "Bancos orientados a documentos pertencem à categoria NoSQL e organizam os dados em documentos semi-estruturados (como JSON), permitindo esquemas flexíveis sem a rigidez das tabelas relacionais.",
+      "prompt": "O que caracteriza um modelo orientado a documentos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Documentos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_modelos_orientados_a_documentos_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "05_modelos_orientados_a_documentos",
+      "topic_title": "Modelos Orientados a Documentos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual formato de dados é tipicamente utilizado no armazenamento de bancos orientados a documentos?",
+      "options": [
+        "JSON",
+        "CSV",
+        "XML",
+        "Parquet"
+      ],
+      "answer": "JSON",
+      "explanation": "Bancos orientados a documentos, como MongoDB, armazenam dados em formato JSON (ou variantes como BSON), o que permite representar estruturas aninhadas e campos variáveis de forma nativa.",
+      "prompt": "Qual formato de dados é tipicamente utilizado no armazenamento de bancos orientados a documentos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Documentos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_modelos_orientados_a_documentos_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "05_modelos_orientados_a_documentos",
+      "topic_title": "Modelos Orientados a Documentos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual banco é citado como exemplo de uso do modelo orientado a documentos?",
+      "options": [
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "SQLite"
+      ],
+      "answer": "MongoDB",
+      "explanation": "O texto usa MongoDB como exemplo de banco NoSQL que utiliza esse modelo.",
+      "prompt": "Qual banco é citado como exemplo de uso do modelo orientado a documentos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Documentos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_modelos_orientados_a_documentos_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "05_modelos_orientados_a_documentos",
+      "topic_title": "Modelos Orientados a Documentos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é uma vantagem característica dos modelos orientados a documentos?",
+      "options": [
+        "Alta escalabilidade",
+        "Consistência superior à dos bancos relacionais",
+        "Schema rígido obrigatório",
+        "Dependência de joins explícitos para consultas"
+      ],
+      "answer": "Alta escalabilidade",
+      "explanation": "Modelos orientados a documentos oferecem alta escalabilidade horizontal e schema flexível, tornando-os adequados para dados heterogêneos e cargas de leitura/escrita distribuídas.",
+      "prompt": "Qual é uma vantagem característica dos modelos orientados a documentos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Documentos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_modelos_orientados_a_documentos_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "05_modelos_orientados_a_documentos",
+      "topic_title": "Modelos Orientados a Documentos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é uma desvantagem dos modelos orientados a documentos em comparação com bancos relacionais?",
+      "options": [
+        "Consistência reduzida",
+        "Menor capacidade de armazenar dados não estruturados",
+        "Ausência total de suporte a documentos",
+        "Obrigatoriedade de tabelas e colunas fixas"
+      ],
+      "answer": "Consistência reduzida",
+      "explanation": "Para ganhar flexibilidade de esquema e escalabilidade horizontal, bancos orientados a documentos frequentemente relaxam garantias de consistência forte (ACID), oferecendo consistência eventual em vez da consistência total dos bancos relacionais.",
+      "prompt": "Qual é uma desvantagem dos modelos orientados a documentos em comparação com bancos relacionais?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Documentos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

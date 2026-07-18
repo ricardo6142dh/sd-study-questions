@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "07_modelos_de_coluna_larga_wide_column",
+  "questions": [
+    {
+      "id": "07_modelos_de_coluna_larga_wide_column_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "07_modelos_de_coluna_larga_wide_column",
+      "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No modelo de coluna larga, o que cada linha e cada coluna representam, respectivamente?",
+      "options": [
+        "Cada linha representa um registro e cada coluna representa um campo",
+        "Cada linha representa um campo e cada coluna representa um registro",
+        "Cada linha representa um índice e cada coluna representa uma partição",
+        "Cada linha representa uma tabela e cada coluna representa um relacionamento"
+      ],
+      "answer": "Cada linha representa um registro e cada coluna representa um campo",
+      "explanation": "No modelo de coluna larga, a estrutura básica mantém linhas como entidades completas (registros) e colunas como atributos desses registros, porém cada linha pode ter um conjunto diferente de colunas, oferecendo flexibilidade de esquema.",
+      "prompt": "No modelo de coluna larga, o que cada linha e cada coluna representam, respectivamente?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_modelos_de_coluna_larga_wide_column_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "07_modelos_de_coluna_larga_wide_column",
+      "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual contexto o modelo de coluna larga é tipicamente utilizado?",
+      "options": [
+        "Em sistemas de armazenamento distribuído",
+        "Apenas em bancos relacionais com schema rígido",
+        "Somente em bancos orientados a grafos",
+        "Exclusivamente em memória local da aplicação"
+      ],
+      "answer": "Em sistemas de armazenamento distribuído",
+      "explanation": "O modelo de coluna larga foi projetado para cenários de armazenamento distribuído, onde os dados precisam ser particionados e replicados entre múltiplos nós de forma eficiente.",
+      "prompt": "Em qual contexto o modelo de coluna larga é tipicamente utilizado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_modelos_de_coluna_larga_wide_column_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "07_modelos_de_coluna_larga_wide_column",
+      "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual objetivo de infraestrutura é característico do modelo de coluna larga?",
+      "options": [
+        "Escalabilidade horizontal",
+        "Bloqueio pessimista por padrão",
+        "Normalização obrigatória dos dados",
+        "Redução de latência por cache local"
+      ],
+      "answer": "Escalabilidade horizontal",
+      "explanation": "O modelo de coluna larga foi concebido para escalar horizontalmente, distribuindo dados entre múltiplos servidores sem a necessidade de hardware mais poderoso.",
+      "prompt": "Qual objetivo de infraestrutura é característico do modelo de coluna larga?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_modelos_de_coluna_larga_wide_column_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "07_modelos_de_coluna_larga_wide_column",
+      "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é uma característica fundamental do modelo de coluna larga em relação à estrutura dos dados?",
+      "options": [
+        "Flexibilidade na estrutura de dados",
+        "Schema rígido e imutável",
+        "Dependência de joins complexos",
+        "Consistência forte como requisito principal"
+      ],
+      "answer": "Flexibilidade na estrutura de dados",
+      "explanation": "O modelo de coluna larga permite que diferentes linhas tenham conjuntos distintos de colunas, oferecendo flexibilidade estrutural que bancos relacionais tradicionais com schema rígido não possibilitam.",
+      "prompt": "Qual é uma característica fundamental do modelo de coluna larga em relação à estrutura dos dados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_modelos_de_coluna_larga_wide_column_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "07_modelos_de_coluna_larga_wide_column",
+      "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Além de flexibilidade, qual capacidade é característica do modelo de coluna larga?",
+      "options": [
+        "Suporte a grandes volumes de informações",
+        "Obrigatoriedade de dados totalmente uniformes em todas as linhas",
+        "Uso exclusivo para pequenas bases transacionais",
+        "Eliminação completa da necessidade de armazenamento distribuído"
+      ],
+      "answer": "Suporte a grandes volumes de informações",
+      "explanation": "O modelo de coluna larga combina flexibilidade de schema com suporte a grandes volumes de dados, sendo projetado para cargas distribuídas em escala.",
+      "prompt": "Além de flexibilidade, qual capacidade é característica do modelo de coluna larga?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Coluna Larga (Wide-Column)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

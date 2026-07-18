@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "07_ip_hash_manglev_e_random",
+  "questions": [
+    {
+      "id": "07_ip_hash_manglev_e_random_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "07_ip_hash_manglev_e_random",
+      "topic_title": "IP Hash, Maglev e Random",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No algoritmo IP hash, qual é o critério principal usado para escolher o backend?",
+      "options": [
+        "O IP de origem do cliente",
+        "A carga média atual de cada host",
+        "A porta de destino da requisição",
+        "O tempo de resposta histórico do servidor"
+      ],
+      "answer": "O IP de origem do cliente",
+      "explanation": "IP hash usa o IP do cliente como entrada do hash para direcionar a requisição ao backend.",
+      "prompt": "No algoritmo IP hash, qual é o critério principal usado para escolher o backend?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "IP Hash, Maglev e Random",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_ip_hash_manglev_e_random_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "07_ip_hash_manglev_e_random",
+      "topic_title": "IP Hash, Maglev e Random",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que IP hash pode causar desbalanceamento em alguns cenários?",
+      "options": [
+        "Porque muitos usuários podem compartilhar o mesmo IP público em NATs ou proxies",
+        "Porque ele sempre envia todas as requisições para o mesmo host, independentemente do IP",
+        "Porque ele depende de métricas de CPU e memória para escolher o backend",
+        "Porque ele só funciona quando o pool tem um único servidor"
+      ],
+      "answer": "Porque muitos usuários podem compartilhar o mesmo IP público em NATs ou proxies",
+      "explanation": "Se vários clientes saem com o mesmo IP, o hash tende a concentrar tráfego no mesmo backend.",
+      "prompt": "Por que IP hash pode causar desbalanceamento em alguns cenários?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "IP Hash, Maglev e Random",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_ip_hash_manglev_e_random_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "07_ip_hash_manglev_e_random",
+      "topic_title": "IP Hash, Maglev e Random",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve melhor o algoritmo Maglev?",
+      "options": [
+        "É um algoritmo associado a hashing consistente e a uma tabela de trabalho, com foco em persistência e cache",
+        "É um algoritmo que escolhe o host com menor número de conexões abertas",
+        "É um algoritmo puramente aleatório, sem qualquer noção de afinidade",
+        "É um algoritmo que roteia apenas com base no path da URL"
+      ],
+      "answer": "É um algoritmo associado a hashing consistente e a uma tabela de trabalho, com foco em persistência e cache",
+      "explanation": "O tópico posiciona Maglev como ligado a hashing consistente, persistência e casos como cache.",
+      "prompt": "Qual afirmação descreve melhor o algoritmo Maglev?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "IP Hash, Maglev e Random",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_ip_hash_manglev_e_random_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "07_ip_hash_manglev_e_random",
+      "topic_title": "IP Hash, Maglev e Random",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal característica do balanceador Random?",
+      "options": [
+        "Seleciona um host aleatoriamente no pool",
+        "Mantém o mesmo cliente sempre no mesmo backend",
+        "Escolhe o host com menor latência observada",
+        "Distribui requisições apenas por IP de origem"
+      ],
+      "answer": "Seleciona um host aleatoriamente no pool",
+      "explanation": "Random escolhe um host aleatório, sem considerar estado, métricas ou histórico.",
+      "prompt": "Qual é a principal característica do balanceador Random?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "IP Hash, Maglev e Random",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_ip_hash_manglev_e_random_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "07_ip_hash_manglev_e_random",
+      "topic_title": "IP Hash, Maglev e Random",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual opção melhor resume a diferença entre IP hash e Random?",
+      "options": [
+        "IP hash cria afinidade de sessão; Random não cria afinidade",
+        "IP hash é aleatório; Random é determinístico por cliente",
+        "IP hash usa métricas do servidor; Random usa apenas o path",
+        "IP hash depende de healthcheck; Random depende de cache"
+      ],
+      "answer": "IP hash cria afinidade de sessão; Random não cria afinidade",
+      "explanation": "IP hash tende a manter o mesmo cliente no mesmo backend; Random não preserva essa afinidade.",
+      "prompt": "Qual opção melhor resume a diferença entre IP hash e Random?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "IP Hash, Maglev e Random",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

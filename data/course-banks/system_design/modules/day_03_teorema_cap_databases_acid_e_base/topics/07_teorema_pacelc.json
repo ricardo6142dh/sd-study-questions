@@ -1,0 +1,61 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "07_teorema_pacelc",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "07_teorema_pacelc",
+      "question": "O Teorema PACELC expande o Teorema CAP ao adicionar uma análise sobre o comportamento do sistema em condições normais. O que a parte 'ELC' da sigla representa?",
+      "options": [
+        "Else (senão), Latency (latência) e Consistency (consistência).",
+        "Eventual (consistência eventual), Latency (latência) e Consistency (consistência).",
+        "Error (erro), Latency (latência) e Consistency (consistência).",
+        "Else (senão), Load (carga) e Consistency (consistência)."
+      ],
+      "answer": "Else (senão), Latency (latência) e Consistency (consistência).",
+      "explanation": "No PACELC, a parte 'ELC' refere-se ao comportamento do sistema quando não há partição de rede (Else), onde o arquiteto deve escolher entre priorizar a baixa latência (Latency) ou a consistência forte (Consistency).",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema PACELC",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-07_teorema_pacelc-q001",
+      "prompt": "O Teorema PACELC expande o Teorema CAP ao adicionar uma análise sobre o comportamento do sistema em condições normais. O que a parte 'ELC' da sigla representa?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Teorema PACELC",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "07_teorema_pacelc",
+      "question": "Por que o Teorema CAP é considerado insuficiente para descrever completamente bancos de dados distribuídos modernos, segundo a proposta de Daniel Abadi?",
+      "options": [
+        "Porque o CAP ignora completamente a existência de partições de rede.",
+        "Porque o CAP foca apenas no comportamento durante falhas, ignorando o trade-off entre latência e consistência durante a operação normal.",
+        "Porque o CAP não permite a classificação de bancos de dados relacionais.",
+        "Porque o CAP é uma teoria matemática que não se aplica a sistemas distribuídos reais."
+      ],
+      "answer": "Porque o CAP foca apenas no comportamento durante falhas, ignorando o trade-off entre latência e consistência durante a operação normal.",
+      "explanation": "O CAP descreve o sistema apenas sob partição (P). O PACELC complementa essa visão ao analisar o que acontece quando a rede está íntegra (Else), onde a latência de replicação torna-se um fator crítico de design.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Teorema PACELC",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-07_teorema_pacelc-q003",
+      "prompt": "Por que o Teorema CAP é considerado insuficiente para descrever completamente bancos de dados distribuídos modernos, segundo a proposta de Daniel Abadi?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "recommended_review": {
+        "topic_title": "Teorema PACELC",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

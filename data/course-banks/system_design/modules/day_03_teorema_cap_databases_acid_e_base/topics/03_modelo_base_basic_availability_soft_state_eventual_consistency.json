@@ -1,0 +1,115 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+  "questions": [
+    {
+      "question": "No modelo BASE, o que caracteriza o conceito de 'Soft State'?",
+      "type": "multiple_choice",
+      "options": [
+        "O estado do sistema é imutável e requer intervenção manual para ser alterado.",
+        "O estado do sistema pode mudar ao longo do tempo sem intervenção externa, como através de expiração automática de dados (TTL).",
+        "O estado do sistema é sempre consistente entre todas as réplicas no momento da escrita.",
+        "O estado do sistema é mantido exclusivamente em memória volátil, sem persistência em disco."
+      ],
+      "answer": "O estado do sistema pode mudar ao longo do tempo sem intervenção externa, como através de expiração automática de dados (TTL).",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_key": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+      "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-03_modelo_base_basic_availability_soft_state_eventual_consistency-q001",
+      "prompt": "No modelo BASE, o que caracteriza o conceito de 'Soft State'?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O estado do sistema pode mudar ao longo do tempo sem intervenção externa, como através de expiração automática de dados (TTL).",
+      "recommended_review": {
+        "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "question": "Qual é a principal diferença na replicação de dados entre os modelos ACID e BASE?",
+      "type": "multiple_choice",
+      "options": [
+        "ACID utiliza replicação assíncrona, enquanto BASE utiliza replicação síncrona.",
+        "ACID prioriza a disponibilidade, enquanto BASE prioriza a integridade transacional.",
+        "ACID geralmente utiliza replicação síncrona para garantir consistência, enquanto BASE utiliza replicação assíncrona para favorecer performance.",
+        "Não há diferença, ambos os modelos utilizam os mesmos protocolos de replicação."
+      ],
+      "answer": "ACID geralmente utiliza replicação síncrona para garantir consistência, enquanto BASE utiliza replicação assíncrona para favorecer performance.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_key": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+      "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-03_modelo_base_basic_availability_soft_state_eventual_consistency-q002",
+      "prompt": "Qual é a principal diferença na replicação de dados entre os modelos ACID e BASE?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: ACID geralmente utiliza replicação síncrona para garantir consistência, enquanto BASE utiliza replicação assíncrona para favorecer performance.",
+      "recommended_review": {
+        "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "question": "Em um sistema que utiliza consistência eventual, qual é o risco principal ao realizar uma leitura logo após uma escrita?",
+      "type": "multiple_choice",
+      "options": [
+        "O sistema pode retornar um erro de transação (rollback).",
+        "O sistema pode retornar dados obsoletos (stale data) caso a replicação ainda não tenha convergido.",
+        "O sistema irá travar devido ao bloqueio de escrita.",
+        "O sistema irá forçar uma consistência forte, aumentando a latência inesperadamente."
+      ],
+      "answer": "O sistema pode retornar dados obsoletos (stale data) caso a replicação ainda não tenha convergido.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_key": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+      "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-03_modelo_base_basic_availability_soft_state_eventual_consistency-q003",
+      "prompt": "Em um sistema que utiliza consistência eventual, qual é o risco principal ao realizar uma leitura logo após uma escrita?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O sistema pode retornar dados obsoletos (stale data) caso a replicação ainda não tenha convergido.",
+      "recommended_review": {
+        "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "question": "O modelo BASE é frequentemente associado a qual combinação do Teorema CAP?",
+      "type": "multiple_choice",
+      "options": [
+        "CP (Consistência e Tolerância a Partição)",
+        "CA (Consistência e Disponibilidade)",
+        "AP (Disponibilidade e Tolerância a Partição)",
+        "Nenhuma das anteriores, pois BASE ignora o Teorema CAP."
+      ],
+      "answer": "AP (Disponibilidade e Tolerância a Partição)",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_key": "03_modelo_base_basic_availability_soft_state_eventual_consistency",
+      "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-03_modelo_base_basic_availability_soft_state_eventual_consistency-q004",
+      "prompt": "O modelo BASE é frequentemente associado a qual combinação do Teorema CAP?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: AP (Disponibilidade e Tolerância a Partição)",
+      "recommended_review": {
+        "topic_title": "Modelo BASE - Basic Availability, Soft-State, Eventual Consistency",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

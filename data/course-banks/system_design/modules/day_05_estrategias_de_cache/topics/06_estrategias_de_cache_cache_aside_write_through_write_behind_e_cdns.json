@@ -1,0 +1,115 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+  "questions": [
+    {
+      "id": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+      "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No padrão Cache Aside, o que acontece quando a aplicação não encontra o dado no cache?",
+      "options": [
+        "Consulta a origem, salva o resultado no cache e então responde",
+        "Atualiza cache e origem no mesmo fluxo de escrita",
+        "Escreve primeiro no cache e persiste na origem depois",
+        "Envia o dado para uma CDN antes de responder"
+      ],
+      "answer": "Consulta a origem, salva o resultado no cache e então responde",
+      "explanation": "No cache aside, a leitura começa no cache; em miss, a origem é consultada, o cache é preenchido e a resposta é retornada.",
+      "prompt": "No padrão Cache Aside, o que acontece quando a aplicação não encontra o dado no cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+      "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No Write-Behind, qual é o papel do flush?",
+      "options": [
+        "Enviar posteriormente o dado do cache para a origem",
+        "Invalidar o cache quando a origem muda",
+        "Atualizar cache e origem simultaneamente",
+        "Buscar o dado na origem antes de preencher o cache"
+      ],
+      "answer": "Enviar posteriormente o dado do cache para a origem",
+      "explanation": "Flush é o envio posterior do dado do cache para a origem, normalmente como parte do fluxo assíncrono do write-behind.",
+      "prompt": "No Write-Behind, qual é o papel do flush?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+      "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação melhor descreve o Write-Through?",
+      "options": [
+        "A escrita atualiza cache e origem no mesmo fluxo síncrono",
+        "A escrita acontece primeiro no cache e a persistência na origem ocorre depois, de forma assíncrona",
+        "A leitura sempre começa na origem e só depois consulta o cache",
+        "O conteúdo estático é servido a partir de uma camada na borda"
+      ],
+      "answer": "A escrita atualiza cache e origem no mesmo fluxo síncrono",
+      "explanation": "No write-through, a escrita percorre cache e origem no mesmo fluxo, reduzindo divergencia ao custo de mais latencia na escrita.",
+      "prompt": "Qual afirmação melhor descreve o Write-Through?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "06_estrategias_de_cache_cache_aside_write_through_write_behind_e_cdns",
+      "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual cenário uma CDN é mais adequada?",
+      "options": [
+        "Distribuição de conteúdo estático mais perto do usuário",
+        "Persistência assíncrona de dados transacionais",
+        "Leitura sob demanda com preenchimento do cache em miss",
+        "Atualização síncrona de cache e origem no caminho de escrita"
+      ],
+      "answer": "Distribuição de conteúdo estático mais perto do usuário",
+      "explanation": "CDNs são projetadas para armazenar e servir conteúdo estático (imagens, CSS, JS, vídeos) a partir de nós geograficamente próximos ao usuário, reduzindo latência e carga na origem.",
+      "prompt": "Em qual cenário uma CDN é mais adequada?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache Aside, Write-Through, Write-Behind e CDNs",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

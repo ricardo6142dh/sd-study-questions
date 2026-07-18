@@ -1,10 +1,6 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { cache } from "react";
 import type { BuiltExam, ExamFilters, QuizBank, QuizQuestion } from "@/types/quiz";
-import { safeReadJson } from "@/lib/fs-utils";
-
-const COURSE_BANKS_DIR = path.resolve(process.cwd(), "data/course-banks");
+import { loadAllCourseBanks, loadCourseBank } from "@/lib/course-bank-storage";
 
 function toArray(value: string | string[] | undefined) {
   if (value === undefined) {
@@ -120,35 +116,7 @@ function selectBalancedQuestions(questions: QuizQuestion[], count: number, seed:
 }
 
 const loadQuizBankCached = cache(async (): Promise<QuizBank> => {
-  try {
-    const courseDirs = await fs.readdir(COURSE_BANKS_DIR);
-    const banks = await Promise.all(
-      courseDirs.map(async (courseSlug) => {
-        const courseDir = path.join(COURSE_BANKS_DIR, courseSlug);
-        const stats = await fs.stat(courseDir);
-
-        if (!stats.isDirectory()) {
-          return { questions: [] } satisfies QuizBank;
-        }
-
-        return safeReadJson<QuizBank>(path.join(courseDir, "question-bank.json"));
-      })
-    );
-
-    const questions = banks.flatMap((bank) => bank.questions);
-
-    return {
-      questions: Array.from(
-        new Map(questions.map((question) => [question.id, question])).values()
-      )
-    };
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return { questions: [] };
-    }
-
-    throw error;
-  }
+  return loadAllCourseBanks();
 });
 
 export async function loadQuizBank(): Promise<QuizBank> {
@@ -156,21 +124,7 @@ export async function loadQuizBank(): Promise<QuizBank> {
 }
 
 const loadQuizBankByCourseCached = cache(async (courseSlug: string): Promise<QuizBank> => {
-  try {
-    const bank = await safeReadJson<QuizBank>(
-      path.join(COURSE_BANKS_DIR, courseSlug, "question-bank.json")
-    );
-
-    return {
-      questions: bank.questions
-    };
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return { questions: [] };
-    }
-
-    throw error;
-  }
+  return loadCourseBank(courseSlug);
 });
 
 export async function loadQuizBankByCourse(courseSlug: string): Promise<QuizBank> {

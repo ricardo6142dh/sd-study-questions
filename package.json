@@ -15,7 +15,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "validate:banks": "node scripts/validate-course-banks.mjs"
+    "validate:banks": "node scripts/validate-course-banks.mjs",
+    "split:banks": "node scripts/split-course-banks.mjs"
   },
   "dependencies": {
     "next": "^16.2.7",

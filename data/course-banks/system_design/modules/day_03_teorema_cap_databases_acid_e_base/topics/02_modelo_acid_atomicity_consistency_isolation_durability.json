@@ -1,0 +1,88 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "02_modelo_acid_atomicity_consistency_isolation_durability",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "02_modelo_acid_atomicity_consistency_isolation_durability",
+      "question": "No contexto do modelo ACID, qual é a definição correta de Atomicidade?",
+      "options": [
+        "A garantia de que o banco de dados sempre respeitará as regras de integridade, como chaves estrangeiras e tipos de dados.",
+        "A capacidade de uma transação ser tratada como uma unidade indivisível, onde todas as operações são efetivadas ou nenhuma é.",
+        "A propriedade que impede que transações concorrentes interfiram no resultado final de outras transações.",
+        "A garantia de que, uma vez que uma transação é confirmada, os dados persistirão mesmo em caso de falha de hardware."
+      ],
+      "answer": "A capacidade de uma transação ser tratada como uma unidade indivisível, onde todas as operações são efetivadas ou nenhuma é.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-02_modelo_acid_atomicity_consistency_isolation_durability-q001",
+      "prompt": "No contexto do modelo ACID, qual é a definição correta de Atomicidade?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: A capacidade de uma transação ser tratada como uma unidade indivisível, onde todas as operações são efetivadas ou nenhuma é.",
+      "recommended_review": {
+        "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "02_modelo_acid_atomicity_consistency_isolation_durability",
+      "question": "Qual das alternativas descreve corretamente o trade-off entre o nível de isolamento e a performance do sistema?",
+      "options": [
+        "Níveis de isolamento mais rigorosos aumentam a performance ao permitir mais paralelismo entre transações.",
+        "O isolamento não possui impacto na performance, sendo uma configuração puramente lógica.",
+        "Níveis de isolamento mais rigorosos reduzem a concorrência, podendo criar gargalos devido ao aumento de filas de espera.",
+        "O isolamento só impacta a performance se o banco de dados não for durável."
+      ],
+      "answer": "Níveis de isolamento mais rigorosos reduzem a concorrência, podendo criar gargalos devido ao aumento de filas de espera.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-02_modelo_acid_atomicity_consistency_isolation_durability-q002",
+      "prompt": "Qual das alternativas descreve corretamente o trade-off entre o nível de isolamento e a performance do sistema?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: Níveis de isolamento mais rigorosos reduzem a concorrência, podendo criar gargalos devido ao aumento de filas de espera.",
+      "recommended_review": {
+        "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "02_modelo_acid_atomicity_consistency_isolation_durability",
+      "question": "Por que o Redis, em sua configuração padrão, não é considerado um banco de dados totalmente ACID?",
+      "options": [
+        "Porque ele não suporta transações de forma alguma.",
+        "Porque ele prioriza a latência ultrabaixa mantendo dados em memória, o que pode comprometer a propriedade de Durabilidade.",
+        "Porque ele não permite que o usuário defina constraints de integridade.",
+        "Porque ele é um banco de dados estritamente relacional que não suporta isolamento."
+      ],
+      "answer": "Porque ele prioriza a latência ultrabaixa mantendo dados em memória, o que pode comprometer a propriedade de Durabilidade.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-02_modelo_acid_atomicity_consistency_isolation_durability-q004",
+      "prompt": "Por que o Redis, em sua configuração padrão, não é considerado um banco de dados totalmente ACID?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Porque ele prioriza a latência ultrabaixa mantendo dados em memória, o que pode comprometer a propriedade de Durabilidade.",
+      "recommended_review": {
+        "topic_title": "Modelo ACID - Atomicity, Consistency, Isolation, Durability",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

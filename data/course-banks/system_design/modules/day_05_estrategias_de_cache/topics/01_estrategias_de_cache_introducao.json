@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "01_estrategias_de_cache_introducao",
+  "questions": [
+    {
+      "id": "01_estrategias_de_cache_introducao_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "01_estrategias_de_cache_introducao",
+      "topic_title": "Estrategias de Cache - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em termos arquiteturais, o que melhor define um cache?",
+      "options": [
+        "Uma camada intermediária que armazena temporariamente uma cópia do dado para reduzir a necessidade de consultar a origem",
+        "A fonte principal e definitiva do dado, usada para substituir a origem",
+        "Uma técnica de compressão de dados para reduzir o tamanho das respostas",
+        "Um mecanismo de replicação síncrona entre bancos de dados"
+      ],
+      "answer": "Uma camada intermediária que armazena temporariamente uma cópia do dado para reduzir a necessidade de consultar a origem",
+      "explanation": "Cache é uma camada intermediária de cópia temporária; ele reduz consultas à origem e a latência.",
+      "prompt": "Em termos arquiteturais, o que melhor define um cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_estrategias_de_cache_introducao_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "01_estrategias_de_cache_introducao",
+      "topic_title": "Estrategias de Cache - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve corretamente a relação entre cache e source of truth?",
+      "options": [
+        "O cache substitui permanentemente a source of truth quando está aquecido",
+        "O cache depende da source of truth para reconstruir o dado quando necessário",
+        "A source of truth existe apenas para preencher o cache na primeira leitura",
+        "Cache e source of truth são sinônimos e sempre contêm exatamente os mesmos dados"
+      ],
+      "answer": "O cache depende da source of truth para reconstruir o dado quando necessário",
+      "explanation": "O cache é uma cópia derivada; a origem continua sendo a referência principal e recuperável.",
+      "prompt": "Qual afirmação descreve corretamente a relação entre cache e source of truth?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_estrategias_de_cache_introducao_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "01_estrategias_de_cache_introducao",
+      "topic_title": "Estrategias de Cache - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quando o uso de cache tende a fazer mais sentido?",
+      "options": [
+        "Quando consultar a origem custa mais do que servir a cópia intermediária e o dado muda menos do que é consultado",
+        "Quando o dado muda constantemente e nunca pode ser reconstruído",
+        "Quando a origem é mais barata e mais rápida do que servir a cópia",
+        "Quando o objetivo principal é eliminar a necessidade de uma source of truth"
+      ],
+      "answer": "Quando consultar a origem custa mais do que servir a cópia intermediária e o dado muda menos do que é consultado",
+      "explanation": "O benefício do cache aparece quando a origem é mais cara de consultar e o dado tem boa reutilização.",
+      "prompt": "Quando o uso de cache tende a fazer mais sentido?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_estrategias_de_cache_introducao_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "01_estrategias_de_cache_introducao",
+      "topic_title": "Estrategias de Cache - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que acontece com a latência quando uma requisição é atendida pelo cache em vez de consultar a origem?",
+      "options": [
+        "A latência tende a diminuir",
+        "A latência necessariamente aumenta",
+        "A latência fica sempre igual, porque cache não afeta tempo de resposta",
+        "A latência só muda se houver TTL configurado"
+      ],
+      "answer": "A latência tende a diminuir",
+      "explanation": "Servir do cache evita o custo de buscar o dado na origem, reduzindo o tempo de resposta.",
+      "prompt": "O que acontece com a latência quando uma requisição é atendida pelo cache em vez de consultar a origem?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_estrategias_de_cache_introducao_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "01_estrategias_de_cache_introducao",
+      "topic_title": "Estrategias de Cache - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual cenário descreve corretamente um cache hit?",
+      "options": [
+        "A requisição encontra o dado no cache e não precisa consultar a origem",
+        "A requisição não encontra o dado no cache e precisa buscar na origem",
+        "O dado expira por TTL e é removido automaticamente",
+        "O cache atinge o limite de capacidade e libera espaço"
+      ],
+      "answer": "A requisição encontra o dado no cache e não precisa consultar a origem",
+      "explanation": "Cache hit significa atendimento direto pelo cache, sem acesso à origem.",
+      "prompt": "Qual cenário descreve corretamente um cache hit?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

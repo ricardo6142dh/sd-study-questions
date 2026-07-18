@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+  "questions": [
+    {
+      "id": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em um sistema de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
+      "options": [
+        "Porque a consistência de dados é crítica e o monólito favorece esse objetivo",
+        "Porque monólitos sempre escalam melhor horizontalmente do que microsserviços",
+        "Porque monólitos eliminam a necessidade de definir domínios e entidades",
+        "Porque monólitos reduzem automaticamente o blast radius de qualquer falha"
+      ],
+      "answer": "Porque a consistência de dados é crítica e o monólito favorece esse objetivo",
+      "explanation": "Em core banking, operações financeiras exigem garantias fortes de consistência e atomicidade — propriedades mais fáceis de alcançar em um monólito, onde transações ocorrem dentro do mesmo processo sem necessidade de coordenação distribuída.",
+      "prompt": "Em um sistema de core banking, qual é a justificativa principal para considerar um monólito como solução inicial?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em que condição microsserviços passam a ser mais adequados do que um monólito em sistemas que começaram centralizados?",
+      "options": [
+        "Quando a escala horizontal exige maior divisão do sistema",
+        "Quando a equipe quer evitar qualquer modelagem de domínio",
+        "Quando a consistência de dados deixa de ser relevante",
+        "Quando o sistema precisa ser sempre implementado como serviços independentes desde o início"
+      ],
+      "answer": "Quando a escala horizontal exige maior divisão do sistema",
+      "explanation": "A migração para microsserviços se justifica quando diferentes partes do sistema têm requisitos de escala distintos e o monólito se torna um gargalo — escalar o sistema inteiro passa a ser menos eficiente do que escalar partes específicas de forma independente.",
+      "prompt": "Em que condição microsserviços passam a ser mais adequados do que um monólito em sistemas que começaram centralizados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a fragmentação do sistema não deve ser feita apenas por critérios técnicos?",
+      "options": [
+        "Porque isso pode apenas reproduzir acoplamentos ruins em vez de resolver o problema",
+        "Porque critérios técnicos impedem qualquer deploy independente",
+        "Porque critérios técnicos sempre aumentam a consistência de dados",
+        "Porque critérios técnicos eliminam a necessidade de bounded context"
+      ],
+      "answer": "Porque isso pode apenas reproduzir acoplamentos ruins em vez de resolver o problema",
+      "explanation": "Dividir o sistema por critérios puramente técnicos (ex: camada, tecnologia) sem mapear domínios e responsabilidades apenas replica os acoplamentos existentes em um contexto distribuído, sem os benefícios reais da separação.",
+      "prompt": "Por que a fragmentação do sistema não deve ser feita apenas por critérios técnicos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel de definir domínios e entidades antes de criar serviços independentes em uma arquitetura de microsserviços?",
+      "options": [
+        "Explicitar responsabilidades de negócio para orientar uma divisão coerente",
+        "Substituir a necessidade de linguagem ubíqua no time",
+        "Garantir que todos os serviços tenham o mesmo ciclo de deploy",
+        "Permitir que a divisão seja feita apenas por conveniência técnica"
+      ],
+      "answer": "Explicitar responsabilidades de negócio para orientar uma divisão coerente",
+      "explanation": "Sem fronteiras de domínio bem definidas, a divisão em serviços tende a ser arbitrária e gera acoplamento implícito; mapear responsabilidades de negócio primeiro garante que cada serviço tenha uma razão coesa para existir.",
+      "prompt": "Qual é o papel de definir domínios e entidades antes de criar serviços independentes em uma arquitetura de microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "07_microservicos_monolitos_e_dominios_case_de_core_banking_dominios_e_entidades",
+      "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual benefício está associado a uma segmentação correta de responsabilidades em microsserviços?",
+      "options": [
+        "Deploy independente com redução do blast radius",
+        "Eliminação total da necessidade de resiliência",
+        "Garantia de consistência forte sem qualquer custo adicional",
+        "Centralização completa de todas as responsabilidades em um único serviço"
+      ],
+      "answer": "Deploy independente com redução do blast radius",
+      "explanation": "Quando os serviços têm fronteiras bem definidas, uma falha ou um deploy mal-sucedido afeta apenas aquele serviço específico, reduzindo o blast radius e permitindo que o restante do sistema continue operando normalmente.",
+      "prompt": "Qual benefício está associado a uma segmentação correta de responsabilidades em microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Case de Core Banking, Dominios e Entidades",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

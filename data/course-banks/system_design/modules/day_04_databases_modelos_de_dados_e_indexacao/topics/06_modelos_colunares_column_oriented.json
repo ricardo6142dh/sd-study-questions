@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "06_modelos_colunares_column_oriented",
+  "questions": [
+    {
+      "id": "06_modelos_colunares_column_oriented_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "06_modelos_colunares_column_oriented",
+      "topic_title": "Modelos Colunares (Column-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em um modelo colunar, como os dados são organizados fisicamente?",
+      "options": [
+        "Por colunas, agrupando os valores de cada coluna",
+        "Por linhas, agrupando todos os campos de cada registro",
+        "Por índices secundários, sem organização física por atributo",
+        "Por partições aleatórias, para equilibrar leitura e escrita"
+      ],
+      "answer": "Por colunas, agrupando os valores de cada coluna",
+      "explanation": "O modelo colunar armazena os dados por colunas, não por linhas.",
+      "prompt": "Em um modelo colunar, como os dados são organizados fisicamente?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Colunares (Column-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_modelos_colunares_column_oriented_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "06_modelos_colunares_column_oriented",
+      "topic_title": "Modelos Colunares (Column-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal benefício do modelo colunar de armazenamento?",
+      "options": [
+        "Consultas rápidas em grandes volumes de dados",
+        "Garantia de consistência forte em qualquer cenário",
+        "Eliminação da necessidade de consultas",
+        "Redução automática do tamanho lógico do schema"
+      ],
+      "answer": "Consultas rápidas em grandes volumes de dados",
+      "explanation": "O modelo colunar armazena os dados de cada atributo de forma contígua, permitindo que consultas analíticas leiam apenas as colunas necessárias e se beneficiem de alta compressão, tornando operações de leitura sobre grandes volumes significativamente mais rápidas.",
+      "prompt": "Qual é o principal benefício do modelo colunar de armazenamento?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Colunares (Column-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_modelos_colunares_column_oriented_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "06_modelos_colunares_column_oriented",
+      "topic_title": "Modelos Colunares (Column-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa descreve corretamente a diferença central entre armazenamento por colunas e por linhas?",
+      "options": [
+        "No colunar, valores da mesma coluna ficam agrupados; no por linhas, os campos de cada registro ficam juntos",
+        "No colunar, cada tabela vira um índice; no por linhas, cada índice vira uma tabela",
+        "No colunar, os dados são sempre não relacionais; no por linhas, sempre relacionais",
+        "No colunar, não existe schema; no por linhas, o schema é obrigatório"
+      ],
+      "answer": "No colunar, valores da mesma coluna ficam agrupados; no por linhas, os campos de cada registro ficam juntos",
+      "explanation": "Essa é a distinção estrutural central entre os dois modelos de armazenamento.",
+      "prompt": "Qual alternativa descreve corretamente a diferença central entre armazenamento por colunas e por linhas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Colunares (Column-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_modelos_colunares_column_oriented_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "06_modelos_colunares_column_oriented",
+      "topic_title": "Modelos Colunares (Column-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual limitação pode surgir em modelos colunares?",
+      "options": [
+        "Problemas de consistência",
+        "Impossibilidade de consultar grandes volumes de dados",
+        "Dependência obrigatória de joins para leitura",
+        "Ausência total de organização por atributos"
+      ],
+      "answer": "Problemas de consistência",
+      "explanation": "Modelos colunares, especialmente em bancos distribuídos como Cassandra ou HBase, frequentemente sacrificam consistência forte em favor de disponibilidade e desempenho de leitura, podendo apresentar leituras desatualizadas dependendo da configuração.",
+      "prompt": "Qual limitação pode surgir em modelos colunares?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Colunares (Column-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "06_modelos_colunares_column_oriented_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "06_modelos_colunares_column_oriented",
+      "topic_title": "Modelos Colunares (Column-Oriented)",
+      "type": "cloze",
+      "format": "cloze",
+      "question": "Complete: o modelo colunar armazena os dados por ______, o que favorece consultas rápidas em grandes volumes de dados.",
+      "options": [
+        "colunas",
+        "linhas",
+        "chaves primárias",
+        "partições aleatórias"
+      ],
+      "answer": "colunas",
+      "explanation": "O modelo colunar organiza os dados por colunas, e isso é associado a consultas rápidas em grandes volumes.",
+      "prompt": "Complete: o modelo colunar armazena os dados por ______, o que favorece consultas rápidas em grandes volumes de dados.",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Colunares (Column-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

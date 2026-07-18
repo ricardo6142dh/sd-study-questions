@@ -11,6 +11,19 @@ async function safeReadJson(filePath) {
   return JSON.parse(content);
 }
 
+async function pathExists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      return false;
+    }
+
+    throw error;
+  }
+}
+
 async function listCourseDirs() {
   const entries = await fs.readdir(COURSE_BANKS_DIR, { withFileTypes: true });
   return entries
@@ -55,24 +68,65 @@ function validateQuestion(question, dirName, index) {
   assert(question.recommended_review && typeof question.recommended_review === "object", `${prefix} missing recommended_review`);
 }
 
+async function collectTopicBankFiles(courseDir) {
+  const modulesDir = path.join(courseDir, "modules");
+
+  if (!(await pathExists(modulesDir))) {
+    return [];
+  }
+
+  const moduleEntries = await fs.readdir(modulesDir, { withFileTypes: true });
+  const files = await Promise.all(
+    moduleEntries
+      .filter((entry) => entry.isDirectory())
+      .map(async (moduleEntry) => {
+        const topicsDir = path.join(modulesDir, moduleEntry.name, "topics");
+
+        if (!(await pathExists(topicsDir))) {
+          return [];
+        }
+
+        const topicEntries = await fs.readdir(topicsDir, { withFileTypes: true });
+        return topicEntries
+          .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+          .map((entry) => path.join(topicsDir, entry.name));
+      })
+  );
+
+  return files.flat().sort((left, right) => left.localeCompare(right, "pt-BR"));
+}
+
+async function loadCourseQuestions(courseDir) {
+  const legacyBankPath = path.join(courseDir, "question-bank.json");
+  const legacyQuestions = (await pathExists(legacyBankPath))
+    ? (await safeReadJson(legacyBankPath)).questions ?? []
+    : [];
+  const topicBankFiles = await collectTopicBankFiles(courseDir);
+  const topicBanks = await Promise.all(topicBankFiles.map((filePath) => safeReadJson(filePath)));
+  const modularQuestions = topicBanks.flatMap((bank) => bank.questions ?? []);
+
+  return Array.from(
+    new Map([...legacyQuestions, ...modularQuestions].map((question) => [question.id, question])).values()
+  );
+}
+
 async function validateCourseBank(courseDir) {
   const dirName = path.basename(courseDir);
   const metadata = await safeReadJson(path.join(courseDir, "metadata.json"));
-  const bank = await safeReadJson(path.join(courseDir, "question-bank.json"));
+  const questions = await loadCourseQuestions(courseDir);
 
   validateMetadata(metadata, dirName);
-  assert(Array.isArray(bank.questions), `${dirName}: question-bank.questions must be an array`);
 
-  bank.questions.forEach((question, index) => validateQuestion(question, dirName, index));
+  questions.forEach((question, index) => validateQuestion(question, dirName, index));
 
-  const uniqueIds = new Set(bank.questions.map((question) => question.id));
-  assert(uniqueIds.size === bank.questions.length, `${dirName}: duplicated question ids found`);
+  const uniqueIds = new Set(questions.map((question) => question.id));
+  assert(uniqueIds.size === questions.length, `${dirName}: duplicated question ids found`);
   assert(
-    bank.questions.every((question) => question.course === metadata.slug),
+    questions.every((question) => question.course === metadata.slug),
     `${dirName}: found questions pointing to another course slug`
   );
 
-  return `${dirName}: ok (${bank.questions.length} questão(ões))`;
+  return `${dirName}: ok (${questions.length} questão(ões))`;
 }
 
 async function main() {

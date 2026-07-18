@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "03_round_robin",
+  "questions": [
+    {
+      "id": "03_round_robin_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "03_round_robin",
+      "topic_title": "Round Robin",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto de balanceamento de carga, o que caracteriza o algoritmo Round Robin?",
+      "options": [
+        "Distribuir requisições de forma cíclica e uniforme entre os servidores",
+        "Enviar cada requisição para o servidor com menor latência medida em tempo real",
+        "Priorizar sempre o servidor com maior capacidade de CPU",
+        "Agrupar requisições por tipo de payload antes de encaminhá-las"
+      ],
+      "answer": "Distribuir requisições de forma cíclica e uniforme entre os servidores",
+      "explanation": "Round Robin faz a rotação sequencial entre os servidores, repetindo a lista de forma uniforme.",
+      "prompt": "No contexto de balanceamento de carga, o que caracteriza o algoritmo Round Robin?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Round Robin",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_round_robin_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "03_round_robin",
+      "topic_title": "Round Robin",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que significa o conceito de quantum no Round Robin descrito na aula?",
+      "options": [
+        "O intervalo de tempo em que um servidor recebe requisições antes da rotação",
+        "A quantidade máxima de conexões simultâneas permitidas por servidor",
+        "O peso relativo de cada requisição no cálculo de distribuição",
+        "O tempo total de vida de um servidor no pool"
+      ],
+      "answer": "O intervalo de tempo em que um servidor recebe requisições antes da rotação",
+      "explanation": "Na aula, quantum é a janela temporal de atendimento dada a cada servidor antes da troca.",
+      "prompt": "O que significa o conceito de quantum no Round Robin descrito na aula?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Round Robin",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_round_robin_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "03_round_robin",
+      "topic_title": "Round Robin",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que o Round Robin costuma ser uma boa escolha quando a meta é escalabilidade horizontal?",
+      "options": [
+        "Porque novos servidores podem ser adicionados ao ciclo com pouca complexidade",
+        "Porque ele redistribui automaticamente requisições pesadas para servidores mais fortes",
+        "Porque ele elimina a necessidade de healthcheck no pool",
+        "Porque ele depende de afinidade fixa entre cliente e servidor"
+      ],
+      "answer": "Porque novos servidores podem ser adicionados ao ciclo com pouca complexidade",
+      "explanation": "A lógica cíclica do Round Robin facilita incluir novos hosts no rodízio.",
+      "prompt": "Por que o Round Robin costuma ser uma boa escolha quando a meta é escalabilidade horizontal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Round Robin",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_round_robin_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "03_round_robin",
+      "topic_title": "Round Robin",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal limitação do Round Robin em cenários com cargas heterogêneas?",
+      "options": [
+        "Ele não diferencia requisições leves de requisições pesadas",
+        "Ele só funciona com um único servidor no pool",
+        "Ele exige que todas as requisições tenham o mesmo path",
+        "Ele depende de roteamento por IP e porta"
+      ],
+      "answer": "Ele não diferencia requisições leves de requisições pesadas",
+      "explanation": "Round Robin distribui de forma igual, mesmo quando o custo real das requisições é diferente.",
+      "prompt": "Qual é a principal limitação do Round Robin em cenários com cargas heterogêneas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Round Robin",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "03_round_robin_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "03_round_robin",
+      "topic_title": "Round Robin",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com o algoritmo Round Robin?",
+      "options": [
+        "A carga pode se concentrar em um único servidor durante a janela temporal",
+        "O algoritmo passa a considerar automaticamente o peso de cada requisição",
+        "Os servidores fora do ciclo recebem mais tráfego para compensar o pico",
+        "O balanceador deixa de encaminhar requisições até o pico terminar"
+      ],
+      "answer": "A carga pode se concentrar em um único servidor durante a janela temporal",
+      "explanation": "O Round Robin distribui requisições em ciclo fixo, sem levar em conta o estado atual dos servidores; durante um pico intenso e curto, muitas requisições podem ser enviadas ao mesmo servidor dentro da mesma janela de rotação, concentrando a carga.",
+      "prompt": "Em um cenário de spike de tráfego, qual efeito pode ocorrer com o algoritmo Round Robin?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Round Robin",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

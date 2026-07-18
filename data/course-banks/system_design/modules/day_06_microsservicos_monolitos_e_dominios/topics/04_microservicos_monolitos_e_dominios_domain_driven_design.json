@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+  "questions": [
+    {
+      "id": "04_microservicos_monolitos_e_dominios_domain_driven_design_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um sistema monolítico?",
+      "options": [
+        "Um sistema em que todos os componentes ficam em uma mesma unidade lógica",
+        "Um sistema dividido em serviços menores com deploy independente obrigatório",
+        "Uma arquitetura definida principalmente por bounded contexts",
+        "Uma abordagem focada em reduzir o blast radius por serviço"
+      ],
+      "answer": "Um sistema em que todos os componentes ficam em uma mesma unidade lógica",
+      "explanation": "Em um monólito, todos os componentes — incluindo lógica de negócio, acesso a dados e apresentação — residem em uma única unidade lógica, o que simplifica o desenvolvimento mas cria acoplamento forte entre as partes.",
+      "prompt": "O que caracteriza um sistema monolítico?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_microservicos_monolitos_e_dominios_domain_driven_design_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que define uma arquitetura de microsserviços?",
+      "options": [
+        "Sistema formado por serviços menores e independentes",
+        "Sistema em que todos os módulos compartilham o mesmo deploy",
+        "Modelo de domínio usado apenas para organizar tabelas",
+        "Estratégia de cache para reduzir latência entre componentes"
+      ],
+      "answer": "Sistema formado por serviços menores e independentes",
+      "explanation": "Microsserviços dividem a aplicação em serviços autônomos e independentes, cada um responsável por um recorte específico de negócio, permitindo deploy e escalabilidade individuais.",
+      "prompt": "O que define uma arquitetura de microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_microservicos_monolitos_e_dominios_domain_driven_design_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Para que serve o Domain-Driven Design (DDD)?",
+      "options": [
+        "Para definir domínios de negócio e organizar o sistema a partir deles",
+        "Para substituir a necessidade de entender o negócio",
+        "Para garantir consistência de dados sem qualquer modelagem de domínio",
+        "Para transformar qualquer aplicação em microsserviços automaticamente"
+      ],
+      "answer": "Para definir domínios de negócio e organizar o sistema a partir deles",
+      "explanation": "DDD é apresentado como uma abordagem para modelar domínios de negócio e estruturar o sistema com base neles.",
+      "prompt": "Para que serve o Domain-Driven Design (DDD)?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_microservicos_monolitos_e_dominios_domain_driven_design_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é linguagem ubíqua no contexto de Domain-Driven Design (DDD)?",
+      "options": [
+        "Vocabulário comum entre negócio e engenharia",
+        "Linguagem usada apenas pela equipe de infraestrutura",
+        "Conjunto de termos técnicos sem relação com o domínio",
+        "Regra para nomear serviços com prefixos padronizados"
+      ],
+      "answer": "Vocabulário comum entre negócio e engenharia",
+      "explanation": "A linguagem ubíqua é um vocabulário compartilhado e acordado entre especialistas de domínio e desenvolvedores, garantindo que os conceitos do negócio sejam representados de forma consistente no código e nas conversas.",
+      "prompt": "O que é linguagem ubíqua no contexto de Domain-Driven Design (DDD)?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_microservicos_monolitos_e_dominios_domain_driven_design_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "04_microservicos_monolitos_e_dominios_domain_driven_design",
+      "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que significa o termo blast radius no contexto de arquitetura de software?",
+      "options": [
+        "O impacto de um deploy independente",
+        "A quantidade de dados replicados entre serviços",
+        "O tempo máximo de resposta de uma API",
+        "A distância entre dois bounded contexts"
+      ],
+      "answer": "O impacto de um deploy independente",
+      "explanation": "Blast radius refere-se ao escopo de impacto causado por uma falha ou mudança; em microsserviços, cada serviço tem deploy independente, o que limita o blast radius a um contexto menor do sistema.",
+      "prompt": "O que significa o termo blast radius no contexto de arquitetura de software?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

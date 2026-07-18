@@ -1,0 +1,144 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "07_estrategias_de_cache_criando_uma_cdn_simples",
+  "questions": [
+    {
+      "id": "07_estrategias_de_cache_criando_uma_cdn_simples_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples",
+      "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel do proxy HTTP em uma CDN simples?",
+      "options": [
+        "Receber a requisição, decidir entre cache e origem e responder ao cliente",
+        "Persistir os dados na origem antes de consultar o cache",
+        "Gerar conteúdo novo sem consultar cliente nem origem",
+        "Substituir a origem permanentemente para todas as requisições"
+      ],
+      "answer": "Receber a requisição, decidir entre cache e origem e responder ao cliente",
+      "explanation": "O proxy HTTP atua como intermediário inteligente: verifica se o conteúdo está em cache e, em caso de miss, busca na origem e armazena o resultado para requisições futuras.",
+      "prompt": "Qual é o papel do proxy HTTP em uma CDN simples?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_estrategias_de_cache_criando_uma_cdn_simples_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples",
+      "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um cache hit nessa CDN simples?",
+      "options": [
+        "O recurso já existe no cache em disco e pode ser servido diretamente",
+        "A origem foi consultada e o conteúdo ainda não foi salvo",
+        "A chave de cache não pôde ser gerada para a requisição",
+        "O proxy decidiu sempre ignorar o cache por segurança"
+      ],
+      "answer": "O recurso já existe no cache em disco e pode ser servido diretamente",
+      "explanation": "Cache hit é quando o conteúdo já está armazenado localmente e a resposta sai do cache, sem buscar a origem.",
+      "prompt": "O que caracteriza um cache hit nessa CDN simples?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_estrategias_de_cache_criando_uma_cdn_simples_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples",
+      "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No fluxo da CDN simples, o que acontece em um cache miss?",
+      "options": [
+        "O proxy busca o conteúdo na origem, grava no cache e responde",
+        "O proxy retorna erro imediatamente sem tentar a origem",
+        "O conteúdo é removido do disco para liberar espaço",
+        "A requisição é descartada porque miss é uma falha anormal"
+      ],
+      "answer": "O proxy busca o conteúdo na origem, grava no cache e responde",
+      "explanation": "Em cache miss, o recurso não está no cache; então o proxy consulta a origem, salva o resultado e devolve a resposta.",
+      "prompt": "No fluxo da CDN simples, o que acontece em um cache miss?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "07_estrategias_de_cache_criando_uma_cdn_simples_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples",
+      "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que a CDN simples reduz a latência nas próximas requisições?",
+      "options": [
+        "Porque responde do cache em vez de voltar à origem",
+        "Porque a origem passa a processar as requisições mais rápido",
+        "Porque a requisição deixa de precisar de uma chave de cache",
+        "Porque o proxy elimina a necessidade de armazenamento"
+      ],
+      "answer": "Porque responde do cache em vez de voltar à origem",
+      "explanation": "A latência cai quando a resposta vem do cache, pois evita o custo de consultar a origem.",
+      "prompt": "Por que a CDN simples reduz a latência nas próximas requisições?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+        "why_review": "Reveja este tópico para consolidar o conceito.",
+        "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples"
+      }
+    },
+    {
+      "id": "07_estrategias_de_cache_criando_uma_cdn_simples_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples",
+      "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a função da chave de cache por hash?",
+      "options": [
+        "Identificar de forma única o conteúdo cacheado a partir da requisição",
+        "Substituir o servidor de origem em caso de falha",
+        "Medir diretamente a latência da rede entre cliente e proxy",
+        "Compactar o conteúdo para reduzir o tamanho do arquivo"
+      ],
+      "answer": "Identificar de forma única o conteúdo cacheado a partir da requisição",
+      "explanation": "A chave de cache por hash mapeia a requisição para o arquivo salvo, permitindo localizar o conteúdo no disco.",
+      "prompt": "Qual é a função da chave de cache por hash?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
+        "why_review": "Reveja este tópico para consolidar o conceito.",
+        "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples"
+      }
+    }
+  ]
+}

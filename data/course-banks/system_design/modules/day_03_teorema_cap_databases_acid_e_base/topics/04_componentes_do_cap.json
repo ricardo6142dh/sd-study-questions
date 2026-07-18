@@ -1,0 +1,88 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "04_componentes_do_cap",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "04_componentes_do_cap",
+      "question": "No contexto do Teorema CAP, o que significa a letra 'P' (Partition Tolerance) e por que ela é considerada obrigatória em sistemas distribuídos?",
+      "options": [
+        "Refere-se à técnica de particionamento de tabelas (sharding) em bancos de dados para melhorar a performance de leitura.",
+        "Refere-se à capacidade do sistema de continuar operando mesmo quando ocorre uma falha de comunicação entre os nós do cluster.",
+        "Refere-se à obrigatoriedade de dividir o banco de dados em múltiplos servidores para garantir a durabilidade dos dados.",
+        "Refere-se à política de segurança que isola os dados de diferentes usuários em partições distintas no disco."
+      ],
+      "answer": "Refere-se à capacidade do sistema de continuar operando mesmo quando ocorre uma falha de comunicação entre os nós do cluster.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Componentes do CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-04_componentes_do_cap-q001",
+      "prompt": "No contexto do Teorema CAP, o que significa a letra 'P' (Partition Tolerance) e por que ela é considerada obrigatória em sistemas distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Refere-se à capacidade do sistema de continuar operando mesmo quando ocorre uma falha de comunicação entre os nós do cluster.",
+      "recommended_review": {
+        "topic_title": "Componentes do CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "04_componentes_do_cap",
+      "question": "Em um sistema distribuído que prioriza a consistência (CP) durante uma partição de rede, qual é o comportamento esperado?",
+      "options": [
+        "O sistema continua respondendo a todas as requisições, mesmo que os dados estejam desatualizados.",
+        "O sistema prioriza a latência mínima, ignorando a sincronização entre os nós.",
+        "O sistema pode se tornar indisponível para garantir que nenhum dado inconsistente seja servido.",
+        "O sistema replica os dados de forma assíncrona para todos os nós, garantindo alta disponibilidade."
+      ],
+      "answer": "O sistema pode se tornar indisponível para garantir que nenhum dado inconsistente seja servido.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Componentes do CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-04_componentes_do_cap-q002",
+      "prompt": "Em um sistema distribuído que prioriza a consistência (CP) durante uma partição de rede, qual é o comportamento esperado?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: O sistema pode se tornar indisponível para garantir que nenhum dado inconsistente seja servido.",
+      "recommended_review": {
+        "topic_title": "Componentes do CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "04_componentes_do_cap",
+      "question": "Por que a classificação 'CA' (Consistency e Availability) é considerada inviável em sistemas distribuídos reais?",
+      "options": [
+        "Porque sistemas distribuídos não permitem o uso de bancos de dados relacionais.",
+        "Porque a partição de rede é um evento inevitável em sistemas distribuídos, tornando a tolerância a partições (P) um requisito obrigatório.",
+        "Porque o modelo CA exige que o sistema seja executado em um único nó, o que contradiz a definição de sistema distribuído.",
+        "Porque a latência de rede sempre impede que a consistência e a disponibilidade sejam alcançadas simultaneamente."
+      ],
+      "answer": "Porque a partição de rede é um evento inevitável em sistemas distribuídos, tornando a tolerância a partições (P) um requisito obrigatório.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Componentes do CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-04_componentes_do_cap-q004",
+      "prompt": "Por que a classificação 'CA' (Consistency e Availability) é considerada inviável em sistemas distribuídos reais?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Porque a partição de rede é um evento inevitável em sistemas distribuídos, tornando a tolerância a partições (P) um requisito obrigatório.",
+      "recommended_review": {
+        "topic_title": "Componentes do CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

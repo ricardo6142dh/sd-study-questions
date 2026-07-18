@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "04_modelos_orientados_a_tuplas_row_oriented",
+  "questions": [
+    {
+      "id": "04_modelos_orientados_a_tuplas_row_oriented_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "04_modelos_orientados_a_tuplas_row_oriented",
+      "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No modelo orientado a tuplas (row-oriented), como os dados são armazenados?",
+      "options": [
+        "Em linhas",
+        "Em colunas",
+        "Em grafos",
+        "Em arquivos separados por tipo de dado"
+      ],
+      "answer": "Em linhas",
+      "explanation": "No modelo row-oriented, todos os atributos de um registro são armazenados juntos e sequencialmente no disco, o que favorece operações de leitura e escrita de registros completos, como inserções e consultas que retornam todas as colunas de poucas linhas.",
+      "prompt": "No modelo orientado a tuplas (row-oriented), como os dados são armazenados?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_modelos_orientados_a_tuplas_row_oriented_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "04_modelos_orientados_a_tuplas_row_oriented",
+      "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Para qual perfil de uso o modelo orientado a tuplas (linhas) é ideal?",
+      "options": [
+        "Escrita intensiva",
+        "Leitura intensiva",
+        "Processamento apenas em lote",
+        "Consultas exclusivamente analíticas"
+      ],
+      "answer": "Escrita intensiva",
+      "explanation": "O modelo orientado a tuplas armazena todos os campos de um registro de forma contígua no disco, o que favorece operações de escrita e atualização de registros completos, tornando-o adequado para cargas com escrita intensiva.",
+      "prompt": "Para qual perfil de uso o modelo orientado a tuplas (linhas) é ideal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_modelos_orientados_a_tuplas_row_oriented_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "04_modelos_orientados_a_tuplas_row_oriented",
+      "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é uma consequência direta do armazenamento em linhas no modelo orientado a tuplas?",
+      "options": [
+        "Facilita atualizações completas de registros",
+        "Elimina a necessidade de índices",
+        "Impede alterações em registros existentes",
+        "Garante alta disponibilidade por definição"
+      ],
+      "answer": "Facilita atualizações completas de registros",
+      "explanation": "Como todos os campos de um registro ficam armazenados juntos na mesma linha, reescrever ou atualizar um registro inteiro exige apenas uma operação localizada, tornando esse padrão eficiente para escritas e atualizações.",
+      "prompt": "Qual é uma consequência direta do armazenamento em linhas no modelo orientado a tuplas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_modelos_orientados_a_tuplas_row_oriented_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "04_modelos_orientados_a_tuplas_row_oriented",
+      "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em português, qual é o termo técnico que designa o modelo de armazenamento orientado a tuplas?",
+      "options": [
+        "Linhas",
+        "Colunas",
+        "Índices",
+        "Partições"
+      ],
+      "answer": "Linhas",
+      "explanation": "O modelo orientado a tuplas é conhecido em português como modelo orientado a linhas, pois os dados são organizados e armazenados registro a registro, com todos os campos de uma entrada agrupados em uma mesma linha.",
+      "prompt": "Em português, qual é o termo técnico que designa o modelo de armazenamento orientado a tuplas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "04_modelos_orientados_a_tuplas_row_oriented_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "04_modelos_orientados_a_tuplas_row_oriented",
+      "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que se pode afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
+      "options": [
+        "O modelo não oferece garantias explícitas de alta disponibilidade ou escalabilidade horizontal",
+        "O modelo é confirmado como ideal para alta disponibilidade e escalabilidade horizontal",
+        "O modelo é inadequado para qualquer cenário distribuído",
+        "A escalabilidade depende exclusivamente de índices secundários"
+      ],
+      "answer": "O modelo não oferece garantias explícitas de alta disponibilidade ou escalabilidade horizontal",
+      "explanation": "O modelo orientado a linhas define a forma de organização física dos dados, mas não implica por si só garantias de alta disponibilidade ou escalabilidade horizontal — essas propriedades dependem da arquitetura e configuração do banco, não do modelo de armazenamento.",
+      "prompt": "O que se pode afirmar sobre disponibilidade e escalabilidade no modelo orientado a tuplas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Orientados a Tuplas (Row-Oriented)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

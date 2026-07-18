@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_06_microsservicos_monolitos_e_dominios",
+  "topic_slug": "01_microservicos_monolitos_e_dominios_introducao",
+  "questions": [
+    {
+      "id": "01_microservicos_monolitos_e_dominios_introducao_q01",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "01_microservicos_monolitos_e_dominios_introducao",
+      "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No monolito, qual caracteristica descreve melhor a estrutura do sistema?",
+      "options": [
+        "Componentes e funcionalidades ficam na mesma unidade logica, com codigo e banco de dados compartilhados",
+        "Cada funcionalidade roda em um servico independente com deploy separado",
+        "O sistema e dividido em varios bancos isolados, sem codigo compartilhado",
+        "A comunicacao entre modulos ocorre obrigatoriamente por rede"
+      ],
+      "answer": "Componentes e funcionalidades ficam na mesma unidade logica, com codigo e banco de dados compartilhados",
+      "explanation": "O monolito concentra componentes na mesma unidade logica e compartilha codigo e banco de dados.",
+      "prompt": "No monolito, qual caracteristica descreve melhor a estrutura do sistema?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_microservicos_monolitos_e_dominios_introducao_q02",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "01_microservicos_monolitos_e_dominios_introducao",
+      "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve melhor microsserviços?",
+      "options": [
+        "Sistema dividido em servicos menores e independentes que se comunicam por rede",
+        "Sistema em que todo o codigo e banco ficam em uma unica unidade logica",
+        "Arquitetura que elimina a necessidade de comunicacao entre componentes",
+        "Modelo que depende apenas de um banco compartilhado e deploy unico"
+      ],
+      "answer": "Sistema dividido em servicos menores e independentes que se comunicam por rede",
+      "explanation": "Microsservicos sao servicos menores e independentes, com comunicacao via rede.",
+      "prompt": "Qual afirmação descreve melhor microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_microservicos_monolitos_e_dominios_introducao_q03",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "01_microservicos_monolitos_e_dominios_introducao",
+      "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual e um trade-off central ao adotar microsservicos em vez de monolito?",
+      "options": [
+        "Maior complexidade operacional em troca de escala horizontal por servico",
+        "Menor necessidade de rede em troca de menos autonomia",
+        "Eliminacao total de dependencias entre equipes",
+        "Consistencia de dados automaticamente mais simples em todos os casos"
+      ],
+      "answer": "Maior complexidade operacional em troca de escala horizontal por servico",
+      "explanation": "Microsservicos permitem escalar por servico, mas aumentam a complexidade operacional.",
+      "prompt": "Qual e um trade-off central ao adotar microsservicos em vez de monolito?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_microservicos_monolitos_e_dominios_introducao_q04",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "01_microservicos_monolitos_e_dominios_introducao",
+      "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Quais fatores devem orientar a escolha entre monólito e microsserviços?",
+      "options": [
+        "Escala, dominio, equipe e maturidade tecnica",
+        "Somente preferencia pessoal da equipe de desenvolvimento",
+        "Apenas o numero de linhas de codigo do projeto",
+        "Somente a linguagem de programacao usada"
+      ],
+      "answer": "Escala, dominio, equipe e maturidade tecnica",
+      "explanation": "A decisao arquitetural depende do contexto tecnico e organizacional, nao de um unico fator.",
+      "prompt": "Quais fatores devem orientar a escolha entre monólito e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "01_microservicos_monolitos_e_dominios_introducao_q05",
+      "course": "system_design",
+      "module_order": 6,
+      "module_key": "microservices_monoliths_domains",
+      "module_title": "Day 06 - Microsservicos, Monolitos e Dominios",
+      "topic_key": "01_microservicos_monolitos_e_dominios_introducao",
+      "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual heurística é recomendada para a evolução arquitetural entre monólito e microsserviços?",
+      "options": [
+        "Comecar simples e distribuir apenas quando carga, dominios e organizacao justificarem",
+        "Dividir em microsservicos desde o primeiro dia, independentemente do contexto",
+        "Manter sempre um monolito, mesmo quando a fragmentacao for claramente necessaria",
+        "Separar tudo por tecnologia antes de entender o dominio"
+      ],
+      "answer": "Comecar simples e distribuir apenas quando carga, dominios e organizacao justificarem",
+      "explanation": "A orientacao e evitar fragmentacao prematura e distribuir apenas quando houver justificativa clara.",
+      "prompt": "Qual heurística é recomendada para a evolução arquitetural entre monólito e microsserviços?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

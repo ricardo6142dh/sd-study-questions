@@ -1,0 +1,88 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "06_criticas_modernas_ao_modelo_cap",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "06_criticas_modernas_ao_modelo_cap",
+      "question": "Por que a interpretação clássica do Teorema CAP como 'escolha 2 de 3' é considerada insuficiente para sistemas modernos?",
+      "options": [
+        "Porque o CAP ignora completamente a existência de partições de rede em sistemas distribuídos.",
+        "Porque a consistência e a disponibilidade não são propriedades binárias, mas sim espectros que podem ser ajustados conforme a necessidade.",
+        "Porque o modelo CAP foi substituído pelo modelo ACID, que é o único padrão utilizado em bancos de dados modernos.",
+        "Porque o CAP só se aplica a bancos de dados relacionais e não a sistemas NoSQL."
+      ],
+      "answer": "Porque a consistência e a disponibilidade não são propriedades binárias, mas sim espectros que podem ser ajustados conforme a necessidade.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Críticas Modernas ao modelo CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-06_criticas_modernas_ao_modelo_cap-q001",
+      "prompt": "Por que a interpretação clássica do Teorema CAP como 'escolha 2 de 3' é considerada insuficiente para sistemas modernos?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Porque a consistência e a disponibilidade não são propriedades binárias, mas sim espectros que podem ser ajustados conforme a necessidade.",
+      "recommended_review": {
+        "topic_title": "Críticas Modernas ao modelo CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "06_criticas_modernas_ao_modelo_cap",
+      "question": "Qual é a principal contribuição do modelo PACELC em relação ao Teorema CAP?",
+      "options": [
+        "O PACELC elimina a necessidade de considerar a tolerância a partições em sistemas distribuídos.",
+        "O PACELC foca exclusivamente em sistemas que não possuem tolerância a falhas.",
+        "O PACELC amplia a análise do CAP ao incluir o trade-off entre latência e consistência durante a operação normal (sem partições).",
+        "O PACELC substitui a necessidade de métricas de SRE ao definir estados fixos de disponibilidade para cada banco de dados."
+      ],
+      "answer": "O PACELC amplia a análise do CAP ao incluir o trade-off entre latência e consistência durante a operação normal (sem partições).",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Críticas Modernas ao modelo CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-06_criticas_modernas_ao_modelo_cap-q002",
+      "prompt": "Qual é a principal contribuição do modelo PACELC em relação ao Teorema CAP?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: O PACELC amplia a análise do CAP ao incluir o trade-off entre latência e consistência durante a operação normal (sem partições).",
+      "recommended_review": {
+        "topic_title": "Críticas Modernas ao modelo CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "06_criticas_modernas_ao_modelo_cap",
+      "question": "É correto afirmar que um banco de dados é estritamente CP ou AP de forma imutável? Por quê?",
+      "options": [
+        "Sim, pois a arquitetura interna do banco de dados define permanentemente seu comportamento sob falhas.",
+        "Não, pois muitos bancos modernos permitem configurar níveis de consistência (ex: via quorum), permitindo que o sistema transite entre diferentes comportamentos no espectro CAP.",
+        "Sim, pois o Teorema CAP é uma lei física que impede qualquer flexibilidade na configuração de bancos de dados distribuídos.",
+        "Não, pois o CAP só se aplica a sistemas que não utilizam replicação de dados."
+      ],
+      "answer": "Não, pois muitos bancos modernos permitem configurar níveis de consistência (ex: via quorum), permitindo que o sistema transite entre diferentes comportamentos no espectro CAP.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Críticas Modernas ao modelo CAP",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-06_criticas_modernas_ao_modelo_cap-q004",
+      "prompt": "É correto afirmar que um banco de dados é estritamente CP ou AP de forma imutável? Por quê?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Não, pois muitos bancos modernos permitem configurar níveis de consistência (ex: via quorum), permitindo que o sistema transite entre diferentes comportamentos no espectro CAP.",
+      "recommended_review": {
+        "topic_title": "Críticas Modernas ao modelo CAP",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

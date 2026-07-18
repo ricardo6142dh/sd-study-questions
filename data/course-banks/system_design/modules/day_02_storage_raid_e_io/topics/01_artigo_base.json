@@ -1,0 +1,85 @@
+{
+  "course": "system_design",
+  "module_slug": "day_02_storage_raid_e_io",
+  "topic_slug": "01_artigo_base",
+  "questions": [
+    {
+      "id": "q1",
+      "topic_key": "01_artigo_base",
+      "format": "multiple_choice",
+      "question": "Ao analisar o desempenho de um sistema de armazenamento, qual é a distinção correta entre Throughput e Bandwidth?",
+      "options": [
+        "Bandwidth é a entrega real de dados, enquanto Throughput é a capacidade máxima teórica.",
+        "Throughput é o volume efetivo de dados transferidos por unidade de tempo, enquanto Bandwidth é a capacidade máxima teórica de tráfego.",
+        "Ambos os termos são sinônimos e representam a velocidade de escrita em disco.",
+        "Throughput refere-se apenas a operações de leitura, enquanto Bandwidth refere-se apenas a operações de escrita."
+      ],
+      "answer": "Throughput é o volume efetivo de dados transferidos por unidade de tempo, enquanto Bandwidth é a capacidade máxima teórica de tráfego.",
+      "course": "system_design",
+      "module_order": 2,
+      "module_key": "storage_raid_io",
+      "module_title": "Day 02 - System Design: Storage, RAID e I/O",
+      "topic_title": "Artigo Base - Storage, RAID e I/O",
+      "prompt": "Ao analisar o desempenho de um sistema de armazenamento, qual é a distinção correta entre Throughput e Bandwidth?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Throughput é o volume efetivo de dados transferidos por unidade de tempo, enquanto Bandwidth é a capacidade máxima teórica de tráfego.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Storage, RAID e I/O",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "q2",
+      "topic_key": "01_artigo_base",
+      "format": "multiple_choice",
+      "question": "Sobre a utilização de RAID em arquiteturas de armazenamento, qual das alternativas abaixo descreve corretamente o seu papel?",
+      "options": [
+        "RAID é uma estratégia de backup completa que protege contra corrupção de dados e desastres naturais.",
+        "RAID substitui a necessidade de backups, pois garante a integridade lógica dos dados.",
+        "RAID provê resiliência e disponibilidade local para continuidade de operação em caso de falha de disco, mas não substitui uma estratégia de backup.",
+        "RAID é utilizado exclusivamente para aumentar a capacidade de armazenamento, sem impacto na disponibilidade."
+      ],
+      "answer": "RAID provê resiliência e disponibilidade local para continuidade de operação em caso de falha de disco, mas não substitui uma estratégia de backup.",
+      "course": "system_design",
+      "module_order": 2,
+      "module_key": "storage_raid_io",
+      "module_title": "Day 02 - System Design: Storage, RAID e I/O",
+      "topic_title": "Artigo Base - Storage, RAID e I/O",
+      "prompt": "Sobre a utilização de RAID em arquiteturas de armazenamento, qual das alternativas abaixo descreve corretamente o seu papel?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: RAID provê resiliência e disponibilidade local para continuidade de operação em caso de falha de disco, mas não substitui uma estratégia de backup.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Storage, RAID e I/O",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "q4",
+      "topic_key": "01_artigo_base",
+      "format": "multiple_choice",
+      "question": "Qual é a principal característica de trade-off ao escolher entre DAS (Direct Attached Storage) e NAS (Network Attached Storage)?",
+      "options": [
+        "DAS oferece maior facilidade de compartilhamento entre múltiplos nós, enquanto NAS oferece menor latência.",
+        "DAS é ideal para performance bruta e baixa latência local, enquanto NAS facilita o compartilhamento, porém introduz latência de rede.",
+        "NAS é sempre superior em performance de I/O, enquanto DAS é limitado apenas a sistemas legados.",
+        "Não existem diferenças de latência entre DAS e NAS, apenas diferenças de custo."
+      ],
+      "answer": "DAS é ideal para performance bruta e baixa latência local, enquanto NAS facilita o compartilhamento, porém introduz latência de rede.",
+      "course": "system_design",
+      "module_order": 2,
+      "module_key": "storage_raid_io",
+      "module_title": "Day 02 - System Design: Storage, RAID e I/O",
+      "topic_title": "Artigo Base - Storage, RAID e I/O",
+      "prompt": "Qual é a principal característica de trade-off ao escolher entre DAS (Direct Attached Storage) e NAS (Network Attached Storage)?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: DAS é ideal para performance bruta e baixa latência local, enquanto NAS facilita o compartilhamento, porém introduz latência de rede.",
+      "recommended_review": {
+        "topic_title": "Artigo Base - Storage, RAID e I/O",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

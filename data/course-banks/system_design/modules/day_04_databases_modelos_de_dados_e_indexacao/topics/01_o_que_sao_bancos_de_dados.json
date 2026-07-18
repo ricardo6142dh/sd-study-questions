@@ -1,0 +1,88 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "01_o_que_sao_bancos_de_dados",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_o_que_sao_bancos_de_dados",
+      "question": "Por que o banco de dados é considerado uma camada de abstração em sistemas de engenharia de software?",
+      "options": [
+        "Porque ele elimina a necessidade de persistência física em discos rígidos.",
+        "Porque ele isola a aplicação da complexidade de I/O, gerenciamento de blocos em disco e estruturas de dados subjacentes.",
+        "Porque ele garante que a aplicação nunca precise lidar com latência de rede.",
+        "Porque ele substitui completamente a necessidade de modelagem de dados na camada de aplicação."
+      ],
+      "answer": "Porque ele isola a aplicação da complexidade de I/O, gerenciamento de blocos em disco e estruturas de dados subjacentes.",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_title": "O que sao Bancos de Dados",
+      "format": "multiple_choice",
+      "id": "system_design-databases_data_models_indexing-01_o_que_sao_bancos_de_dados-q001",
+      "prompt": "Por que o banco de dados é considerado uma camada de abstração em sistemas de engenharia de software?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: Porque ele isola a aplicação da complexidade de I/O, gerenciamento de blocos em disco e estruturas de dados subjacentes.",
+      "recommended_review": {
+        "topic_title": "O que sao Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_o_que_sao_bancos_de_dados",
+      "question": "Em sistemas distribuídos, qual é o principal trade-off ao buscar consistência forte em um cenário de distribuição geográfica?",
+      "options": [
+        "Aumento da disponibilidade em caso de falhas de rede.",
+        "Redução do custo de armazenamento de dados.",
+        "Aumento da latência percebida pelo usuário devido à necessidade de sincronização entre nós.",
+        "Eliminação da necessidade de protocolos de consenso."
+      ],
+      "answer": "Aumento da latência percebida pelo usuário devido à necessidade de sincronização entre nós.",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_title": "O que sao Bancos de Dados",
+      "format": "multiple_choice",
+      "id": "system_design-databases_data_models_indexing-01_o_que_sao_bancos_de_dados-q002",
+      "prompt": "Em sistemas distribuídos, qual é o principal trade-off ao buscar consistência forte em um cenário de distribuição geográfica?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: Aumento da latência percebida pelo usuário devido à necessidade de sincronização entre nós.",
+      "recommended_review": {
+        "topic_title": "O que sao Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "01_o_que_sao_bancos_de_dados",
+      "question": "Qual é a principal diferença entre o modelo de armazenamento row-oriented e o colunar?",
+      "options": [
+        "O row-oriented é otimizado para agregações analíticas (OLAP), enquanto o colunar é para transações (OLTP).",
+        "O row-oriented é focado em registros individuais (OLTP), enquanto o colunar é otimizado para agregações e análises (OLAP).",
+        "O row-oriented utiliza apenas memória RAM, enquanto o colunar utiliza apenas disco.",
+        "Não há diferença de performance, apenas de sintaxe de consulta."
+      ],
+      "answer": "O row-oriented é focado em registros individuais (OLTP), enquanto o colunar é otimizado para agregações e análises (OLAP).",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_title": "O que sao Bancos de Dados",
+      "format": "multiple_choice",
+      "id": "system_design-databases_data_models_indexing-01_o_que_sao_bancos_de_dados-q004",
+      "prompt": "Qual é a principal diferença entre o modelo de armazenamento row-oriented e o colunar?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O row-oriented é focado em registros individuais (OLTP), enquanto o colunar é otimizado para agregações e análises (OLAP).",
+      "recommended_review": {
+        "topic_title": "O que sao Bancos de Dados",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

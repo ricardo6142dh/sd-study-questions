@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "05_least_connection",
+  "questions": [
+    {
+      "id": "05_least_connection_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "05_least_connection",
+      "topic_title": "Least Connection",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No algoritmo Least Connection, qual critério é usado para escolher o servidor de destino?",
+      "options": [
+        "O servidor com menos conexões ativas no momento",
+        "O servidor com menor latência média histórica",
+        "O próximo servidor na sequência fixa",
+        "O servidor com menos requisições totais acumuladas"
+      ],
+      "answer": "O servidor com menos conexões ativas no momento",
+      "explanation": "Least Connection direciona a próxima solicitação ao servidor com menor número de conexões ativas.",
+      "prompt": "No algoritmo Least Connection, qual critério é usado para escolher o servidor de destino?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Connection",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_least_connection_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "05_least_connection",
+      "topic_title": "Least Connection",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve melhor a diferença entre Least Connection e Round Robin?",
+      "options": [
+        "Least Connection considera conexões ativas; Round Robin distribui de forma sequencial sem considerar a carga atual",
+        "Least Connection distribui de forma sequencial; Round Robin escolhe o servidor com menos conexões ativas",
+        "Ambos escolhem sempre o servidor com maior capacidade nominal",
+        "Ambos dependem exclusivamente de healthcheck para decidir o destino"
+      ],
+      "answer": "Least Connection considera conexões ativas; Round Robin distribui de forma sequencial sem considerar a carga atual",
+      "explanation": "Round Robin faz distribuição uniforme e sequencial, enquanto Least Connection usa o número de conexões ativas como critério.",
+      "prompt": "Qual afirmação descreve melhor a diferença entre Least Connection e Round Robin?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Connection",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_least_connection_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "05_least_connection",
+      "topic_title": "Least Connection",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Como o algoritmo Least Connection aborda a questão de carga e saturação dos servidores?",
+      "options": [
+        "Ele tenta ser mais inteligente que uma distribuição puramente uniforme ao observar conexões ativas",
+        "Ele ignora completamente o estado atual dos servidores",
+        "Ele só funciona quando todos os servidores têm exatamente o mesmo hardware",
+        "Ele escolhe o servidor com maior número de conexões para maximizar throughput"
+      ],
+      "answer": "Ele tenta ser mais inteligente que uma distribuição puramente uniforme ao observar conexões ativas",
+      "explanation": "Ao encaminhar novas conexões para o servidor com menos conexões abertas no momento, o Least Connection usa um proxy em tempo real da carga atual — tornando-o mais adaptativo do que algoritmos cíclicos como Round Robin.",
+      "prompt": "Como o algoritmo Least Connection aborda a questão de carga e saturação dos servidores?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Connection",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_least_connection_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "05_least_connection",
+      "topic_title": "Least Connection",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual confusão conceitual é comum ao estudar o algoritmo Least Connection?",
+      "options": [
+        "Confundir Least Connection com Least Request",
+        "Confundir Least Connection com healthcheck",
+        "Confundir Least Connection com SSL/TLS offloading",
+        "Confundir Least Connection com roteamento por path"
+      ],
+      "answer": "Confundir Least Connection com Least Request",
+      "explanation": "Apesar dos nomes parecidos, Least Connection observa o número de conexões TCP abertas, enquanto Least Request observa o número de requisições ativas em andamento — são métricas distintas que levam a decisões de roteamento diferentes.",
+      "prompt": "Qual confusão conceitual é comum ao estudar o algoritmo Least Connection?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Connection",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_least_connection_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "05_least_connection",
+      "topic_title": "Least Connection",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve corretamente o algoritmo de balanceamento Least Request?",
+      "options": [
+        "Ele tenta distribuir a carga de forma uniforme, mas não leva em conta a carga/saturação dos servidores",
+        "Ele escolhe o servidor com menos conexões ativas no momento",
+        "Ele sempre segue a mesma ordem fixa de servidores",
+        "Ele depende de IP Hash para decidir o destino"
+      ],
+      "answer": "Ele tenta distribuir a carga de forma uniforme, mas não leva em conta a carga/saturação dos servidores",
+      "explanation": "Least Request distribui requisições de forma uniforme entre os servidores, mas não monitora a carga real ou a saturação de cada um, o que o diferencia de algoritmos mais adaptativos como LOR.",
+      "prompt": "Qual afirmação descreve corretamente o algoritmo de balanceamento Least Request?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Least Connection",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

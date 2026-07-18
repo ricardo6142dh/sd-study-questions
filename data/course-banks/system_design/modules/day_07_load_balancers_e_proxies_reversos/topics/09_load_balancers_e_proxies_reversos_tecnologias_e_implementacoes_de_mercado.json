@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_07_load_balancers_e_proxies_reversos",
+  "topic_slug": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+  "questions": [
+    {
+      "id": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado_q01",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+      "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que melhor descreve o Envoy no contexto de balanceamento de carga e proxies modernos?",
+      "options": [
+        "Um proxy de alta performance, cloud native, usado como base para outras tecnologias",
+        "Um balanceador exclusivamente de Layer 4, sem uso em ecossistemas modernos",
+        "Uma solução apenas para cache HTTP, sem papel em roteamento",
+        "Um load balancer proprietário focado somente em ambientes on-premises"
+      ],
+      "answer": "Um proxy de alta performance, cloud native, usado como base para outras tecnologias",
+      "explanation": "O Envoy é um proxy de alta performance projetado para ambientes cloud native, com APIs abertas e extensíveis que o tornam a base de diversas soluções modernas, como service meshes (ex: Istio) e gateways de API.",
+      "prompt": "O que melhor descreve o Envoy no contexto de balanceamento de carga e proxies modernos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado_q02",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+      "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No contexto de infraestrutura moderna, o que caracteriza uma tecnologia como 'cloud native'?",
+      "options": [
+        "Tecnologias extensíveis, com APIs abertas, escaláveis e reutilizáveis como base para outras soluções",
+        "Tecnologias que só funcionam em provedores públicos de nuvem",
+        "Ferramentas desenhadas apenas para rodar em containers sem integração externa",
+        "Soluções que eliminam a necessidade de APIs por completo"
+      ],
+      "answer": "Tecnologias extensíveis, com APIs abertas, escaláveis e reutilizáveis como base para outras soluções",
+      "explanation": "Cloud native vai além de simplesmente executar na nuvem: envolve arquiteturas extensíveis com APIs abertas, alta escalabilidade e a capacidade de servir como base para outras soluções, seguindo os princípios da CNCF.",
+      "prompt": "No contexto de infraestrutura moderna, o que caracteriza uma tecnologia como 'cloud native'?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado_q03",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+      "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que melhor descreve o HAProxy e seus casos de uso?",
+      "options": [
+        "É um load balancer open source, muito performático, e também pode atuar como proxy reverso",
+        "É uma solução apenas de proxy reverso, sem foco em balanceamento",
+        "É uma ferramenta exclusiva para Service Mesh, sem uso como balanceador",
+        "É um produto gerenciado de cloud provider, sem versão open source"
+      ],
+      "answer": "É um load balancer open source, muito performático, e também pode atuar como proxy reverso",
+      "explanation": "O HAProxy é uma solução open source amplamente reconhecida por sua performance e confiabilidade como load balancer, sendo também capaz de atuar como proxy reverso em arquiteturas de alta disponibilidade.",
+      "prompt": "O que melhor descreve o HAProxy e seus casos de uso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado_q04",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+      "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual opção descreve melhor os load balancers fornecidos por cloud providers?",
+      "options": [
+        "São alternativas gerenciadas que podem oferecer health check dinâmico e offload de SSL",
+        "São soluções que só funcionam para tráfego interno entre pods",
+        "São proxies que não suportam HTTPS nem TCP",
+        "São ferramentas que substituem completamente a necessidade de qualquer roteamento"
+      ],
+      "answer": "São alternativas gerenciadas que podem oferecer health check dinâmico e offload de SSL",
+      "explanation": "Load balancers gerenciados por cloud providers (como AWS ALB ou GCP Load Balancer) abstraem a infraestrutura e oferecem recursos nativos como health check dinâmico e offload de SSL, reduzindo a carga operacional das aplicações.",
+      "prompt": "Qual opção descreve melhor os load balancers fornecidos por cloud providers?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado_q05",
+      "course": "system_design",
+      "module_order": 7,
+      "module_key": "load_balancers_reverse_proxies",
+      "module_title": "Day 07 - Load Balancers e Proxies Reversos",
+      "topic_key": "09_load_balancers_e_proxies_reversos_tecnologias_e_implementacoes_de_mercado",
+      "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Na prática, qual é a principal diferença entre usar uma tecnologia como load balancer e como proxy reverso?",
+      "options": [
+        "A mesma tecnologia pode assumir ambos os papéis; a diferença depende da forma de implementação",
+        "Load balancer e proxy reverso são funções incompatíveis entre si",
+        "Proxy reverso só existe em Layer 7, enquanto load balancer só existe em Layer 4",
+        "Load balancer sempre faz cache, enquanto proxy reverso sempre faz compressão"
+      ],
+      "answer": "A mesma tecnologia pode assumir ambos os papéis; a diferença depende da forma de implementação",
+      "explanation": "Ferramentas como Nginx e Envoy são polivalentes: atuam como load balancer quando distribuem tráfego entre múltiplos backends, e como proxy reverso quando ficam na frente de um serviço específico — o papel é definido pela configuração, não pela tecnologia em si.",
+      "prompt": "Na prática, qual é a principal diferença entre usar uma tecnologia como load balancer e como proxy reverso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Load Balancers e Proxies Reversos - Tecnologias e Implementacoes de Mercado",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "09_modelos_de_grafos",
+  "questions": [
+    {
+      "id": "09_modelos_de_grafos_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "09_modelos_de_grafos",
+      "topic_title": "Modelos de Grafos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No modelo de dados em grafos, qual é o foco principal da representação?",
+      "options": [
+        "Representar relações entre entidades",
+        "Armazenar apenas entidades isoladas sem conexões",
+        "Organizar dados exclusivamente em tabelas e colunas fixas",
+        "Indexar dados apenas por tempo para séries históricas"
+      ],
+      "answer": "Representar relações entre entidades",
+      "explanation": "O ponto central do modelo de grafos é explicitar relações entre entidades, não apenas armazená-las separadamente.",
+      "prompt": "No modelo de dados em grafos, qual é o foco principal da representação?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Grafos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_modelos_de_grafos_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "09_modelos_de_grafos",
+      "topic_title": "Modelos de Grafos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel dos índices no contexto de modelos de dados em grafos?",
+      "options": [
+        "Melhorar a performance das consultas",
+        "Eliminar a necessidade de consistência em sistemas distribuídos",
+        "Substituir a representação das relações entre entidades",
+        "Garantir schema rígido como em bancos relacionais"
+      ],
+      "answer": "Melhorar a performance das consultas",
+      "explanation": "A entrada destaca índices como mecanismo importante para melhorar a performance.",
+      "prompt": "Qual é o papel dos índices no contexto de modelos de dados em grafos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Grafos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_modelos_de_grafos_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "09_modelos_de_grafos",
+      "topic_title": "Modelos de Grafos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em sistemas distribuídos, qual problema pode surgir ao utilizar bancos de dados orientados a grafos?",
+      "options": [
+        "Problemas de consistência",
+        "Perda obrigatória de índices",
+        "Impossibilidade de representar relações",
+        "Obrigatoriedade de schema rígido"
+      ],
+      "answer": "Problemas de consistência",
+      "explanation": "Grafos com relacionamentos entre entidades são difíceis de particionar entre nós de um sistema distribuído, pois traversais entre partições exigem coordenação, o que pode introduzir problemas de consistência.",
+      "prompt": "Em sistemas distribuídos, qual problema pode surgir ao utilizar bancos de dados orientados a grafos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Grafos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_modelos_de_grafos_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "09_modelos_de_grafos",
+      "topic_title": "Modelos de Grafos",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o principal trade-off prático ao utilizar bancos de dados orientados a grafos em ambientes distribuídos?",
+      "options": [
+        "Índices ajudam na performance, mas sistemas distribuídos podem introduzir problemas de consistência",
+        "Schema rígido melhora a consistência, mas elimina a necessidade de índices",
+        "Grafos são usados apenas quando não há relações entre entidades",
+        "A principal preocupação é otimizar escrita, não leitura"
+      ],
+      "answer": "Índices ajudam na performance, mas sistemas distribuídos podem introduzir problemas de consistência",
+      "explanation": "Índices aceleram traversais em grafos, mas ao distribuir os dados entre múltiplos nós, manter a consistência das relações torna-se um desafio, criando uma tensão entre performance e consistência.",
+      "prompt": "Qual é o principal trade-off prático ao utilizar bancos de dados orientados a grafos em ambientes distribuídos?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Grafos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "09_modelos_de_grafos_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "09_modelos_de_grafos",
+      "topic_title": "Modelos de Grafos",
+      "type": "cloze",
+      "format": "cloze",
+      "question": "Complete: no modelo de dados em grafos, o foco principal é representar ______ entre entidades.",
+      "options": [
+        "relações",
+        "partições",
+        "transações",
+        "colunas"
+      ],
+      "answer": "relações",
+      "explanation": "O modelo de grafos é definido pela representação de relações entre entidades.",
+      "prompt": "Complete: no modelo de dados em grafos, o foco principal é representar ______ entre entidades.",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos de Grafos",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

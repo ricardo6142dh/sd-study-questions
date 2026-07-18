@@ -1,0 +1,88 @@
+{
+  "course": "system_design",
+  "module_slug": "day_03_teorema_cap_databases_acid_e_base",
+  "topic_slug": "05_combinacoes_do_modelo_cap_cp_ap_ca",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "topic_key": "05_combinacoes_do_modelo_cap_cp_ap_ca",
+      "question": "Em um sistema distribuído, qual é o comportamento esperado de um banco de dados classificado como CP (Consistency + Partition Tolerance) durante uma falha de rede (partição)?",
+      "options": [
+        "O sistema prioriza a disponibilidade, permitindo que todos os nós continuem respondendo, mesmo que os dados estejam desatualizados.",
+        "O sistema prioriza a consistência, podendo sacrificar a disponibilidade ao recusar requisições para evitar a entrega de dados inconsistentes.",
+        "O sistema mantém tanto a consistência quanto a disponibilidade, garantindo que não haja impacto na operação dos usuários.",
+        "O sistema entra em modo de leitura apenas, ignorando completamente a tolerância a partições."
+      ],
+      "answer": "O sistema prioriza a consistência, podendo sacrificar a disponibilidade ao recusar requisições para evitar a entrega de dados inconsistentes.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-05_combinacoes_do_modelo_cap_cp_ap_ca-q001",
+      "prompt": "Em um sistema distribuído, qual é o comportamento esperado de um banco de dados classificado como CP (Consistency + Partition Tolerance) durante uma falha de rede (partição)?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O sistema prioriza a consistência, podendo sacrificar a disponibilidade ao recusar requisições para evitar a entrega de dados inconsistentes.",
+      "recommended_review": {
+        "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "05_combinacoes_do_modelo_cap_cp_ap_ca",
+      "question": "Por que sistemas classificados estritamente como CA (Consistency + Availability) não são ideais para arquiteturas distribuídas de alta escala?",
+      "options": [
+        "Porque eles não suportam o modelo ACID, que é obrigatório para sistemas distribuídos.",
+        "Porque eles não possuem mecanismos de replicação de dados.",
+        "Porque eles não toleram falhas de rede (partições), tornando-se indisponíveis quando a comunicação entre nós é interrompida.",
+        "Porque eles priorizam a latência em detrimento da consistência dos dados."
+      ],
+      "answer": "Porque eles não toleram falhas de rede (partições), tornando-se indisponíveis quando a comunicação entre nós é interrompida.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-05_combinacoes_do_modelo_cap_cp_ap_ca-q002",
+      "prompt": "Por que sistemas classificados estritamente como CA (Consistency + Availability) não são ideais para arquiteturas distribuídas de alta escala?",
+      "difficulty": "medium",
+      "correct_option": 2,
+      "explanation": "Gabarito: Porque eles não toleram falhas de rede (partições), tornando-se indisponíveis quando a comunicação entre nós é interrompida.",
+      "recommended_review": {
+        "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "topic_key": "05_combinacoes_do_modelo_cap_cp_ap_ca",
+      "question": "Como a configuração de 'quorum' pode influenciar a classificação de um banco de dados como o Cassandra no teorema CAP?",
+      "options": [
+        "O quorum não altera a classificação, pois o Cassandra é nativamente AP.",
+        "O uso de quorums fortes pode tornar o sistema mais próximo de um comportamento CP, priorizando a consistência sobre a disponibilidade.",
+        "O quorum é utilizado apenas para aumentar a latência, sem impacto na consistência ou disponibilidade.",
+        "O quorum força o sistema a operar sempre em modo CA, independentemente da rede."
+      ],
+      "answer": "O uso de quorums fortes pode tornar o sistema mais próximo de um comportamento CP, priorizando a consistência sobre a disponibilidade.",
+      "course": "system_design",
+      "module_order": 3,
+      "module_key": "cap_acid_base",
+      "module_title": "Day 03 - Teorema CAP, Databases ACID e BASE",
+      "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+      "format": "multiple_choice",
+      "id": "system_design-cap_acid_base-05_combinacoes_do_modelo_cap_cp_ap_ca-q004",
+      "prompt": "Como a configuração de 'quorum' pode influenciar a classificação de um banco de dados como o Cassandra no teorema CAP?",
+      "difficulty": "medium",
+      "correct_option": 1,
+      "explanation": "Gabarito: O uso de quorums fortes pode tornar o sistema mais próximo de um comportamento CP, priorizando a consistência sobre a disponibilidade.",
+      "recommended_review": {
+        "topic_title": "Combinações do Modelo CAP - CP, AP, CA",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

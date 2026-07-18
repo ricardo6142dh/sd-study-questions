@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "12_indexacao_b_tree_arvores_b",
+  "questions": [
+    {
+      "id": "12_indexacao_b_tree_arvores_b_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "12_indexacao_b_tree_arvores_b",
+      "topic_title": "Indexacao B-Tree e Arvores B",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que é uma B-tree?",
+      "options": [
+        "Uma estrutura de árvore balanceada usada em bancos de dados para indexing e consultas",
+        "Uma tabela otimizada para armazenar dados em colunas variáveis",
+        "Um algoritmo de busca linear para grandes volumes de dados",
+        "Uma técnica de replicação entre bancos distribuídos"
+      ],
+      "answer": "Uma estrutura de árvore balanceada usada em bancos de dados para indexing e consultas",
+      "explanation": "A B-tree mantém todos os seus caminhos da raiz às folhas com a mesma profundidade (balanceamento), garantindo que o custo de busca, inserção e remoção seja O(log n) independentemente dos dados armazenados.",
+      "prompt": "O que é uma B-tree?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao B-Tree e Arvores B",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "12_indexacao_b_tree_arvores_b_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "12_indexacao_b_tree_arvores_b",
+      "topic_title": "Indexacao B-Tree e Arvores B",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é a principal característica estrutural de cada nó em uma B-tree?",
+      "options": [
+        "Cada nó possui um número fixo de filhos",
+        "Cada nó tem exatamente dois filhos",
+        "Os nós podem ter qualquer quantidade de filhos sem restrição",
+        "A árvore é organizada em linhas e colunas"
+      ],
+      "answer": "Cada nó possui um número fixo de filhos",
+      "explanation": "O número fixo de filhos por nó (definido pelo fator de ramificação, ou ordem da árvore) controla a altura da B-tree e garante que a estrutura permaneça balanceada e com custo de acesso previsível.",
+      "prompt": "Qual é a principal característica estrutural de cada nó em uma B-tree?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao B-Tree e Arvores B",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "12_indexacao_b_tree_arvores_b_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "12_indexacao_b_tree_arvores_b",
+      "topic_title": "Indexacao B-Tree e Arvores B",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que B-trees são mais eficientes que árvores de busca binária no contexto descrito?",
+      "options": [
+        "Porque mantêm a altura da árvore baixa em grandes volumes de dados",
+        "Porque eliminam completamente a necessidade de consultas",
+        "Porque sempre usam menos memória em qualquer cenário",
+        "Porque armazenam os dados sem necessidade de indexação"
+      ],
+      "answer": "Porque mantêm a altura da árvore baixa em grandes volumes de dados",
+      "explanation": "A vantagem citada é a baixa altura da árvore, especialmente útil quando há muitos dados.",
+      "prompt": "Por que B-trees são mais eficientes que árvores de busca binária no contexto descrito?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao B-Tree e Arvores B",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "12_indexacao_b_tree_arvores_b_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "12_indexacao_b_tree_arvores_b",
+      "topic_title": "Indexacao B-Tree e Arvores B",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em qual cenário a B-tree apresenta maior vantagem de desempenho?",
+      "options": [
+        "Em grandes volumes de dados",
+        "Apenas em tabelas pequenas e estáticas",
+        "Somente quando não há consultas",
+        "Exclusivamente em dados em tempo real"
+      ],
+      "answer": "Em grandes volumes de dados",
+      "explanation": "A estrutura balanceada da B-tree garante profundidade logarítmica independente do tamanho do conjunto de dados, mantendo o número de operações de I/O por consulta baixo mesmo com volumes muito grandes.",
+      "prompt": "Em qual cenário a B-tree apresenta maior vantagem de desempenho?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao B-Tree e Arvores B",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "12_indexacao_b_tree_arvores_b_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "12_indexacao_b_tree_arvores_b",
+      "topic_title": "Indexacao B-Tree e Arvores B",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação descreve corretamente a relação entre balanceamento de árvore e eficiência das consultas?",
+      "options": [
+        "Manter a árvore balanceada ajuda a manter a altura baixa e melhora a eficiência das consultas",
+        "Balanceamento só importa para reduzir o número de colunas por registro",
+        "Uma árvore balanceada é sempre mais lenta que uma árvore de busca binária",
+        "O balanceamento substitui a necessidade de indexação"
+      ],
+      "answer": "Manter a árvore balanceada ajuda a manter a altura baixa e melhora a eficiência das consultas",
+      "explanation": "Em uma B-tree, o balanceamento garante que a altura da árvore cresça de forma logarítmica, limitando o número de comparações e acessos a disco necessários para localizar qualquer registro.",
+      "prompt": "Qual afirmação descreve corretamente a relação entre balanceamento de árvore e eficiência das consultas?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Indexacao B-Tree e Arvores B",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

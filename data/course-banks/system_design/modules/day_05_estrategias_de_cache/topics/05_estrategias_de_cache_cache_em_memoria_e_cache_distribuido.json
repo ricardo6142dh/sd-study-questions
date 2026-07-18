@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_05_estrategias_de_cache",
+  "topic_slug": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+  "questions": [
+    {
+      "id": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido_q01",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+      "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um cache em memória?",
+      "options": [
+        "Um cache armazenado na memória da própria aplicação, com escopo local à réplica/processo/thread",
+        "Um cache compartilhado entre várias réplicas do sistema",
+        "Um cache persistido em banco de dados para acesso entre serviços",
+        "Uma camada de cache acessível apenas por uma CDN"
+      ],
+      "answer": "Um cache armazenado na memória da própria aplicação, com escopo local à réplica/processo/thread",
+      "explanation": "Cache em memória fica dentro da própria aplicação e não é compartilhado entre réplicas.",
+      "prompt": "O que caracteriza um cache em memória?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido_q02",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+      "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é uma consequência direta de usar cache em memória quando há várias réplicas da aplicação?",
+      "options": [
+        "Cada réplica mantém seu próprio cache, sem compartilhamento automático de estado",
+        "Todas as réplicas passam a ler as mesmas chaves de um único cache central",
+        "A latência de rede desaparece entre as réplicas",
+        "A invalidação deixa de ser necessária"
+      ],
+      "answer": "Cada réplica mantém seu próprio cache, sem compartilhamento automático de estado",
+      "explanation": "No cache em memória, o estado é local; cada réplica tem seu próprio cache.",
+      "prompt": "Qual é uma consequência direta de usar cache em memória quando há várias réplicas da aplicação?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido_q03",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+      "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Por que o cache em memória exige invalidação manual com mais cuidado do que outras estratégias de cache?",
+      "options": [
+        "Porque entradas acumuladas podem saturar a memória e causar memory leaks",
+        "Porque o cache é automaticamente compartilhado entre réplicas",
+        "Porque ele depende de hashing consistente para funcionar",
+        "Porque ele só funciona quando há Redis centralizado"
+      ],
+      "answer": "Porque entradas acumuladas podem saturar a memória e causar memory leaks",
+      "explanation": "Diferente de caches externos com TTL gerenciado centralmente, o cache em memória cresce dentro do processo da aplicação — sem invalidação ativa, entradas obsoletas se acumulam e podem esgotar a memória disponível.",
+      "prompt": "Por que o cache em memória exige invalidação manual com mais cuidado do que outras estratégias de cache?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido_q04",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+      "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "O que caracteriza um cache distribuído?",
+      "options": [
+        "Um cache compartilhado por várias réplicas do sistema",
+        "Um cache que existe apenas dentro de uma thread local",
+        "Um cache que não permite acesso às mesmas chaves por múltiplas instâncias",
+        "Um cache que só serve para reduzir uso de CPU, não latência"
+      ],
+      "answer": "Um cache compartilhado por várias réplicas do sistema",
+      "explanation": "Cache distribuído é compartilhado entre réplicas, permitindo acesso comum às mesmas chaves.",
+      "prompt": "O que caracteriza um cache distribuído?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido_q05",
+      "course": "system_design",
+      "module_order": 5,
+      "module_key": "cache_strategies",
+      "module_title": "Day 05 - Estrategias de Cache",
+      "topic_key": "05_estrategias_de_cache_cache_em_memoria_e_cache_distribuido",
+      "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual afirmação melhor relaciona cache distribuído e escalabilidade horizontal?",
+      "options": [
+        "Cache distribuído é mais adequado quando várias réplicas precisam compartilhar estado e crescer horizontalmente",
+        "Cache distribuído elimina a necessidade de múltiplas réplicas",
+        "Cache distribuído só faz sentido em aplicações monolíticas sem paralelismo",
+        "Cache distribuído substitui a necessidade de qualquer cache local"
+      ],
+      "answer": "Cache distribuído é mais adequado quando várias réplicas precisam compartilhar estado e crescer horizontalmente",
+      "explanation": "Cache distribuído é acessível por múltiplas réplicas e processos, permitindo compartilhamento de estado e crescimento horizontal sem que cada instância precise manter seu próprio cache local.",
+      "prompt": "Qual afirmação melhor relaciona cache distribuído e escalabilidade horizontal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}

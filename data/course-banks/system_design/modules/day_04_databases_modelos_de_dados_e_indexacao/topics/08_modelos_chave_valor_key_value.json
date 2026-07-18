@@ -1,0 +1,142 @@
+{
+  "course": "system_design",
+  "module_slug": "day_04_databases_modelos_de_dados_e_indexacao",
+  "topic_slug": "08_modelos_chave_valor_key_value",
+  "questions": [
+    {
+      "id": "08_modelos_chave_valor_key_value_q01",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "08_modelos_chave_valor_key_value",
+      "topic_title": "Modelos Chave-Valor (Key-Value)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "No modelo chave-valor, como os dados são organizados para acesso?",
+      "options": [
+        "Por uma associação direta entre uma chave e um valor",
+        "Por tabelas com relacionamentos explícitos entre entidades",
+        "Por documentos com schema rígido e colunas fixas",
+        "Por séries temporais indexadas apenas por timestamp"
+      ],
+      "answer": "Por uma associação direta entre uma chave e um valor",
+      "explanation": "O modelo chave-valor armazena dados associando uma chave a um valor, permitindo acesso simples por chave.",
+      "prompt": "No modelo chave-valor, como os dados são organizados para acesso?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Chave-Valor (Key-Value)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_modelos_chave_valor_key_value_q02",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "08_modelos_chave_valor_key_value",
+      "topic_title": "Modelos Chave-Valor (Key-Value)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual é o papel da indexação em bancos de dados chave-valor?",
+      "options": [
+        "A indexação é importante para melhorar a busca",
+        "A indexação elimina a necessidade de qualquer chave",
+        "A indexação substitui o armazenamento do valor",
+        "A indexação é irrelevante para desempenho de acesso"
+      ],
+      "answer": "A indexação é importante para melhorar a busca",
+      "explanation": "Em bancos chave-valor, a indexação melhora o desempenho das operações de busca, pois sem ela seria necessário varrer todos os registros para localizar um valor específico.",
+      "prompt": "Qual é o papel da indexação em bancos de dados chave-valor?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Chave-Valor (Key-Value)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_modelos_chave_valor_key_value_q03",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "08_modelos_chave_valor_key_value",
+      "topic_title": "Modelos Chave-Valor (Key-Value)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Em termos gerais de desempenho para acesso direto por chave, qual comparação entre hash tables e árvores de busca é mais precisa?",
+      "options": [
+        "Hash tables tendem a ser mais rápidas que árvores de busca",
+        "Árvores de busca tendem a ser mais rápidas que hash tables",
+        "Hash tables e árvores de busca têm exatamente o mesmo desempenho em qualquer caso",
+        "Apenas árvores de busca são adequadas para armazenamento chave-valor"
+      ],
+      "answer": "Hash tables tendem a ser mais rápidas que árvores de busca",
+      "explanation": "Hash tables oferecem acesso em tempo O(1) para operações de leitura e escrita por chave exata, enquanto árvores de busca operam em O(log n), tornando hash tables geralmente mais rápidas para esse padrão de acesso.",
+      "prompt": "Em termos gerais de desempenho para acesso direto por chave, qual comparação entre hash tables e árvores de busca é mais precisa?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Chave-Valor (Key-Value)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_modelos_chave_valor_key_value_q04",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "08_modelos_chave_valor_key_value",
+      "topic_title": "Modelos Chave-Valor (Key-Value)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Com que categoria de sistemas o modelo chave-valor é normalmente associado?",
+      "options": [
+        "Sistemas não relacionais",
+        "Sistemas exclusivamente relacionais",
+        "Sistemas orientados apenas a grafos",
+        "Sistemas que exigem schema rígido e integridade referencial"
+      ],
+      "answer": "Sistemas não relacionais",
+      "explanation": "O modelo chave-valor é uma das formas mais simples de banco de dados NoSQL (não relacional), priorizando acesso rápido por chave em detrimento de recursos como joins e integridade referencial.",
+      "prompt": "Com que categoria de sistemas o modelo chave-valor é normalmente associado?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Chave-Valor (Key-Value)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    },
+    {
+      "id": "08_modelos_chave_valor_key_value_q05",
+      "course": "system_design",
+      "module_order": 4,
+      "module_key": "databases_data_models_indexing",
+      "module_title": "Day 04 - Databases, Modelos de Dados e Indexacao",
+      "topic_key": "08_modelos_chave_valor_key_value",
+      "topic_title": "Modelos Chave-Valor (Key-Value)",
+      "type": "multiple_choice",
+      "format": "multiple_choice",
+      "question": "Qual alternativa descreve corretamente a relação entre o modelo chave-valor e a escalabilidade horizontal?",
+      "options": [
+        "O modelo chave-valor é associado à escalabilidade horizontal",
+        "O modelo chave-valor impede qualquer forma de escalabilidade horizontal",
+        "A escalabilidade horizontal é citada como exclusiva de bancos relacionais",
+        "A escalabilidade horizontal depende de schema rígido e não se aplica ao modelo chave-valor"
+      ],
+      "answer": "O modelo chave-valor é associado à escalabilidade horizontal",
+      "explanation": "O modelo chave-valor é naturalmente associado à escalabilidade horizontal: sua estrutura simples de pares chave-valor facilita a distribuição dos dados entre nós.",
+      "prompt": "Qual alternativa descreve corretamente a relação entre o modelo chave-valor e a escalabilidade horizontal?",
+      "difficulty": "medium",
+      "correct_option": 0,
+      "recommended_review": {
+        "topic_title": "Modelos Chave-Valor (Key-Value)",
+        "why_review": "Reveja este tópico para consolidar o conceito."
+      }
+    }
+  ]
+}
