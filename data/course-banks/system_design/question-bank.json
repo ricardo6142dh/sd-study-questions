@@ -1327,7 +1327,7 @@
       "topic_title": "Modelos Orientados a Documentos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual vantagem o conteúdo atribui aos modelos orientados a documentos?",
+      "question": "Qual é uma vantagem característica dos modelos orientados a documentos?",
       "options": [
         "Alta escalabilidade",
         "Consistência superior à dos bancos relacionais",
@@ -1335,8 +1335,8 @@
         "Dependência de joins explícitos para consultas"
       ],
       "answer": "Alta escalabilidade",
-      "explanation": "O resumo executivo destaca alta escalabilidade como uma característica do modelo.",
-      "prompt": "Qual vantagem o conteúdo atribui aos modelos orientados a documentos?",
+      "explanation": "Modelos orientados a documentos oferecem alta escalabilidade horizontal e schema flexível, tornando-os adequados para dados heterogêneos e cargas de leitura/escrita distribuídas.",
+      "prompt": "Qual é uma vantagem característica dos modelos orientados a documentos?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1624,7 +1624,7 @@
       "topic_title": "Modelos de Coluna Larga (Wide-Column)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Além de flexibilidade, qual capacidade o conteúdo associa ao modelo de coluna larga?",
+      "question": "Além de flexibilidade, qual capacidade é característica do modelo de coluna larga?",
       "options": [
         "Suporte a grandes volumes de informações",
         "Obrigatoriedade de dados totalmente uniformes em todas as linhas",
@@ -1632,8 +1632,8 @@
         "Eliminação completa da necessidade de armazenamento distribuído"
       ],
       "answer": "Suporte a grandes volumes de informações",
-      "explanation": "O resumo executivo afirma que o modelo suporta grandes volumes de informações.",
-      "prompt": "Além de flexibilidade, qual capacidade o conteúdo associa ao modelo de coluna larga?",
+      "explanation": "O modelo de coluna larga combina flexibilidade de schema com suporte a grandes volumes de dados, sendo projetado para cargas distribuídas em escala.",
+      "prompt": "Além de flexibilidade, qual capacidade é característica do modelo de coluna larga?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -1759,16 +1759,16 @@
       "topic_title": "Modelos Chave-Valor (Key-Value)",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual alternativa melhor representa a relação mencionada entre o modelo chave-valor e a escalabilidade horizontal?",
+      "question": "Qual alternativa descreve corretamente a relação entre o modelo chave-valor e a escalabilidade horizontal?",
       "options": [
         "O modelo chave-valor é associado à escalabilidade horizontal",
         "O modelo chave-valor impede qualquer forma de escalabilidade horizontal",
         "A escalabilidade horizontal é citada como exclusiva de bancos relacionais",
-        "O conteúdo diz que a escalabilidade horizontal depende de schema rígido"
+        "A escalabilidade horizontal depende de schema rígido e não se aplica ao modelo chave-valor"
       ],
       "answer": "O modelo chave-valor é associado à escalabilidade horizontal",
-      "explanation": "O tópico associa explicitamente o modelo chave-valor à escalabilidade horizontal.",
-      "prompt": "Qual alternativa melhor representa a relação mencionada entre o modelo chave-valor e a escalabilidade horizontal?",
+      "explanation": "O modelo chave-valor é naturalmente associado à escalabilidade horizontal: sua estrutura simples de pares chave-valor facilita a distribuição dos dados entre nós.",
+      "prompt": "Qual alternativa descreve corretamente a relação entre o modelo chave-valor e a escalabilidade horizontal?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2650,7 +2650,7 @@
       "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Em uma arquitetura read-intensive, qual é o foco principal destacado pelo tópico?",
+      "question": "Em uma arquitetura read-intensive, qual é o foco principal?",
       "options": [
         "Eficiência de leitura",
         "Redução da latência de escrita",
@@ -2659,7 +2659,7 @@
       ],
       "answer": "Eficiência de leitura",
       "explanation": "Read-intensive é descrita como arquitetura orientada à eficiência de leitura.",
-      "prompt": "Em uma arquitetura read-intensive, qual é o foco principal destacado pelo tópico?",
+      "prompt": "Em uma arquitetura read-intensive, qual é o foco principal?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -2677,7 +2677,7 @@
       "topic_title": "Arquitetura Write-Intensive e Read-Intensive",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual associação o tópico faz para arquiteturas read-intensive?",
+      "question": "Qual abordagem de modelagem de dados é mais associada a arquiteturas read-intensive?",
       "options": [
         "Modelos de dados normalizados (SQL) com indexação adequada",
         "Modelos de dados não normalizados (NoSQL) para reduzir latência de escrita",
@@ -2686,7 +2686,7 @@
       ],
       "answer": "Modelos de dados normalizados (SQL) com indexação adequada",
       "explanation": "O conteúdo relaciona read-intensive a modelos normalizados (SQL) e ressalta a importância da indexação adequada.",
-      "prompt": "Qual associação o tópico faz para arquiteturas read-intensive?",
+      "prompt": "Qual abordagem de modelagem de dados é mais associada a arquiteturas read-intensive?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3190,7 +3190,7 @@
       "topic_title": "Estrategias de Cache - Cache Miss, Cache Hit e Hit Rate",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Como o hit rate é calculado neste tópico?",
+      "question": "Como o hit rate é calculado?",
       "options": [
         "hits / total de requisições",
         "misses / hits",
@@ -3199,7 +3199,7 @@
       ],
       "answer": "hits / total de requisições",
       "explanation": "Hit rate é a proporção de hits sobre o total de requisições, normalmente expressa em porcentagem.",
-      "prompt": "Como o hit rate é calculado neste tópico?",
+      "prompt": "Como o hit rate é calculado?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3271,7 +3271,7 @@
       "topic_title": "Estrategias de Cache - Cache em Memoria e Cache Distribuido",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "O que caracteriza um cache em memória no contexto do tópico?",
+      "question": "O que caracteriza um cache em memória?",
       "options": [
         "Um cache armazenado na memória da própria aplicação, com escopo local à réplica/processo/thread",
         "Um cache compartilhado entre várias réplicas do sistema",
@@ -3280,7 +3280,7 @@
       ],
       "answer": "Um cache armazenado na memória da própria aplicação, com escopo local à réplica/processo/thread",
       "explanation": "Cache em memória fica dentro da própria aplicação e não é compartilhado entre réplicas.",
-      "prompt": "O que caracteriza um cache em memória no contexto do tópico?",
+      "prompt": "O que caracteriza um cache em memória?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3387,7 +3387,7 @@
         "Cache distribuído substitui a necessidade de qualquer cache local"
       ],
       "answer": "Cache distribuído é mais adequado quando várias réplicas precisam compartilhar estado e crescer horizontalmente",
-      "explanation": "O tópico associa cache distribuído ao compartilhamento de estado e à escalabilidade horizontal.",
+      "explanation": "Cache distribuído é acessível por múltiplas réplicas e processos, permitindo compartilhamento de estado e crescimento horizontal sem que cada instância precise manter seu próprio cache local.",
       "prompt": "Qual afirmação melhor relaciona cache distribuído e escalabilidade horizontal?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -3597,19 +3597,20 @@
       "format": "multiple_choice",
       "question": "Por que a CDN simples reduz a latência nas próximas requisições?",
       "options": [
-        "Porque responde do cache local em vez de voltar à origem",
+        "Porque responde do cache em vez de voltar à origem",
         "Porque a origem passa a processar as requisições mais rápido",
         "Porque a requisição deixa de precisar de uma chave de cache",
         "Porque o proxy elimina a necessidade de armazenamento"
       ],
-      "answer": "Porque responde do cache local em vez de voltar à origem",
+      "answer": "Porque responde do cache em vez de voltar à origem",
       "explanation": "A latência cai quando a resposta vem do cache, pois evita o custo de consultar a origem.",
       "prompt": "Por que a CDN simples reduz a latência nas próximas requisições?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
         "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
-        "why_review": "Reveja este tópico para consolidar o conceito."
+        "why_review": "Reveja este tópico para consolidar o conceito.",
+        "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples"
       }
     },
     {
@@ -3622,7 +3623,7 @@
       "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Na implementação descrita, qual é a função da chave de cache por hash?",
+      "question": "Qual é a função da chave de cache por hash?",
       "options": [
         "Identificar de forma única o conteúdo cacheado a partir da requisição",
         "Substituir o servidor de origem em caso de falha",
@@ -3631,12 +3632,13 @@
       ],
       "answer": "Identificar de forma única o conteúdo cacheado a partir da requisição",
       "explanation": "A chave de cache por hash mapeia a requisição para o arquivo salvo, permitindo localizar o conteúdo no disco.",
-      "prompt": "Na implementação descrita, qual é a função da chave de cache por hash?",
+      "prompt": "Qual é a função da chave de cache por hash?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
         "topic_title": "Estrategias de Cache - Criando uma CDN Simples",
-        "why_review": "Reveja este tópico para consolidar o conceito."
+        "why_review": "Reveja este tópico para consolidar o conceito.",
+        "topic_key": "07_estrategias_de_cache_criando_uma_cdn_simples"
       }
     },
     {
@@ -3676,7 +3678,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmacao descreve melhor microsservicos segundo o topico?",
+      "question": "Qual afirmação descreve melhor microsserviços?",
       "options": [
         "Sistema dividido em servicos menores e independentes que se comunicam por rede",
         "Sistema em que todo o codigo e banco ficam em uma unica unidade logica",
@@ -3685,7 +3687,7 @@
       ],
       "answer": "Sistema dividido em servicos menores e independentes que se comunicam por rede",
       "explanation": "Microsservicos sao servicos menores e independentes, com comunicacao via rede.",
-      "prompt": "Qual afirmacao descreve melhor microsservicos segundo o topico?",
+      "prompt": "Qual afirmação descreve melhor microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3730,7 +3732,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Segundo o topico, quais fatores devem orientar a escolha entre monolito e microsservicos?",
+      "question": "Quais fatores devem orientar a escolha entre monólito e microsserviços?",
       "options": [
         "Escala, dominio, equipe e maturidade tecnica",
         "Somente preferencia pessoal da equipe de desenvolvimento",
@@ -3739,7 +3741,7 @@
       ],
       "answer": "Escala, dominio, equipe e maturidade tecnica",
       "explanation": "A decisao arquitetural depende do contexto tecnico e organizacional, nao de um unico fator.",
-      "prompt": "Segundo o topico, quais fatores devem orientar a escolha entre monolito e microsservicos?",
+      "prompt": "Quais fatores devem orientar a escolha entre monólito e microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -3757,7 +3759,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Introducao",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual heuristica o topico recomenda para a evolucao arquitetural?",
+      "question": "Qual heurística é recomendada para a evolução arquitetural entre monólito e microsserviços?",
       "options": [
         "Comecar simples e distribuir apenas quando carga, dominios e organizacao justificarem",
         "Dividir em microsservicos desde o primeiro dia, independentemente do contexto",
@@ -3766,7 +3768,7 @@
       ],
       "answer": "Comecar simples e distribuir apenas quando carga, dominios e organizacao justificarem",
       "explanation": "A orientacao e evitar fragmentacao prematura e distribuir apenas quando houver justificativa clara.",
-      "prompt": "Qual heuristica o topico recomenda para a evolucao arquitetural?",
+      "prompt": "Qual heurística é recomendada para a evolução arquitetural entre monólito e microsserviços?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4000,7 +4002,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Microservicos",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Quando microsserviços tendem a fazer mais sentido, de acordo com o apoio ao tópico?",
+      "question": "Quando microsserviços tendem a fazer mais sentido?",
       "options": [
         "Quando existem domínios maduros e relativamente independentes, workloads diferentes e times com autonomia real",
         "Quando o sistema ainda não tem limites de domínio claros",
@@ -4009,7 +4011,7 @@
       ],
       "answer": "Quando existem domínios maduros e relativamente independentes, workloads diferentes e times com autonomia real",
       "explanation": "Essas condições justificam a fragmentação e o custo extra de uma arquitetura distribuída.",
-      "prompt": "Quando microsserviços tendem a fazer mais sentido, de acordo com o apoio ao tópico?",
+      "prompt": "Quando microsserviços tendem a fazer mais sentido?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4108,7 +4110,7 @@
       "topic_title": "Microservicos, Monolitos e Dominios - Domain Driven Design",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "No contexto do tópico, para que o DDD é usado?",
+      "question": "Para que serve o Domain-Driven Design (DDD)?",
       "options": [
         "Para definir domínios de negócio e organizar o sistema a partir deles",
         "Para substituir a necessidade de entender o negócio",
@@ -4117,7 +4119,7 @@
       ],
       "answer": "Para definir domínios de negócio e organizar o sistema a partir deles",
       "explanation": "DDD é apresentado como uma abordagem para modelar domínios de negócio e estruturar o sistema com base neles.",
-      "prompt": "No contexto do tópico, para que o DDD é usado?",
+      "prompt": "Para que serve o Domain-Driven Design (DDD)?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -4521,7 +4523,7 @@
         "Porque critérios técnicos eliminam a necessidade de bounded context"
       ],
       "answer": "Porque isso pode apenas reproduzir acoplamentos ruins em vez de resolver o problema",
-      "explanation": "O tópico alerta que dividir tecnicamente sem explicitar domínios e responsabilidades pode apenas replicar acoplamentos ruins.",
+      "explanation": "Dividir o sistema por critérios puramente técnicos (ex: camada, tecnologia) sem mapear domínios e responsabilidades apenas replica os acoplamentos existentes em um contexto distribuído, sem os benefícios reais da separação.",
       "prompt": "Por que a fragmentação do sistema não deve ser feita apenas por critérios técnicos?",
       "difficulty": "medium",
       "correct_option": 0,
@@ -5242,7 +5244,7 @@
       "topic_title": "Least Request",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Ao adicionar ou remover réplicas, qual risco o texto associa ao Least Request se os contadores não forem tratados corretamente?",
+      "question": "Ao adicionar ou remover réplicas, qual risco existe no Least Request se os contadores não forem tratados corretamente?",
       "options": [
         "Concentração temporária de tráfego em um host",
         "Perda total de compatibilidade com Layer 7",
@@ -5250,8 +5252,8 @@
         "Aumento obrigatório do tempo de resposta em todos os hosts"
       ],
       "answer": "Concentração temporária de tráfego em um host",
-      "explanation": "O conteúdo alerta que mudanças na quantidade de réplicas podem causar concentração indevida de tráfego se os contadores não forem ajustados.",
-      "prompt": "Ao adicionar ou remover réplicas, qual risco o texto associa ao Least Request se os contadores não forem tratados corretamente?",
+      "explanation": "Mudanças na quantidade de réplicas podem desbalancear os contadores do Least Request, causando concentração temporária de tráfego em um único host até que os contadores se estabilizem.",
+      "prompt": "Ao adicionar ou remover réplicas, qual risco existe no Least Request se os contadores não forem tratados corretamente?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -5593,7 +5595,7 @@
       "topic_title": "IP Hash, Maglev e Random",
       "type": "multiple_choice",
       "format": "multiple_choice",
-      "question": "Qual afirmação descreve melhor o Maglev no contexto do tópico?",
+      "question": "Qual afirmação descreve melhor o algoritmo Maglev?",
       "options": [
         "É um algoritmo associado a hashing consistente e a uma tabela de trabalho, com foco em persistência e cache",
         "É um algoritmo que escolhe o host com menor número de conexões abertas",
@@ -5602,7 +5604,7 @@
       ],
       "answer": "É um algoritmo associado a hashing consistente e a uma tabela de trabalho, com foco em persistência e cache",
       "explanation": "O tópico posiciona Maglev como ligado a hashing consistente, persistência e casos como cache.",
-      "prompt": "Qual afirmação descreve melhor o Maglev no contexto do tópico?",
+      "prompt": "Qual afirmação descreve melhor o algoritmo Maglev?",
       "difficulty": "medium",
       "correct_option": 0,
       "recommended_review": {
@@ -6033,7 +6035,7 @@
         "Conversão do proxy reverso em load balancer"
       ],
       "answer": "Throttling, com rejeição ou corte de requisições acima da capacidade",
-      "explanation": "O material associa rate limit local ao esgotamento de capacidade e ao efeito de throttling quando o limite é ultrapassado.",
+      "explanation": "Quando o rate limit é excedido, o proxy reverso aplica throttling: requisições acima da capacidade são rejeitadas ou descartadas, protegendo os backends de sobrecarga.",
       "prompt": "Quando o rate limit local de um proxy reverso é excedido no laboratório, qual efeito é esperado?",
       "difficulty": "medium",
       "correct_option": 0,

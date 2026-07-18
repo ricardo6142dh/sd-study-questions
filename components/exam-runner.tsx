@@ -212,12 +212,12 @@ export function ExamRunner({
           </div>
 
           <article className="course-panel question-card">
+            <h2>{currentQuestion.prompt}</h2>
+
             <div className="question-meta">
               <span>{formatModuleLabel(currentQuestion.module_title)}</span>
               <span>{formatTopicLabel(currentQuestion.topic_title)}</span>
             </div>
-
-            <h2>{currentQuestion.prompt}</h2>
 
             <div className="answers">
               {currentQuestion.options.map((option, optionIndex) => {
